@@ -6,7 +6,7 @@ published: true
 date: 2014-08-25 01:26
 tags:
   - Ajax
-  - Javascript
+  - javascript
   - jQuery
 comments: true
 
