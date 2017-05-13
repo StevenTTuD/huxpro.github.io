@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "[Design Pattern]Command Pattern "
+title: "[Design Pattern] - Command Pattern"
 published: true
 date: 2014-02-08 19:33
-tags:
-	- Design Pattern
+tags: ["Design Pattern"]
 comments: true
 
 ---
 
 定義:
+
 Encapsulate a request as an object, thereby letting you parameterize clients with different requests, queue or log requests, and support undoable operations
 
 粗分為兩部分:
@@ -95,7 +95,8 @@ public class SimpleCommandInvoker {
 }
 ```
 
-```default MetaCommandInvoker.java
+```java
+// MetaCommandInvoker.java
 public class MetaCommandInvoker {
 
 	List<Command> commands = new ArrayList<Command>();
@@ -124,7 +125,7 @@ public class MetaCommandInvoker {
 ## Undo與NoCommand
 這部分先行跳過，擇日補上，如果對復原有需要的朋友，請參閱Head First Design Pattern一書。
 
-##延伸思考:
+## 延伸思考:
 
 1. 如果我們把Command用Abstract class或是Concrete Class實作一些方法，而非interface會怎麼樣?
 

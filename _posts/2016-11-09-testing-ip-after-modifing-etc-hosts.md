@@ -3,8 +3,8 @@ layout: post
 title: "在 OSX 環境中測試 etc/hosts 是否成功修改"
 published: true
 date: 2016-11-09 08:02
-tags: []
-categories: []
+tags:
+  - OSX
 comments: true
 
 ---

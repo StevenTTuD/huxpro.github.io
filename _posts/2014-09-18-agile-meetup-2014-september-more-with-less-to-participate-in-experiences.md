@@ -3,8 +3,8 @@ layout: post
 title: Agile Meetup 2014 9月：More with LeSS
 published: true
 date: 2014-09-18 17:24
-tags: []
-categories: []
+tags:
+  - Agile
 comments: true
 
 ---

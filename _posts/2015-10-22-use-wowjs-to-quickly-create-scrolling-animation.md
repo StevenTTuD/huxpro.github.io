@@ -3,8 +3,8 @@ layout: post
 title: Demo：使用wow.js快速打造捲動式動畫網頁
 published: true
 date: 2015-10-22 08:45
-tags: []
-categories: []
+tags:
+  - HTML / CSS
 comments: true
 
 ---

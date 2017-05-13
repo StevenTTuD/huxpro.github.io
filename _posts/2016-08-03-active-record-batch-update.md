@@ -3,8 +3,9 @@ layout: post
 title: ActiveRecord - 更新大量資料
 published: true
 date: 2016-08-03 02:46
-tags: []
-categories: []
+tags:
+  - Rails
+  - ActiveRecord
 comments: true
 
 ---
@@ -15,13 +16,13 @@ comments: true
 如果插入的筆數過多，需要調整 sql buffer 的大小。
 本例子的情景是一次更新100筆資料，資料量不大，所以不會遇到這個問題。
 
-### 方法一：純 SQL 
+### 方法一：純 SQL
 
 1. 因為欄位很多，我要傳送的欄位又是完整的一個不少，所以我用 `Model.attribute_names` 來組合要傳入的欄位名稱。
 1. 然後將要更新的 Hash 組成 `VALUES (x1, y1, z1, ...), (x2, y2, z2, ...), ...`字串
 1. 最後將要更新的欄位組成 `flag_string=VALUES(flag_string)` 這種格式
 
-想要組出的 sql 
+想要組出的 sql
 
 ```rb
     ActiveRecord::Base.connection.execute("
@@ -99,7 +100,7 @@ INSERT INTO linkouts (id,kind,report_id,keyword_id,ezpd_id,url,name,price,full_m
     )
 ```
 
-### 方法二：使用 AcitveRecord-import 
+### 方法二：使用 AcitveRecord-import
 
 AcitveRecord Import 是一個專門用來批次新增或是修改資料的 gem。
 用法很簡單，在原本的 Model 後面加上要新的陣列，並指定要更新的欄位即可。

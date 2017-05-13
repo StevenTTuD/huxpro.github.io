@@ -3,8 +3,9 @@ layout: post
 title: 'Ruby bits ( 1 ) : Expression'
 published: true
 date: 2014-09-03 09:10
-tags: []
-categories: []
+tags:
+  - Ruby
+  - Ruby Bit
 comments: true
 
 ---
@@ -31,7 +32,7 @@ Rails 世界中只有 nil 的值是 false（除了 False 本身的值當然是 F
 
 ![](https://lh5.googleusercontent.com/-6w8mJFsayEk/VJ6nfsNXD6I/AAAAAAAADS4/cCaNA4Tc9AU/w1648-h870-no/Screen%2BShot%2B2014-12-27%2Bat%2B20.33.55.png)
 
-## short circuit assignment 
+## short circuit assignment
 指的是使用 and(&&) 和 or(||)來縮減 if-else
 
 ###Ex1 : if nil, default to empty array
@@ -83,9 +84,9 @@ end
 ```rb
 def list_url(user_name, list_name)
   if list_name
-    url = "https://twitter.com/#{user_name}/#{list_name}" 
+    url = "https://twitter.com/#{user_name}/#{list_name}"
   else
-    url = "https://twitter.com/#{user_name}" 
+    url = "https://twitter.com/#{user_name}"
   end
   url
 end
@@ -96,7 +97,7 @@ def list_url(user_name, list_name)
       "https://twitter.com/#{user_name}/#{list_name}"
   else
       "https://twitter.com/#{user_name}"
-  end 
+  end
 end
 ```
 ##CASE
@@ -104,7 +105,7 @@ case 的用法跟java不太一樣，但是其實意義上有點類似，ruby裡�
 ###CASE RANGES
 
 ```rb
-popularity = case tweet.retweet_count 
+popularity = case tweet.retweet_count
   when 0..9
     nil
   when 10..99
@@ -116,10 +117,10 @@ end
 
 ###CASE - REGEXPS
 ```rb
-tweet_type = case tweet.status 
+tweet_type = case tweet.status
 	when /\A@\w+/
 		:mention
-	when /\Ad\s+\w+/ 
+	when /\Ad\s+\w+/
 		:direct_message
 	else
 		:public
@@ -128,7 +129,7 @@ end
 
 ###CASE - WHEN/THEN
 ```rb
-tweet_type = case tweet.status 
+tweet_type = case tweet.status
 	when /\A@\w+/    then :mention
 	when/\Ad\s+\w+/  then :direct_message
 	else                  :public

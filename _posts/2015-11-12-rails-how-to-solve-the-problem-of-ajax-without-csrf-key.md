@@ -3,8 +3,8 @@ layout: post
 title: 'Rails - 如何解決ajax沒有CSRF Key的問題 '
 published: true
 date: 2015-11-12 16:12
-tags: []
-categories: []
+tags:
+  - Rails
 comments: true
 
 ---
@@ -17,7 +17,7 @@ comments: true
 ```js
 $(document).ajaxSend(function(e, xhr, options) {
   var token =$j("meta[name='csrf-token']").attr("content");
-  xhr.setRequestHeader("X-CSRF-Token", token);  
+  xhr.setRequestHeader("X-CSRF-Token", token);
 });
 ```
 

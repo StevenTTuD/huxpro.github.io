@@ -3,8 +3,9 @@ layout: post
 title: 'Rails: 使用 Whenever 產生 Cronjob '
 published: true
 date: 2016-07-08 04:53
-tags: []
-categories: []
+tags:
+  - Rails
+  - Cronjob
 comments: true
 
 ---
@@ -32,7 +33,7 @@ Crontab 是 Linux 中用來管理例行事務的程式，而 whenever 實際上�
 第一到六項分別是：
 
 1. 分鐘 1～59
-2. 小時 0～23 
+2. 小時 0～23
 3. 日 1～31
 4. 月 1～12
 5. 0～6（0表示星期天）
@@ -40,7 +41,7 @@ Crontab 是 Linux 中用來管理例行事務的程式，而 whenever 實際上�
 
 需要注意的是`6`要運行的命令必須輸入`絕對路徑`，輸入相對路徑是沒有任何效果的。
 
-#### 使用 crontab 產生器產生 cronjob 
+#### 使用 crontab 產生器產生 cronjob
 
 看完上面規則後一定覺得很難撰寫，不直覺。來推薦一個網站 [crontab.guru - the cron schedule expression editor](http://crontab.guru/)輸入 cronjob 後可以立即顯示正確時間。
 
@@ -52,13 +53,13 @@ Whenever 是一個 Ruby 的 Gem，沒錯，你不在 Rails 環境下也可以使
 
 在 Gemfile 中加入`whenever`
 
-或是輸入`gem install whenever` 
+或是輸入`gem install whenever`
 
 #### 初始化
 
 移動到 Rails 資料夾輸入  `wheneverize .`，會幫你建立`config/schedule.rb`，如果你要建在非 Rails 的資料夾，可能需要自己創一個 config 資料夾來避免發生錯誤。
 
-#### 把 whenever 中的內內容轉為 crontab 
+#### 把 whenever 中的內內容轉為 crontab
 
 後面可以指定環境
 
@@ -90,7 +91,7 @@ every 3.hours do
 end
 ```
 
-如果是執行 model 方法要用 `runner` 
+如果是執行 model 方法要用 `runner`
 
 ```rb
 every 1.day, :at => '4:30 am' do
@@ -115,7 +116,7 @@ end
 ```
 
 如此一來 cronjob 是不是變得很好寫了呢:D
- 
+
 
 ### 參考資料
 

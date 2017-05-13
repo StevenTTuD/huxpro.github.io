@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: "Design Pattern - 資源總整理"
 published: true
 date: 2014-01-01 20:10

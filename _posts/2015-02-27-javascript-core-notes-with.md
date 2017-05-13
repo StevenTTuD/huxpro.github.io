@@ -3,8 +3,8 @@ layout: post
 title: javascript 筆記：|| 與 &&的妙用
 published: true
 date: 2015-02-27 09:27
-tags: []
-categories: []
+tags:
+  - Javascript
 comments: true
 
 ---

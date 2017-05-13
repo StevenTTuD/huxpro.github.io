@@ -3,8 +3,8 @@ layout: post
 title: Javascript核心筆記：callback
 published: true
 date: 2015-02-27 04:25
-tags: []
-categories: []
+tags:
+  - Javascript
 comments: true
 
 ---
@@ -25,7 +25,7 @@ A callback is a function that is passed as an argument to another function and i
 ```js
 var func1=function(callback){
     //do something.
-    
+
     //如果callback存在就執行它
     callback && callback();
 }

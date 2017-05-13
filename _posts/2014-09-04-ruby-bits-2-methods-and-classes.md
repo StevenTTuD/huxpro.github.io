@@ -3,8 +3,9 @@ layout: post
 title: 'Ruby bits ( 2 ) : Methods and Classes'
 published: true
 date: 2014-09-04 05:05
-tags: []
-categories: []
+tags:
+  - Ruby
+  - Ruby Bit
 comments: true
 
 ---

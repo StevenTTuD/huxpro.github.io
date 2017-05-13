@@ -3,8 +3,9 @@ layout: post
 title: Typescript是新手的好朋友
 published: true
 date: 2015-03-08 14:17
-tags: []
-categories: []
+tags:
+  - Javascript
+  - Typescript
 comments: true
 
 ---

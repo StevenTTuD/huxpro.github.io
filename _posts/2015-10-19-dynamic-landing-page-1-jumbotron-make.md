@@ -3,8 +3,8 @@ layout: post
 title: Landing Page 實作：來做個簡單的Jumbotron
 published: true
 date: 2015-10-19 19:53
-tags: []
-categories: []
+tags:
+  - HTML / CSS
 comments: true
 
 ---

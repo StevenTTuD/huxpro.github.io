@@ -3,8 +3,9 @@ layout: post
 title: EDX Linux Foundation Ch11：Local Security Principle section 1~3
 published: true
 date: 2014-09-22 07:53
-tags: []
-categories: []
+tags:
+  - Linux
+  - EDX Linux Foundation Course
 comments: true
 
 ---
@@ -24,11 +25,11 @@ By default, Linux distinguishes between several account types in order to isolat
 - Network
 
  The ```last``` utility, which shows the last time each user logged into the system, can be used to help identify potentially inactive accounts which are candidates for system removal.
- 
+
 ##Understanding the root Account
- 
+
  root is the most privileged account on a Linux/UNIX system. This account has the ability to carry out all facets of system administration, including adding accounts, changing user passwords, examining log files, installing software, etc. Utmost care must be taken when using this account. It has no security restrictions imposed upon it.
- 
+
 #section 2: Understanding the usage of root
 ##Operations that Require root Privileges
  root privileges are required to perform operations such as:
@@ -65,7 +66,7 @@ Whenever sudo is invoked, a trigger will look at /etc/sudoers and the files in /
 
 ###Edit sudoers
  You can edit the ```sudoers``` file by using ```visudo```, which ensures that only one person is editing the file at a time.
- 
+
 The basic structure of an entry is:
 ```
 who where = (as_whom) what
@@ -84,7 +85,7 @@ Dec 8 14:20:47 server1 sudo: op : TTY=pts/6 PWD=/var/log USER=root COMMAND=/usr/
 Linux is considered to be more secure than many other operating systems because processes are naturally isolated from each other. One process normally cannot access the resources of another process, even when that process is running with the same user privileges.
 
 ##Hardware Device Access
-###device special file (often called a device node) under the /dev directory that corresponds to the device being accessed. 
+###device special file (often called a device node) under the /dev directory that corresponds to the device being accessed.
 
 ###/dev/sd*
 Hard disks, for example, are represented as /dev/sd*. While a root user can read and write to the disk in a raw fashion (for example, by doing something like:

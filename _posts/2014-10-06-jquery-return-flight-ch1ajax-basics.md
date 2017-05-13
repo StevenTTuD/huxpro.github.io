@@ -3,8 +3,9 @@ layout: post
 title: jQuery Return Flight Ch1 ( 2 )：補充筆記
 published: true
 date: 2014-10-06 03:06
-tags: []
-categories: []
+tags:
+  - jQuery
+  - Javascript
 comments: true
 
 ---

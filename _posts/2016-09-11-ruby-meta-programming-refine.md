@@ -3,8 +3,9 @@ layout: post
 title: 'Ruby metaprogramming - Open Class and Refine '
 published: true
 date: 2016-09-11 13:49
-tags: []
-categories: []
+tags:
+  - Ruby
+  - Metaprogramming
 comments: true
 
 ---
@@ -57,7 +58,7 @@ $ ruby refine_ex.rb
 
 要呼叫`using IAmRefineModule`後，我們定義的 refine Module，那麼 Class 方法才會被覆寫到原有的 class。
 
-### Method Lookup 
+### Method Lookup
 
 接下來我們來跟 Module 的 Prepend 來比較看看，看看 refine 定義的方法，是否會優先於 prepend module 所引入的方法。
 

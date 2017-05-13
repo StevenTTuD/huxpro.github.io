@@ -3,8 +3,9 @@ layout: post
 title: Ruby bits ( 3 )：Class
 published: true
 date: 2014-09-05 06:41
-tags: []
-categories: []
+tags:
+  - Ruby
+  - Ruby Bit
 comments: true
 
 ---
@@ -77,7 +78,7 @@ class Attachment
 			thumbnail
     when :mp3
       player
-		end 
+		end
   end
 end
 ```
@@ -86,13 +87,13 @@ end
 class Attachment
   def preview
     thumbnail
-  end 
+  end
 end
 
 class Audio < Attachment
   def preview
     player
-	end 
+	end
 end
 ```
 
@@ -137,7 +138,7 @@ class User
   end
 end
 ```
-#Override 
+#Override
 Override的方法很簡單，直接取相同的method名稱，就可以複寫掉父類別的method。
 
 #最後一關refactoring看不太懂

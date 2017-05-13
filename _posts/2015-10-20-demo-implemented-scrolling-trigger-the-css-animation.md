@@ -3,12 +3,12 @@ layout: post
 title: Demo：實作捲動觸發CSS動畫
 published: true
 date: 2015-10-20 18:35
-tags: []
-categories: []
+tags: ["HTML / CSS"]
 comments: true
 
 ---
-[demo頁面](http://steventtud.github.io/CSS-Animation-Page-Demo/)
+
+[demo](http://steventtud.github.io/CSS-Animation-Page-Demo/)
 
 ##第一部分：使用CSS撰寫Slide In效果
 
@@ -30,8 +30,7 @@ animation-fill-mode 結束後的狀態
 - backwards：结束后返回动画开始时的状态
 - both：结束后可遵循forwards和backwards两个规则。
 
-
-####3. 使用`transform:translate`移動元素
+#### 3. 使用`transform:translate`移動元素
 
 使用`transform: translate(x,y)`來移動元素。其他常用的還有：
 
@@ -41,7 +40,7 @@ animation-fill-mode 結束後的狀態
 可以到W3C Scholl玩玩看
 [CSS3 2D Transforms](http://www.w3schools.com/css/css3_2dtransforms.asp)
 
-####程式碼(CSS部分)
+#### 程式碼(CSS部分)
 
 ```css
 @-webkit-keyframes fadeIn { from { opacity:0; } to {opacity: 1;} }
@@ -83,28 +82,28 @@ animation-fill-mode 結束後的狀態
 }
 ```
 
-####程式碼(JS部分)
+#### 程式碼(JS部分)
 
 用簡單的addClass方法即可完成。
 
 ```js
-$(function () { 
+$(function () {
     $(window).scroll(function () {
         var y = $(this).scrollTop();
         if (y > 300) {
              $('#monitor').addClass('animate');
              $('#phone').addClass('animate');
         };
-        
+
 			.
 			.
 			.
-       
+
     });
 });
 ```
 
-##第二部分：使用CSS讓圖片永久旋轉
+## 第二部分：使用CSS讓圖片永久旋轉
 
 keyframe:用來編寫這個動畫的過程。設定好旋轉的動作命名為rotaRadial。
 
@@ -147,10 +146,9 @@ keyframe:用來編寫這個動畫的過程。設定好旋轉的動作命名為ro
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
 }
-
 ```
 
-##第三部分：讓圖片變大
+## 第三部分：讓圖片變大
 
 原本圖片的大小，設成0。
 
@@ -174,26 +172,26 @@ img.grow-img{
 用`.animate`設定了transition，因此會有動畫效果。
 
 ```js
-$(function () { 
+$(function () {
     $(window).scroll(function () {
         var y = $(this).scrollTop();
         if (y > 300) {
             $('#monitor').addClass('animate');
             $('#phone').addClass('animate');
         };
-			
-			
+
+
         if(y > 400){
           $('#support').find('img').addClass('animate grow-img');
           $('#speed').find('img').addClass('animate grow-img');
           $('#smart').find('img').addClass('animate grow-img');
         };
-       
+
     });
 });
 ```
 
-##參考連結
+## 參考連結
 
 大量範例展示CSS動畫可以做到的效果。
 

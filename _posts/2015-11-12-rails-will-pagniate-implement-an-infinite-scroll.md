@@ -3,8 +3,9 @@ layout: post
 title: Rails - 使用 will pagniate 搭配 ajax 實作無限捲動
 published: true
 date: 2015-11-12 05:29
-tags: []
-categories: []
+tags:
+    - Rails
+    - Javascript
 comments: true
 
 ---
@@ -21,7 +22,7 @@ will paganiate 由送到 controller 的 params[:page] 決定回傳的`@posts`。
 ##inifite scroll event
 
 ```js
-$(window).scroll(function () { 
+$(window).scroll(function () {
    if ($(window).scrollTop() >= $(document).height() - $(window).height() - 10) {
       //Add something at the end of the page
    }

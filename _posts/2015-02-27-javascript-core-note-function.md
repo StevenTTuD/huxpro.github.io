@@ -3,8 +3,8 @@ layout: post
 title: 'Javascript核心筆記：function '
 published: true
 date: 2015-02-27 09:55
-tags: []
-categories: []
+tags:
+  - Javascript
 comments: true
 
 ---
@@ -48,13 +48,13 @@ func(10, 20, 30, 40); // 10 20
 傳入比參數個數還多的引數也是可行的，在函式內部會自動宣告 arguments 名稱參考至具陣列外觀的物件，上頭帶有所有傳入的引數。例如，你可以如下設計一個加總數值的函式：
 ```js
 function sum() {
-    var sum = 0;    
+    var sum = 0;
     for(var i = 0; i < arguments.length; i++) {
         sum += arguments[i];
     }
     return sum;
 }
- 
+
 console.log(sum(1, 2));;      // 3
 console.log(sum(1, 2, 3));    // 6
 console.log(sum(1, 2, 3, 4)); // 10
@@ -71,7 +71,7 @@ arguments 不是 Array 實例，它只是具有數字作為特性，特性參考
 - 宣告式
 	- 具名宣告 function add(a, b){return a+b;};
 	- 匿名宣告 function (a, b){return a+b;};
-  
+
 宣告式的特性有：
 - 在javascript引擎解析javascript程式碼時，會受到Function declaration Hoisting，提升到作用域的最前面執行。
 - 後面加括號`不可以`立刻調用函數

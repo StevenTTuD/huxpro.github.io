@@ -3,8 +3,10 @@ layout: post
 title: "排版練習1：PSD to HTML Porfolio"
 published: true
 date: 2015-02-12 04:51
-tags: []
-categories: []
+tags:
+  - HTML
+  - CSS
+  - PSD to HTML
 comments: true
 
 ---

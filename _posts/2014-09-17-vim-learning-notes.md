@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Vim 學習筆記(持續更新)
+title: Vim 學習筆記
 published: true
 date: 2014-09-17 19:45
-tags: []
-categories: []
+tags:
+  - Vim
 comments: true
 
 ---
@@ -22,7 +22,7 @@ comments: true
 第三課：移動
 跳至某一行 ```:第幾行```
 跳至段落```{```或```}```
-跳至句首$ 
+跳至句首$
 跳至句尾0
 跳至某行：
 

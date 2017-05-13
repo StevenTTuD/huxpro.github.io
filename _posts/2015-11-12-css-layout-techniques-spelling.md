@@ -3,8 +3,8 @@ layout: post
 title: CSS排版技巧 - 文繞圖
 published: true
 date: 2015-11-12 16:16
-tags: []
-categories: []
+tags:
+  - HTML / CSS
 comments: true
 
 ---
@@ -66,7 +66,7 @@ comments: true
 
 ###想要分段的時候用div包起來並加上`.clear-fix`
 
-如果段落(p)高比圖片(img)小的時候會出現這樣的情況。有時候我們想要段落分明，這時候使用div包覆並幫div加上`.clear-fix`。 
+如果段落(p)高比圖片(img)小的時候會出現這樣的情況。有時候我們想要段落分明，這時候使用div包覆並幫div加上`.clear-fix`。
 
 ![](https://lh3.googleusercontent.com/XPE7PCrLNc_xKHE_J32rggtUNIVM2G8XMJJwobHk-7AaeAYLpoLBa7YnkyXFskjfzsa1kIlDPH6Jd02Lc2H2yQ6Zlb1fbPek016YPeJ4KWTK3OnMfZalsnEr3XiWeB3AkTRAK1ycxVJOARSbfIUC09i2tqow3yBy3cHmbQ4xm_mwIbqVSbbSsbHNbNlxyLqKb5fVbI_FLyyAS8jXjB6lgjMrI0cPf2x3GCA8kR_Jzwkepluy0I5gqc-LSlJe55G5f9fLmBoHr_4wN_X212TNKYB-wCKEAN7pQUXsl8nf7N3KG0Zso20TJ2lAOgZDVHOtZzLCUpsANVDVs-KpdA8GPBuskGLGz9aVd-XRZKCvM0yI3QZPHG6-3l9GaOsfF35ALn0gv20duMZvnPyHQqgCvAhzwVgWig5c2J77quPhxwZ4eq6TOYPC7e1xrRbPhfBRlYG14AMuDmfHTHjkA7ltt-Rn2D_irzzHZ-jYw3lhSa6y74TVgTukijsnt72QNckgBOy4_82VF_4YmVZFjbxTrPPrQ2EIfy2z7a8TLrU2BKI=w1199-h542-no)
 

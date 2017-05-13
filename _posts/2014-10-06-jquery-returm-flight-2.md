@@ -3,8 +3,9 @@ layout: post
 title: jQuery Returm Flight Ch2：Javascript Object & Function
 published: true
 date: 2014-10-06 06:20
-tags: []
-categories: []
+tags:
+  - jQuery
+  - Javascript
 comments: true
 
 ---
@@ -34,13 +35,13 @@ var confirmation = {
   loadConfirmation: function() { ... }
   showBoardingPass: function(event) { ... }
 };
-  
+
 $(document).ready(function() {
   confirmation.init();
 });
 ```
 
-#Part2 javascript Function 
+#Part2 javascript Function
 ##Object vs Function
 這是物件，只允許一個vacation。
 ```js

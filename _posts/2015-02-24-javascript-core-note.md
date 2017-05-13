@@ -3,8 +3,8 @@ layout: post
 title: javascript核心筆記：Object
 published: true
 date: 2015-02-24 02:50
-tags: []
-categories: []
+tags:
+    - Javascript
 comments: true
 
 ---
@@ -160,15 +160,15 @@ function Man(name, url) {
     this.name = name;
     this.url = url;
 }
- 
+
 Man.prototype.equals = function(other) {
     return (this.name === other.name) &&  (this.url === other.url);
 };
- 
+
 var man1 = new Man('Justin Lin', 'openhome.cc');
 var man2 = new Man('Justin Lin', 'openhome.cc');
 var man3 = new Man('Justin Lin', 'openhome.cc');
- 
+
 console.log(man1.equals(man2));
 console.log(man1.equals(man3));
 ```

@@ -3,14 +3,14 @@ layout: post
 title: "細讀 Bootstrap 3 文件"
 published: true
 date: 2015-03-15 03:54
-tags: []
-categories: []
+tags:
+  - Bootstrap
 comments: true
 
 ---
 使用Bootstrap好一段時間了，卻沒有好好的把官方文件讀過一遍，雖然寫的出來但是速度不盡理想，所以這兩天花些時間將幾個不太理解的常用元件與一些以前有使用到卻不太了解的data-attribute用法寫下筆記，好提高生產力。
 
-##Part 1: Navbar 
+##Part 1: Navbar
 
 這是一個bootstrap官網上的完整navbar範例。
 ```html
@@ -76,17 +76,17 @@ navbar的外部由nav包覆，但是這樣的作法其實不太妥當，因為�
 ```html
 <nav class="navbar navbar-default|navbar-inverse">
   <div class="container-fluid">
-  
+
     .
     .
     .
-  
+
   </div>
 </nav>
 ```
 
 > Use `.container-fluid` for a full width container, spanning the entire width of your viewport.
-> 
+>
 
 ####Brand與手機版本的元素
 除了Brand以外的上半部程式碼顯示的是手機版本的畫面。
@@ -99,7 +99,7 @@ navbar的外部由nav包覆，但是這樣的作法其實不太妥當，因為�
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      
+
       <!-- Brand 在這-->
       <a class="navbar-brand" href="#">Brand</a>
     </div>
@@ -114,23 +114,23 @@ navbar的容器有幾種：
 
 ```html
 	<div class="navbar-header">
-	
+
 	    .
 	    .
 	    .
-	    
+
 	</div>
-	
+
 <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-    
+
       <!-- 我是ul.navbar-nav -->
       <ul class="nav navbar-nav">
         .
         .
         .
       </ul>
-      
+
       <!-- 這是一個nav-form -->
       <form class="navbar-form navbar-left" role="search">
         <div class="form-group">
@@ -198,12 +198,12 @@ form的使用跟一般的form是相同的，特別注意的是加上`.navbar-for
 
 1. 使用指令`navbar`建構出navbar雛形 ，包含brand、navbar-form。
 2. 要加上dropdwon時使用指令`navbar-dropdown`
-3. 各式各樣input : 
+3. 各式各樣input :
 	- `radiobs`
 	- `checkboxbs`
 	- `btn`
 	- `textareabs`
-	- `selectbs` 
+	- `selectbs`
 
 ####參考資料：
 [官方Doc - navbar](http://getbootstrap.com/components/#navbar)
@@ -338,7 +338,7 @@ indecator和controls需要跟外層的`#carousel-example-generic"`一致。
       .
       .
       .
-      
+
 <!-- Controls -->
       <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>

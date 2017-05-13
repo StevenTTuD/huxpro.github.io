@@ -3,8 +3,8 @@ layout: post
 title: Ruby中冒號開頭Symbol與&:to_s用法解釋
 published: true
 date: 2015-07-16 05:53
-tags: []
-categories: []
+tags:
+  - Ruby
 comments: true
 
 ---
@@ -77,7 +77,7 @@ comments: true
 
 ```
 [23] pry(main)> all_symbols.include?(:sym)
-=> true 
+=> true
 # :sym是系統預設的所以顯示true
 [24] pry(main)> all_symbols.include?(:abc)
 => false

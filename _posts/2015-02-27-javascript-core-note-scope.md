@@ -3,8 +3,8 @@ layout: post
 title: 'Javascript核心筆記：scope '
 published: true
 date: 2015-02-27 12:40
-tags: []
-categories: []
+tags:
+  - Javascript
 comments: true
 
 ---

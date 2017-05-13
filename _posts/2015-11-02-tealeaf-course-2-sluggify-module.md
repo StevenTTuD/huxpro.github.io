@@ -3,8 +3,8 @@ layout: post
 title: "從 Tealeaf 課程學習模組化 - Sluggify Module"
 published: true
 date: 2015-11-02 19:05
-tags: []
-categories: []
+tags:
+  - Rails
 comments: true
 
 ---
@@ -19,7 +19,7 @@ module Sluggable
   extend ActiveSupport:Concern
 
   include do
-  
+
   end
 end
 ```
@@ -28,7 +28,7 @@ end
 > 還有另一個方法把rb檔initializers中，放在這個資料夾裡面代表app打開初始化時就會先跑過一遍。
 
 ###2. 跟sluggify有關的方法通通搬過來
- 
+
 接著我們要把原本model(post.rb,category.rb)跟sluggify有關的方法搬過來。
 
 1. 把`after_validation :generate_slug!`放在include區塊。
@@ -68,9 +68,9 @@ module Sluggable
     def to_slug(name)
       str = name.strip
       str.gsub! /\s*[^A-Za-z0-9]\s*/, '-' # 將符號轉成"-"
-    
+
       str.gsub! /-+/, '-' # 將多個"-"轉成一個"-"
-    
+
       str
     end
 end
@@ -86,7 +86,7 @@ end
     .
     .
     .
-    
+
   end
 ```
 
@@ -108,7 +108,7 @@ class_attribute這個ruby語言獨有的特性可以幫助我們解決這個問�
 ###4. 新增類別方法sluggable_cloumn讓model能夠初始化slug_column
 
 ```rb
-module Sluggable  
+module Sluggable
  .
  .
  .
@@ -126,11 +126,11 @@ end
 class Post
     .
     .
-    
+
     sluggable_column :title
-    
+
     .
-    . 
+    .
 end
 ```
 

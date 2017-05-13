@@ -3,8 +3,8 @@ layout: post
 title: Javascript核心筆記：this
 published: true
 date: 2015-02-27 04:14
-tags: []
-categories: []
+tags:
+  - Javascript
 comments: true
 
 ---
@@ -34,17 +34,17 @@ console.log( toString.call(p2) ); //[momor, 32]
 function toString() {
     return this.name;
 }
- 
+
 var p1 = {
-    name     : 'Justin', 
+    name     : 'Justin',
     toString : toString
 };
- 
+
 var p2 = {
-    name     : 'momor', 
+    name     : 'momor',
     toString : toString
 };
- 
+
 console.log(p1.toString());        // Justin
 console.log(p2.toString());        // momor
 console.log(p1.toString.call(p2)); // momor
@@ -57,9 +57,9 @@ call 方法的第一個參數就是用來指定函式中的 this 所參考的物
 function add(num1, num2) {
     return this.num + num1 + num2;
 }
- 
+
 var o = {num : 10};
- 
+
 console.log(add.call(o, 20, 30)); // 60
 ```
 
@@ -69,11 +69,11 @@ console.log(add.call(o, 20, 30)); // 60
 function add(num1, num2) {
     return this.num + num1 + num2;
 }
- 
+
 var o1 = {num : 10};
 var o2 = {num : 100};
 var args = [20, 30];
- 
+
 console.log(add.apply(o1, args)); // 60
 console.log(add.apply(o2, args)); // 150
 ```
@@ -98,12 +98,12 @@ function toString() {
 }
  
 var p1 = {
-    name     : 'Justin', 
+    name     : 'Justin',
     toString : toString
 };
  
 var p2 = {
-    name     : 'momor', 
+    name     : 'momor',
     toString : toString
 };
  

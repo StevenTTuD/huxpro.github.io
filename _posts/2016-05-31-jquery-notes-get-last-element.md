@@ -3,8 +3,7 @@ layout: post
 title: jQuery vs Ruby - 取得倒數的元素並組成字串
 published: true
 date: 2016-05-31 03:55
-tags: []
-categories: []
+tags: ["jQuery", "Ruby"]
 comments: true
 
 ---
@@ -43,15 +42,14 @@ arr[-3..-1]
 => [4, 5, 6]
 ```
 
-
 ### 3.1 取出元素中的text後，存到陣列中
 
 先把要的字串存到陣列裡面
 
 ```js
 arr = [];
-$('span[itemprop=title]').slice(-3).each(function(i,f){ 
-	arr.push( $(f).text()) 
+$('span[itemprop=title]').slice(-3).each(function(i,f){
+	arr.push( $(f).text())
 });
 ```
 
@@ -63,11 +61,11 @@ $('span[itemprop=title]').slice(-3).each(function(i,f){
 arr.reverse().join(",");
 ```
 
-### 4. 另一種方法：使用 map 加上 join 
+### 4. 另一種方法：使用 map 加上 join
 
 ```js
 arr = [];
-$('span[itemprop=title]').slice(-3).map(function(i,f){ 
+$('span[itemprop=title]').slice(-3).map(function(i,f){
 	return $(f).text();
 }).get().join(",") ;
 ```

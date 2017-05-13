@@ -3,8 +3,8 @@ layout: post
 title: Demo：使用scrollspy讓畫面更生動
 published: true
 date: 2015-10-19 20:16
-tags: []
-categories: []
+tags:
+  - HTML / CSS
 comments: true
 
 ---
@@ -30,7 +30,7 @@ height: 100%;
     $("body").scrollspy({
         target: ".navbar-custom",
         offset: 370
-    }) 
+    })
 	});
 ```
 
@@ -40,7 +40,7 @@ nav class="navbar navbar-default navbar-custom navbar-fixed-top" role="navigatio
     .
     .
     .
-      
+
   </div><!-- /.container -->
 </nav>
 ```
@@ -94,7 +94,7 @@ nav class="navbar navbar-default navbar-custom navbar-fixed-top" role="navigatio
 		var $anchor = $(this);
 		$('html, body').stop().animate({
 			scrollTop: $($anchor.attr('href')).offset().top-100
-		}, 1500, 'easeInOutExpo');		
+		}, 1500, 'easeInOutExpo');
 		event.preventDefault();
 	});
 ```

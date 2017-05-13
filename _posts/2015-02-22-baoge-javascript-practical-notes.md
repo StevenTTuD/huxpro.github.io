@@ -3,8 +3,9 @@ layout: post
 title: "保哥 javascript 實戰課程筆記"
 published: true
 date: 2015-02-22 06:09
-tags: []
-categories: []
+tags:
+  - Javascript
+  - Course
 comments: true
 
 ---
@@ -70,7 +71,7 @@ var myMother = new person("Sally", "Rally", 48, "green");
 var myFather = new person("John", "Doe", 50, "blue");
 var myMother = new person("Sally", "Rally", 48, "green");
 ```
-1. 因為javascript沒有Class概念，所以必須借助prototype的特性。 
+1. 因為javascript沒有Class概念，所以必須借助prototype的特性。
 
 ###4. javascript的物件可以不需先行宣告就可以自由擴充屬性
 1. 這點是我之前學習時沒有發現的微妙之處，一般物件導向程式語言如java一定要先行宣告變數才能使用，而javascript卻不需要。
@@ -94,7 +95,7 @@ javascript有兩種物件：
 - 原生物件(Native)，也可以叫做內建物件，例如Array、Date或是使用者自行定義(後面會提到)
 - 宿主物件(Host)，例如window物件和所有DOM物件。
 - 所有物件資料都從根物件(就是window)開始連結(chain)。
-  
+
 怎麼去分辨這兩種物件，只要看看物件能不能在瀏覽器底下執行就可以，如果只能在瀏覽器底下執行，就是Host物件，如果在非瀏覽器的地方也可以執行，那就是Native。
 
 
@@ -103,15 +104,15 @@ javascript有兩種物件：
 - 物件(object)
   - 記憶體中的資料
   - 僅存在執行時期
-  
+
 - 變數(variable)
   - 用來儲存物件的記憶體位址(指標)
   - 在開發時期進行宣告(使用var關鍵字)
-  
+
 - 型別(type)
   - 用來標示物件的種類
   - 不同型別可能會有不同的預設屬性與方法
-  
+
 ![](https://lh5.googleusercontent.com/-dtWA3IrgWbw/VOmNEZi5u8I/AAAAAAAAE98/m3Xk4tBMpzY/w577-h388-no/01333w234234willcourse.jpg)
 (引用自[梅西的小腦袋](http://windwaterbo-blog.logdown.com/posts/222722-baoge-typescript-combat-development-and-javascript-javascript-basic-beliefs-review))
 
@@ -160,9 +161,9 @@ ANS : 5個記憶體物件、1個變數、3個型別  '
     ```
     function (a, b){return a+b;};
     ```
-    
+
 使用匿名的方式，在偵錯或是效能調教時，會無法看出確切的函式位置，盡量避免。
-   
+
 ## 後記
 保哥javascript實戰開發課程中還有更多的內容，本篇學習筆記重點放在理解 javascript 的重要特性和 javascript 的物件特性，函式部分只有稍稍帶過，更詳細的筆記將會在研讀[JavaScript語言核心系列](http://www.codedata.com.tw/category/javascript/5)的時候記錄。
 

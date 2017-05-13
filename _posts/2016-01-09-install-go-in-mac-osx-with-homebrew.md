@@ -3,7 +3,9 @@ layout: post
 title: "在 Mac OS X 下使用 brew 安裝 Go"
 published: true
 date: 2016-01-09 14:07
-tags: []
+tags:
+  - Golang
+  - OSX
 categories: []
 comments: true
 
@@ -38,7 +40,7 @@ brew install go
 
 
 
-#### bash 
+#### bash
 
 打開 bash 設定檔
 

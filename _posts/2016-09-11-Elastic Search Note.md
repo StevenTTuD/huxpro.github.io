@@ -1,9 +1,10 @@
 ---
 layout: post
-title: Elasticsearch 實戰筆記
+title: Elasticsearch 筆記
 published: true
 date: 2016-09-11 04:24
-tags: []
+tags:
+  - Elasticsearch
 categories: []
 comments: true
 
@@ -45,7 +46,7 @@ comments: true
 另外 Elasticsearch Ruby 的 API 位置在[這邊](http://www.rubydoc.info/gems/elasticsearch-api/Elasticsearch/API/Actions)。因為文件的連結沒有在官方 github 中明顯的寫出來，一開始讓我疑惑了一下。
 
 
-#### 1.3 可以用哪些方法存取 Elasticsearch 
+#### 1.3 可以用哪些方法存取 Elasticsearch
 
 跟 Elasticsearch 的溝通只要透過 HTTP Request 就可以存取。這也是雖然 Elasticsearch 是以 Java 作為底層，但是卻可以跟大多數其他程式語言製作系統輕鬆串接重要原因。所以操作上只要你可以發出 HTTP Request 就可以跟 Elasticsearch 溝通。而因為安全性的關係，Elasticsearch 常常架設在內網。需要在遠端存取的時候透過VPN 會是比較安全的作法。
 
@@ -75,11 +76,11 @@ PUT my_index
   "mappings": {
     "my_type": {
       "properties": {
-        "full_name": { 
+        "full_name": {
           "type":  "string"
         },
         "status": {
-          "type":  "string", 
+          "type":  "string",
           "index": "not_analyzed"
         }
       }

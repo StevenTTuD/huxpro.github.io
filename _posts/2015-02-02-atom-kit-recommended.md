@@ -3,8 +3,9 @@ layout: post
 title: Atom 套件整理
 published: true
 date: 2015-02-02 14:35
-tags: []
-categories: []
+tags:
+  - Atom
+  - Text Editor
 comments: true
 
 ---
@@ -75,7 +76,7 @@ comments: true
   可以在atom中使用vim的指令。
   `zentabs`
   限制開啟的分頁最多不超過5個。
- 
+
  最後附上我的package清單，
 ```
 	##packages.cson

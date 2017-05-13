@@ -3,8 +3,9 @@ layout: post
 title: EDX Linux Foundation Ch11：Local Security Principle section 4~5
 published: true
 date: 2014-09-22 08:07
-tags: []
-categories: []
+tags:
+  - Linux
+  - EDX Linux Foundation Course
 comments: true
 
 ---
@@ -23,7 +24,7 @@ echo -n test | sha512sum
 ##Good Password Practices
 IT professionals follow several good practices for securing the data and the password of every user.
 
-###1.Password aging 
+###1.Password aging
 **Password aging** is a method to ensure that users get prompts that remind them to create a new password after a specific period. This can ensure that passwords, if cracked, will only be usable for a limited amount of time. This feature is implemented using **chage**, which configures the password expiry information for a user.
 
 
@@ -37,7 +38,7 @@ One can also install password cracking programs, such as John The Ripper, to sec
 #Seciton 5: Securing the Boot Process and Hardware
 
 ##Requiring Boot Loader Passwords
-You can secure the boot process with a secure password to prevent someone from bypassing the user authentication step. 
+You can secure the boot process with a secure password to prevent someone from bypassing the user authentication step.
 
 ###GRUB version 1（older version）
 you can invoke **grub-md5-crypt**  which will prompt you for a password and then encrypt as shown on the adjoining screen.
@@ -46,7 +47,7 @@ You then must edit ```/boot/grub/grub.conf``` by adding the following line below
 ```
 password --md5 $1$Wnvo.1$qz781HRVG4jUnJXmdSCZ30
 ```
-You can also force passwords for only certain boot choices rather than all. 
+You can also force passwords for only certain boot choices rather than all.
 舊的作法是直接修改```/boot/grub/grub.conf```
 
 ###GRUB version 2（older version）

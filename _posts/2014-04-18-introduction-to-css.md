@@ -3,7 +3,8 @@ layout: post
 title: 'CSS簡介 '
 published: true
 date: 2014-04-18 05:08
-tags: ["CSS"]
+tags:
+  - CSS
 categories: []
 comments: true
 

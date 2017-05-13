@@ -3,8 +3,9 @@ layout: post
 title: EDX Linux Foundation Ch12：Network
 published: true
 date: 2014-09-30 04:17
-tags: []
-categories: []
+tags:
+  - Linux
+  - EDX Linux Foundation Course
 comments: true
 
 ---
@@ -21,13 +22,13 @@ A 32-bit IPv4 address is divided into four 8-bit sections called octets.
 ![](https://lh6.googleusercontent.com/-rgUCVtxI9gk/VCoF-H3gCzI/AAAAAAAADDU/sJFdNhvXi9k/w1655-h803-no/Screen%2BShot%2B2014-09-30%2Bat%2B09.18.47.png)
 
 Classes A, B, and C are classified into two parts: **Network addresses(Net ID)** and **Host address (Host ID)**. The Net ID is used to identify the network, while the Host ID is used to identify a host in the network.
-Class D is used for special multicast applications (information is broadcast to multiple computers simultaneously) 
+Class D is used for special multicast applications (information is broadcast to multiple computers simultaneously)
 Class E is reserved for future use.
 
 ##IP Address Allocation
 Typically, a range of IP addresses are requested from your **Internet Service Provider(ISP)** by your organization's network administrator
 
-You can assign IP addresses to computers over a network manually or dynamically. 
+You can assign IP addresses to computers over a network manually or dynamically.
 
 ![](https://lh3.googleusercontent.com/-Gdkko-JytG4/VCoK16007yI/AAAAAAAADDs/BKfxn8tDBfA/w1278-h660-no/Screen%2BShot%2B2014-09-30%2Bat%2B09.43.14.png)
 
@@ -38,7 +39,7 @@ When you assign IP addresses manually, you add static (never changing) addresses
 ipcalc
 
 ##Name Resolution
-Name Resolution is used to convert numerical IP address values into a human-readable format known as the **hostname**.**text** For example, 140.211.169.4 is the numerical IP address that refers to the linuxfoundation.org hostname. Hostnames are easier to remember. 
+Name Resolution is used to convert numerical IP address values into a human-readable format known as the **hostname**.**text** For example, 140.211.169.4 is the numerical IP address that refers to the linuxfoundation.org hostname. Hostnames are easier to remember.
 ![](https://lh5.googleusercontent.com/2VU-chSrk_oMUIEB0vphQlRJ43uY73L016WiEjS-JkI=w1490-h1140-no)
 
 ##Using Domain Name System (DNS) and Name Resolution Tools
@@ -60,9 +61,9 @@ look up domain name information
 ![](https://plus.google.com/photos/106207382048371838527/albums/6044136604797521137/6061411979084535810?pid=6061411979084535810&oid=106207382048371838527)
 
 ##Network Interfaces
-Network interfaces are a connection channel between a device and a network. 
+Network interfaces are a connection channel between a device and a network.
 
-Physically, network interfaces can proceed through a **network interface card (NIC)** or can be more abstractly implemented as software. 
+Physically, network interfaces can proceed through a **network interface card (NIC)** or can be more abstractly implemented as software.
 
 A list of currently active network interfaces is reported by the ifconfig utility which you may have to run as the superuser.
 
@@ -71,7 +72,7 @@ A list of currently active network interfaces is reported by the ifconfig utilit
 
  /etc/init.d/network start
  ???
- 
+
 ##Network Configuration Commands
 To view the IP address:
 $ /sbin/ip addr show
@@ -88,7 +89,7 @@ To check the status of the remote host, at the command prompt, type ```ping <hos
 
 
 ##route
-Servers maintain **routing tables** containing the addresses of each node in the network.**route** is used to view or change the IP routing table. 
+Servers maintain **routing tables** containing the addresses of each node in the network.**route** is used to view or change the IP routing table.
 ![](https://lh6.googleusercontent.com/-8Xy4nDL37cE/VCocCP4OY1I/AAAAAAAADEs/XiRhyVmMkEc/w1653-h490-no/Screen%2BShot%2B2014-09-30%2Bat%2B10.56.54.png)
 
 ##traceroute

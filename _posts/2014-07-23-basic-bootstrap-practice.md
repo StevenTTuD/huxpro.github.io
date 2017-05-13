@@ -1,10 +1,12 @@
 ---
 layout: post
-title: Bootstrap  學習筆記
+title: Bootstrap 學習筆記
 published: true
 date: 2014-07-23 15:13
-tags: []
-categories: []
+tags:
+  - HTML
+  - CSS
+  - BOOTSTRAP
 comments: true
 
 ---

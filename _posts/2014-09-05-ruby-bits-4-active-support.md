@@ -3,14 +3,15 @@ layout: post
 title: Ruby bits ( 4 )：ActiveSupport
 published: true
 date: 2014-09-05 08:12
-tags: []
-categories: []
+tags:
+  - Ruby
+  - Ruby Bit
 comments: true
 
 ---
 
 #install it and load it
-##install it 
+##install it
 gem install activesupport
 gem install i18n
 

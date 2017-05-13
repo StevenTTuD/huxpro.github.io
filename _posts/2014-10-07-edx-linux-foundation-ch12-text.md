@@ -3,13 +3,14 @@ layout: post
 title: EDX Linux Foundation Ch13 Manipulating Text
 published: true
 date: 2014-10-07 14:59
-tags: []
-categories: []
+tags:
+  - Linux
+  - EDX Linux Foundation Course
 comments: true
 
 ---
 #Section 1 cat and echo
-##cat(concatenate) 
+##cat(concatenate)
 cat file
 顯示檔案，按空白鍵可以捲動
 
@@ -28,7 +29,7 @@ cat >> existingfile
 cat > filename << EOF
 新增檔案的另一個方法，可以自行輸入內容，要離開的時候在句首輸入EOF。
 
-##tac 
+##tac
 cat反過來 ，效果是從檔案的後面幾行開始顯示，用法跟cat相同
 tac file
 tac file file2 > newfile
@@ -43,7 +44,7 @@ echo string > newfile
 echo string >> existingfile
 echo $variable
 印出變數。
- 
+
 #Section 2 sed and awk
 ##sed
 sed Command Syntax
@@ -71,7 +72,7 @@ awk -F: '{ print $1 $6 }' /etc/passwd
 
 ##sort
 sort filename
-sort -u 
+sort -u
 sort -r
 
 sort -u 將重複的資料僅列出一個(這邊不太確定)
@@ -88,9 +89,9 @@ uniq -c filename
 
 ##paste
 想要把兩張表合併起來可以用paste來做到，輸出的結果依照delimiters來區分欄位，delimiter可以是tab、空格, comma,  '|'等等。paste並不是很嚴謹的合併，需要先進行set且資料欄位齊全才可以使用。常用在user與group的對應。
-paste -d 
+paste -d
 使用` -d`可以自訂delimiter。
-paste -s 
+paste -s
 paste file1 file2
 paste -d, file1 file2
 paste -d ':' names phone
@@ -113,7 +114,7 @@ $ cat directory
 555-289-6193 Youngstown
 ```
 
-The result of joining 
+The result of joining
 $ join phonebook directory
 ```
 555-123-4567 Bob Anytown
@@ -153,35 +154,35 @@ grep -B 3 [pattern] <filename>
 ##tr
 用來刪除一段文字，或者替換一段文字。
 
-Command	Usage	
+Command	Usage
 $ tr abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ
-Convert lower case to upper case	
+Convert lower case to upper case
 
-$ tr '{}' '()' < inputfile > 
-outputfile	Translate braces into parenthesis	
+$ tr '{}' '()' < inputfile >
+outputfile	Translate braces into parenthesis
 
 $ echo "This is for testing" | tr [:space:] '\t'
-Translate white-space to tabs	
+Translate white-space to tabs
 
 $ echo "This is for testing" | tr -s [:space:]
-Squeeze repetition of characters using -s	
+Squeeze repetition of characters using -s
 
-$ echo "the geek stuff" | tr -d 't'	
-Delete specified characters using -d option	
+$ echo "the geek stuff" | tr -d 't'
+Delete specified characters using -d option
 
 $ echo "my username is 432234" | tr -cd [:digit:]
-Complement the sets using -c option	
+Complement the sets using -c option
 
 $ tr -cd [:print:] < file.txt
-Remove all non-printable character from a file	
+Remove all non-printable character from a file
 
 $ tr -s '\n' ' ' < file.txt
-Join all the lines in a file into a single line	
+Join all the lines in a file into a single line
 
 ##tee
 想要將這個資料流的處理過程中將某段訊息存下來，就使用tee指令。
- ls -l | tee newfile 
- 
+ ls -l | tee newfile
+
 ##wc
 word count
 計算line的數量或字數

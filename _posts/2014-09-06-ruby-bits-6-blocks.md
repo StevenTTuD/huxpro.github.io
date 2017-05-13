@@ -3,8 +3,9 @@ layout: post
 title: Ruby bits ( 6 )：Blocks 學習筆記
 published: true
 date: 2014-09-06 05:13
-tags: []
-categories: []
+tags:
+  - Ruby
+  - Ruby Bit
 comments: true
 
 ---
@@ -85,15 +86,15 @@ call_this_block { |myarg| puts myarg.upcase }
 ```rb
 class Timeline
   def list_tweets
-    @user.friends.each do |friend|  
+    @user.friends.each do |friend|
       friend.tweets.each { |tweet| puts tweet }
-    end 
+    end
   end
-  
+
   def store_tweets
     @user.friends.each do |friend|
       friend.tweets.each { |tweet| tweet.cache }
-    end 
+    end
   end
 end
 ```
@@ -101,9 +102,9 @@ end
 ```rb
 class Timeline
   def each
-    @user.friends.each do |friend| 
+    @user.friends.each do |friend|
       friend.tweets.each { |tweet| yield tweet }
-    end 
+    end
   end
 end
 timeline = Timeline.new(user)
@@ -136,7 +137,7 @@ def update_status(user, tweet)
     logger.error(e)
 ensure
     sign_out(user)
-	end 
+	end
 end
 ```
 ```rb
@@ -148,7 +149,7 @@ def get_list(user, list_name)
     logger.error(e)
 ensure
     sign_out(user)
-	end 
+	end
 end
 ```
 有裡個method裡面除了核心邏輯以外全部都一樣。這樣的話我們需要進行重構來實現DRY原則。因為Proc本身就是匿名函數也就是一段未執行程式碼，所以特別適用這個情況。
@@ -161,7 +162,7 @@ def while_signed_in_as(user) begin
     logger.error(e)
   ensure
     sign_out(user)
-  end 
+  end
 end
 ```
 使用do的時候會省略傳入的&block，所以這段程式碼其實是對block做些處理，並顯示在block.call也就是yield的部份。
@@ -178,7 +179,7 @@ end
 ##最後可以改寫的精簡一點
 去掉不必要的begin和end
 ```rb
-def while_signed_in_as(user) 
+def while_signed_in_as(user)
   sign_in(user)
   yield
   rescue ConnectionError => e
@@ -350,15 +351,15 @@ class Emulator
   def initialize(system)
     # Creates an emulator for the given system
   end
- 
+
   def play(game)
     # Runs the given game in the emulator
   end
- 
+
   def start(game)
     # Loads the given game but doesn't run it
   end
- 
+
   def screenshot
     # Returns a screenshot of the currently loaded game
   end

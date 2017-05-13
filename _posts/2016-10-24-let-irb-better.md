@@ -3,8 +3,8 @@ layout: post
 title: Ruby - 讓 irb 更好用
 published: true
 date: 2016-10-24 23:56
-tags: []
-categories: []
+tags:
+  - Ruby
 comments: true
 
 ---

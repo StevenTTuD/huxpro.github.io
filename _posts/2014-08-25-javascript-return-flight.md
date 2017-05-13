@@ -3,8 +3,10 @@ layout: post
 title: jQuery Return Flight Ch1 ( 1 )：Ajax Basics
 published: true
 date: 2014-08-25 01:26
-tags: []
-categories: []
+tags:
+  - Ajax
+  - Javascript
+  - jQuery
 comments: true
 
 ---
@@ -13,11 +15,11 @@ comments: true
 之前我們只能顯示localhost的圖片，現在我們要從server載圖片下來，並顯示之。
 接下來來完成我們第一個Ajax程式。
 ```js
-$('.confirmation').on('click', 'button', function(){ 
+$('.confirmation').on('click', 'button', function(){
   $.ajax('http://example.org/confirmation.html',  {
      success: function(response) {
        $('.ticket').html(response).slideDown();
-	   } 
+	   }
 	});
 });
 ```
@@ -44,7 +46,7 @@ $('.confirmation').on('click', 'button', function(){ $.ajax('confirmation.html',
 ##使用$.get減少程式碼
 使用$.ajax
 ```js
-$.ajax('confirmation.html', { 
+$.ajax('confirmation.html', {
 	 success: function(response) {
       $('.ticket').html(response).slideDown();
     }
@@ -106,7 +108,7 @@ $(document).ready(function() {
       success: function(response) {
         $('.photos').html(response).fadeIn();
       }
-      
+
     });
   });
 });

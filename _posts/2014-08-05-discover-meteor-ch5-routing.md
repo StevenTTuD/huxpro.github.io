@@ -3,8 +3,9 @@ layout: post
 title: Discover Meteor Ch5：Routing
 published: true
 date: 2014-08-05 07:18
-tags: []
-categories: []
+tags:
+  - Meteor
+  - Javascript
 comments: true
 
 ---
@@ -25,7 +26,7 @@ Not only does it help with routing (setting up paths), but it can also take care
 - **Paths**: A path is a URL within your app. It can be static (/terms_of_service) or dynamic (/posts/xyz), and even include query parameters (/search? keyword=meteor).
 - **Segments**: The different parts of a path, delimited by forward slashes (/).
 - **Hooks**: Hooks are actions that you'd like to perform before, after, or even during the routing process. A typical example would be checking if the user has the proper rights before displaying a page.
-- **Filters**: Filters are simply hooks that you define globally for one or more routes. 
+- **Filters**: Filters are simply hooks that you define globally for one or more routes.
 - **Route Templates**: Each route needs to point to a template. If you don't specify one,the router will look for a template with the same name as the route by default.
 - **Layouts**: You can think of layouts as one of those digital photo frames. They contain all the HTML code that wraps the current template, and will remain the same even if the template changes.
 - **Controllers**: Sometimes, you'll realize that a lot of your templates are reusing the same parameters. Rather than duplicate your code, you can let all these routes inherit from a single routing controller which will contain all the routing logic.

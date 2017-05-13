@@ -3,7 +3,10 @@ layout: post
 title: Rails - 使用 dropzone.js 實現檔案上傳
 published: true
 date: 2015-11-12 16:31
-tags: []
+tags:
+  - Rails
+  - Ajax
+  - Javascript
 categories: []
 comments: true
 
@@ -22,7 +25,7 @@ create的時候controller要設定一些值給js接。
       #  you need to send an error header, otherwise Dropzone
       #  will not interpret the response as an error:
       render json: { error: @upload.errors.full_messages.join(',')}, :status => 400
-    end     
+    end
   end
 
 ```

@@ -3,8 +3,9 @@ layout: post
 title: Sublime 3 套件整理
 published: true
 date: 2014-07-17 03:34
-tags: []
-categories: []
+tags:
+  - Sublime
+  - Text Editor
 comments: true
 
 ---

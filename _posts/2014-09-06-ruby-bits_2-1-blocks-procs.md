@@ -3,8 +3,9 @@ layout: post
 title: Ruby bits 2 ( 1 )：BLOCKS, PROCS & LAMBDAS
 published: true
 date: 2014-09-06 07:42
-tags: []
-categories: []
+tags:
+  - Ruby
+  - Ruby Bit
 comments: true
 
 ---
@@ -19,7 +20,7 @@ my_proc.call # => tweet
 ```
 等同於
 ```rb
-my_proc = Proc.new { puts "tweet" } 
+my_proc = Proc.new { puts "tweet" }
 my_proc.call # => tweet
 ```
 
@@ -43,7 +44,7 @@ class Tweet
       yield
     else
       raise 'Auth Error'
-    end 
+    end
   end
 end
 ```
@@ -60,13 +61,13 @@ class Tweet
       success.call
     else
       raise 'Auth Error'
-    end 
+    end
   end
 end
 ```
 ```rb
-tweet = Tweet.new('Ruby Bits!') 
-success = -> { puts "Sent!" } 
+tweet = Tweet.new('Ruby Bits!')
+success = -> { puts "Sent!" }
 tweet.post(success)
 ```
 
@@ -79,14 +80,14 @@ class Tweet
       success.call
     else
       error.call
-    end 
+    end
   end
 end
 ```
 ```rb
 tweet = Tweet.new('Ruby Bits!')
 success = -> { puts "Sent!" }
-error = -> { raise 'Auth Error' } 
+error = -> { raise 'Auth Error' }
 tweet.post(success, error)
 ```
 #Using the ampersand
@@ -127,7 +128,7 @@ end
 ```
 ```rb
 timeline = Timeline.new(tweets)
-timeline.each do |tweet| 
+timeline.each do |tweet|
   puts tweet
 end
 ```

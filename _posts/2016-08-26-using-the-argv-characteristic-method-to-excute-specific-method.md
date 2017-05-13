@@ -3,8 +3,8 @@ layout: post
 title: Ruby - 利用 ARGV 特性執行指定的方法
 published: true
 date: 2016-08-26 16:58
-tags: []
-categories: []
+tags:
+  - Ruby
 comments: true
 
 ---
@@ -20,7 +20,7 @@ class Move
   def self.walking
     puts "walking"
   end
-	
+
   def self.running
     puts "running"
   end
@@ -45,7 +45,7 @@ swimming
 用這樣的方式我們可以執行 Class 中的某個方法，不過還是麻煩了點。現在我們來試試透過 ARGV 來執行 Move 中的方法。
 
 
-### 方法二：使用 ARGV 執行指定的 method 
+### 方法二：使用 ARGV 執行指定的 method
 
 #### 2.1 簡單介紹 ARGV
 

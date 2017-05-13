@@ -3,8 +3,9 @@ layout: post
 title: EDX Linux Foundation Ch 8：Filesystem
 published: true
 date: 2014-09-08 17:36
-tags: []
-categories: []
+tags:
+  - Linux
+  - EDX Linux Foundation Course
 comments: true
 
 ---

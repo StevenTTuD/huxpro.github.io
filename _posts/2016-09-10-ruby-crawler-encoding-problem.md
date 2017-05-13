@@ -3,8 +3,9 @@ layout: post
 title: Ruby - 爬網頁時遇到的編碼錯亂問題
 published: true
 date: 2016-09-10 13:50
-tags: []
-categories: []
+tags:
+  - Ruby
+  - Crawler
 comments: true
 
 ---

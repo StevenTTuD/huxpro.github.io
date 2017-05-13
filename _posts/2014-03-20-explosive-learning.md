@@ -6,7 +6,6 @@ published: true
 date: 2014-03-20 17:01
 tags:
   - Learning
-categories: []
 comments: true
 
 

@@ -3,8 +3,8 @@ layout: post
 title: Rails - Sortable Table With Ajax
 published: true
 date: 2015-11-12 15:32
-tags: []
-categories: []
+tags:
+  - Rails
 comments: true
 
 ---
@@ -111,7 +111,7 @@ memo_controller 中新增一個action來接這個ajax。因為要表示的是一
 
 ##遇到的Bug與解決方法
 
-###Post 422 
+###Post 422
 [javascript - POST 422 (Unprocessable Entity) in Rails? Due to the routes or the controller? - Stack Overflow](http://stackoverflow.com/questions/27098239/post-422-unprocessable-entity-in-rails-due-to-the-routes-or-the-controller)
 
 

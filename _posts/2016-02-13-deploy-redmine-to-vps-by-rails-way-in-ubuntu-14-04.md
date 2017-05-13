@@ -3,8 +3,9 @@ layout: post
 title: Deploy Redmine to VPS by Rails way in Ubuntu 14.04
 published: true
 date: 2016-02-13 10:30
-tags: []
-categories: []
+tags:
+  - Rails
+  - Redmine
 comments: true
 
 ---
@@ -16,9 +17,9 @@ Redmine 是一套以 Ruby 為基底的專案管理網頁應用程式。而且正
 
 本文採用的環境：
 OS: Ubuntu 14.04
-VPS: Digital Ocean 
+VPS: Digital Ocean
 
-## 在 Ubuntu 創造新的使用者 
+## 在 Ubuntu 創造新的使用者
 
 Linux 是非常嚴謹的系統，不同資料夾放的東西都有其規範。而 root 帳號在 Linux 系統中是超人，可以做任何的事情。為了維持 Linux 系統的乾淨度，我們要建立一個專用的使用者 oceanttd 而不是直接使用 root 帳號來部屬。這樣在有多人要同時使用同一個 Linux 作業系統的時候會減少很多麻煩。
 
@@ -31,7 +32,7 @@ sudo adduser oceanttd
 把 oceanttd 帳號加到 sudo 群組[(?)](http://askubuntu.com/questions/7477/how-can-i-add-a-new-user-as-sudoer-using-the-command-line)
 
 ```
-sudo adduser oceanttd sudo 
+sudo adduser oceanttd sudo
 ```
 
 切換到 oceanttd 帳號
@@ -43,17 +44,17 @@ su oceanttd
 ## 更新 Ubuntu apt-get 的套件
 
 ```
-sudo apt-get update 
+sudo apt-get update
 ```
 
 
 ## 安裝 Mysql 或是其他資料庫
 
 ```
-sudo apt-get install mysql-server 
+sudo apt-get install mysql-server
 ```
 
-## 安裝 RVM 
+## 安裝 RVM
 
 輸入指令安裝 RVM，過程中可能會出現一些錯誤訊息，因為我沒有預先使用 `apt-get` 安裝需要的套件。不過不要緊，跟著系統會告訴哪些還沒裝好，並且會給你安裝的指令，跟著系統指示很快的就可以完成。
 
@@ -64,9 +65,9 @@ curl -L https://get.rvm.io | bash
 重新登入 vps，輸入 `rvm -v` 查看 rvm 是否有裝好。
 
 
-## 在 RVM 中安裝 Ruby 
+## 在 RVM 中安裝 Ruby
 
-``` 
+```
 rvm install 2.2.3
 ```
 
@@ -76,12 +77,12 @@ rvm install 2.2.3
 rvm use 2.2.3 --default
 ```
 
-檢查系統中的 ruby 是否使用 rvm 的 ruby 
+檢查系統中的 ruby 是否使用 rvm 的 ruby
 
 輸入`ruby -v`檢查版本
 輸入`which ruby` 檢查路徑，路徑裡面有 rvm 的才是正確
 
-## 安裝 Rails 
+## 安裝 Rails
 
 記得加上 `--no-ri --no-rdoc` ，意思是不要裝文件，因為我們上網查就好了。可以省下很多時間。
 
@@ -125,19 +126,19 @@ $ sudo apt-get install libmagickwand-dev
 ### Rails 資料庫處理
 
 ```
-rake db:create 
+rake db:create
 rake db:migrate
 ```
 
 建之前要更新一下 `config/database.yml` 的內容，把 VPS Server 上的 mysql 帳號密碼寫進去。
 
-## 安裝 Passenger 
+## 安裝 Passenger
 
 ```
 gem install passenger --no-ri --no-rdoc
 ```
 
-## 使用 Passenger 安裝 nginx 
+## 使用 Passenger 安裝 nginx
 
 ```
 rvmsudo passenger-install-nginx-module
@@ -189,7 +190,7 @@ http {
 
   ## ------------ 重点修改内容 --------
 
-  server {    
+  server {
     # 此处用于防止其他的域名绑定到你的网站上面
     listen 80 default;
     return 403;
@@ -205,7 +206,7 @@ http {
     location ~ ^(/assets) {
       access_log        off;
       # 设置 assets 下面的浏览器缓存时间为最大值（由于 Rails Assets Pipline 的文件名是根据文件修改产生的 MD5 digest 文件名，所以此处可以放心开启）
-      expires           max; 
+      expires           max;
     }
   }
 

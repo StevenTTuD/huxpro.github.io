@@ -3,8 +3,9 @@ layout: post
 title: EDX Linux Foundation 補充筆記
 published: true
 date: 2014-09-30 17:18
-tags: []
-categories: []
+tags:
+  - Linux
+  - EDX Linux Foundation Course
 comments: true
 
 ---
@@ -32,7 +33,7 @@ NI
 #1. OSI (Open System Interconnection) 七層協定
 ##layer 1 phisical layer
 ##layer 2 data link layer
-###偏軟體的子層 MAC(media access control) 
+###偏軟體的子層 MAC(media access control)
 MAC 是網路媒體所能處理的主要資料包裹，這也是最終被實體層編碼成位元串的資料。
 ####MAC frame
 ###偏硬體的子層LLC(logical link control)
@@ -61,7 +62,7 @@ MAC 是網路媒體所能處理的主要資料包裹，這也是最終被實體�
 5. 鏈結層：如果使用乙太網路時，此時 IP 會依據 CSMA/CD 的標準，包裹到 MAC 訊框中，並給予 MAC 表頭，再轉成位元串後， 利用傳輸媒體傳送到遠端主機上。
 等到 Yahoo 收到你的包裹後，在依據相反方向拆解開來，然後交給對應的層級進行分析，最後就讓 Yahoo 的 WWW 伺服器軟體得到你所想要的資料，該伺服器軟體再根據你的要求，取得正確的資料後，又依循上述的流程，一層一層的包裝起來， 最後傳送到你的手上！就是這樣囉！
 
-## MAC 
+## MAC
 MAC 其實就是我們上面一直講到的訊框 (frame) 囉！ 只是這個訊框上面有兩個很重要的資料，就是目標與來源的網卡卡號，因此我們又簡稱網卡卡號為 MAC 而已。 簡單的說，你可以把MAC想成是一個在網路線上面傳遞的包裹，而這個包裹是整個網路硬體上面傳送資料的最小單位了。 也就是說，網路線可想成是一條『一次僅可通過一個人』的獨木橋， 而 MAC 就是在這個獨木橋上面動的人啦！
 
 ##乙太網路
@@ -77,7 +78,7 @@ MAC 其實就是我們上面一直講到的訊框 (frame) 囉！ 只是這個訊
 #IP 的取得方式
 ##static
 ##DHCP(Dynamic Host Configuration Protocol)
-##透過撥接取得： 
+##透過撥接取得：
 向你的 ISP 申請註冊，取
 得帳號密碼後，直接撥接到 ISP ，你的 ISP 會透過他們自己的設定，讓你的作業系統取得正確的網路參數。
 

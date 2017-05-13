@@ -3,8 +3,9 @@ layout: post
 title: jQuery Return Flight Ch4：Utility Methods
 published: true
 date: 2014-10-10 05:16
-tags: []
-categories: []
+tags:
+  - jQuery
+  - Javascript
 comments: true
 
 ---
@@ -17,7 +18,7 @@ comments: true
 success: function(result){
   $.each(result, function(index, city) {
     var favorite = $('.favorite-'+index);
-    favorite.find('p').html(city.name); 
+    favorite.find('p').html(city.name);
     favorite.find('img')
             .attr('src', city.image);
   });
@@ -36,7 +37,7 @@ $.each(collection, function(<index>, <object>) {});
     contentType: 'application/json',
     dataType: 'json',
     success: function(result) { ... }
-	}); 
+	});
 });
 ```
 等於使用getJSON
@@ -46,7 +47,7 @@ $('.update-status').on('click', function() {
     name: 'JFK - New York, NY',
     var statusElements = ???
     $('.status-list').html(statusElements)
-  }); 
+  });
 });
 ```
 
@@ -100,7 +101,7 @@ $('.update-flight-status').on('click', function() {
     $('.status-list').detach()
   });                .html(statusElements)
                      .appendTo('.status');
-});                
+});
 ```
 這邊使用detach而不使用remove來刪除元素，因為detach其實不會把元素真正的刪除，而會保留下來。這樣做效率比較好。
 [detach與remvove的區別](http://www.jquery001.com/jquery-detach-remove.html)

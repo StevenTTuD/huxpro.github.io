@@ -3,8 +3,9 @@ layout: post
 title: "[7/16]Agile daily Stand up"
 published: true
 date: 2014-07-16 17:37
-tags: ["Agile", "Scrum"]
-categories: []
+tags:
+  - Agile
+  - Scrum
 comments: true
 
 ---

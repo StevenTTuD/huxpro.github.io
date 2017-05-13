@@ -3,8 +3,9 @@ layout: post
 title: Atom殺手級套件介紹
 published: true
 date: 2015-07-22 07:50
-tags: []
-categories: []
+tags:
+  - Atom
+  - Text Editor
 comments: true
 
 ---

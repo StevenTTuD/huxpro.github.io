@@ -3,8 +3,8 @@ layout: post
 title: Javascript核心筆記：namespace
 published: true
 date: 2015-02-27 14:39
-tags: []
-categories: []
+tags:
+  - Javascript
 comments: true
 
 ---
@@ -12,23 +12,23 @@ comments: true
 1. 直接指定
 ```js
 var myApp = {}
- 
+
 myApp.id = 0;
- 
+
 myApp.next = function() {
-    return myApp.id++;  
+    return myApp.id++;
 }
- 
+
 myApp.reset = function() {
-    myApp.id = 0;   
+    myApp.id = 0;
 }
- 
+
 window.console && console.log(
     myApp.next(),
     myApp.next(),
     myApp.reset(),
     myApp.next()
-); //0, 1, undefined, 0 
+); //0, 1, undefined, 0
 ```
 
 2. 使用物件實字（Object Literal Notation）

@@ -3,19 +3,20 @@ layout: post
 title: 'Generate Safety Query String In ActiveRecord '
 published: true
 date: 2016-07-07 07:46
-tags: []
-categories: []
+tags:
+  - Rails
+  - ActiveRecord
 comments: true
 
 ---
 ## Solution 1: sanitize_sql
 
-```rb 
+```rb
 ActiveRecord::Base.send(:sanitize_sql,["select * from my_table where description='%s' and id='%s'","mal'formed", 55], "my_table")
 => "select * from my_table where description='mal\\'formed' and id='55'"
 ```
 
-Can also use instance method to do the same thing 
+Can also use instance method to do the same thing
 
 ```rb
 MyTable.send(:sanitize_sql,["select * from my_table where description='%s' and id='%s'","mal'formed", 55])
@@ -39,8 +40,8 @@ ActiveRecord::Base.connection.quote only escape quotes of query. So... it's not 
 
 ## Solution 3: sanitize_sql_array
 
-When you using sanitize_sql_array, the output will the same as when you using sanitize_sql. 
-But your dont need to send useless table name in third parameter anymore. 
+When you using sanitize_sql_array, the output will the same as when you using sanitize_sql.
+But your dont need to send useless table name in third parameter anymore.
 
 ```rb
 [24] pry(main)> ActiveRecord::Base.send(:sanitize_sql_array, ["select * from my_table where description='%s' and id='%s'","mal'formed", 55])

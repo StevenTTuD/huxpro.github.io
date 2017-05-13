@@ -3,8 +3,8 @@ layout: post
 title: Rails 筆記 - 使用 ActiveRecord::Enum 設定狀態
 published: true
 date: 2016-05-01 12:05
-tags: []
-categories: []
+tags:
+  - Rails
 comments: true
 
 ---
@@ -61,7 +61,7 @@ conversation.status.nil? # => true
 conversation.status      # => nil
 ```
 
-## 用 Hash 儲存 enum 
+## 用 Hash 儲存 enum
 
 宣告成 hash 型態的話，我們可以用 status 的複數型態 statuses 來取得這個 Hash，之後的取值也從 Conversation.active 變成了 Conversation.statuses[:active]，兩個得到的結果是一樣的。不過使用 Hash 時可以明確知道我現在在修改的是 status，屬性一多的時候不會造成混淆。
 

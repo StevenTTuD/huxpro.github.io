@@ -3,8 +3,9 @@ layout: post
 title: Ruby bits ( 5 )：Modules
 published: true
 date: 2014-09-05 08:52
-tags: []
-categories: []
+tags:
+  - Ruby
+  - Ruby Bit
 comments: true
 
 ---
@@ -21,7 +22,7 @@ Ruby bits的課程真的很不錯，講到的主題都是很重要的東西。�
 ###use extend to expose methods as class method
 ```rb
 class Tweet
-  extend Searchable 
+  extend Searchable
 end
 ```
 使用的時候，直接呼叫class（開頭大寫）。
@@ -54,7 +55,7 @@ end
 ```
 ```rb
 module ImageUtils
-  
+
   def preview
   end
 
@@ -63,9 +64,9 @@ module ImageUtils
 
   module ClassMethods
     def fetch_from_twitter(user)
-    end 
+    end
   end
-  
+
 end
 ```
 使用上可以按照之前所學的來呼叫class method與instance method
@@ -96,14 +97,14 @@ module ImageUtils
   module ClassMethods
     def fetch_from_twitter(user)
     end
-  end 
+  end
 end
 ```
 #part3: 使用Activesupport :: Concern解決相依性問題
 
 > Activesupport :: Concern代表什麼意思
 :: is basically a namespace resolution operator. It allows you to access items in modules, or class-level items in classes. For example, say you had this setup:
-關鍵字double colon ruby 
+關鍵字double colon ruby
 [What is Ruby's double-colon (::) all about?](http://stackoverflow.com/questions/3009477/what-is-rubys-double-colon-all-about)
 
 ##使用方式
@@ -112,20 +113,20 @@ end
 
 ```rb
 require 'active_support/concern' module ImageUtils
-	
-  extend ActiveSupport::Concern 
-  
-  included do 
+
+  extend ActiveSupport::Concern
+
+  included do
     clean_up
 	end
-  
+
   module ClassMethods
     def fetch_from_twitter(user)
     end
-  
+
     def clean_up
     end
-  end 
+  end
 end
 ```
 這樣就可以直接include ImageUtil的ClassMethods
@@ -141,16 +142,16 @@ module ImageUtils
   def self.included(base)      #base is ImageProcessing module
     base.extend(ClassMethods)
   end
-  module ClassMethods 
+  module ClassMethods
     def clean_up; end
 	end
 end
 ```
 ```rb
-module ImageProcessing 
+module ImageProcessing
 
 	include ImageUtils
-  
+
   def self.included(base)
     base.clean_up                #undefined method error
   end
@@ -166,10 +167,10 @@ end
 Okay，ActiveSupport::Concern 就是來幫助解決這個難題，我們希望宿主可以不需要知道 modules 之間的 dependencies 關係。dependencies 關係寫在 module 裡面就好了。
 ```rb
 module ImageUtils
- 
+
   extend ActiveSupport::Concern
-  
-  module ClassMethods 
+
+  module ClassMethods
     def clean_up; end
   end
 end
@@ -177,9 +178,9 @@ end
 ```rb
 module ImageProcessing
 
-  extend ActiveSupport::Concern 
+  extend ActiveSupport::Concern
   include ImageUtils
-  
+
   included do
     clean_up
   end
@@ -257,7 +258,7 @@ extend的解釋如下
 Adds to obj the instance methods from each module given as a parameter.
 雖然是用extend這個字，但並非是繼承的意思，而是加入instance method。
 
-##5.5 
+##5.5
 使用self.include初始化class method
 
 ##5.6

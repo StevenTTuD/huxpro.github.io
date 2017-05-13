@@ -3,8 +3,10 @@ layout: post
 title: "排版練習2：PSD to html with Bootstrap"
 published: true
 date: 2015-02-12 12:33
-tags: []
-categories: []
+tags:
+  - HTML
+  - CSS
+  - PSD to HTML
 comments: true
 
 ---
@@ -21,7 +23,7 @@ sprite 說的是利用將 icon 集中在一張圖片上，藉由CSS設定不同�
 1. 從左側ruler拉進隔線每50px拉一條，這是為了等等區隔複製過來的icon，每個間隔會是50px。
 1. 使用方框工具(第二個工具)選取後，用移動工具(第一個工具)將icon對齊左上角(如果右下角的layer選錯的話，方框工具會選不到圖案）。
 1. 接著將mumbo logo也複製進來，放在第二排，對齊左上角，製作好的photoshop檔案會是長得像這樣。
-註: 
+註:
 ![](https://lh5.googleusercontent.com/-kZxU_a73YTk/VNyjQ0_8wfI/AAAAAAAAE6g/LXCLe6pwyL4/w1410-h628-no/sprite.jpg)
 1. 將photoshop檔案 save for web，存成檔名為sprite.png的檔案。放在imgs資料夾下。
 1. 製作好圖片之後來實際做做看social-list，關鍵是將background設成sprite.png。再利用個別的class鎖定不同的位置，這樣就會顯示不同的icon。

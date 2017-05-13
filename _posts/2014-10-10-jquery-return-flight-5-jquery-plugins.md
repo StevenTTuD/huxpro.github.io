@@ -3,8 +3,9 @@ layout: post
 title: jQuery Return Flight Ch5 ( 1 )：Advanced Event
 published: true
 date: 2014-10-10 07:27
-tags: []
-categories: []
+tags:
+  - jQuery
+  - Javascript
 comments: true
 
 ---
@@ -16,9 +17,9 @@ function picture() { console.log('Show Plane'); }
 function status() { console.log('In Service'); }
 function zoom() { console.log('Zoom Picture'); }
 
-$(document).ready(function() { 
+$(document).ready(function() {
     $('button').on('click.image', picture);
-    $('button').on('click.details', status); 
+    $('button').on('click.details', status);
     $('button').on('mouseover.image', zoom);
     ...
     $('button').trigger('click');
@@ -31,7 +32,7 @@ $('button').trigger('click');
 會觸發這兩個
 ```js
 $('button').on('click.image', picture);
-$('button').on('click.details', status); 
+$('button').on('click.details', status);
 ```
 
 ##自訂`<event>`同時觸發多個事件
@@ -41,15 +42,15 @@ $(<dom element>).on("<event>.<namespace>", <method>)
 ```
 但其實jquery可以自訂event，讓我們做更多方便的操作。現在我們來自訂一個event。
 ```js
-$('.vacation').on('show.price', showPrice); 
+$('.vacation').on('show.price', showPrice);
 ```
 可以看到本來應該是'click'的部份，已經用`show.price`這個我們新創的event所代替。
 這樣我們就可以透過這個event來trigger所有的vacation。
 ```js
-$('.vacation').trigger('show.price'); 
+$('.vacation').trigger('show.price');
 ```
 或是透過這個event來trigger最後一個vacation。
-```js 
+```js
 $('.vacation:last').trigger('show.price')
 ```
 完整範例：
@@ -71,7 +72,7 @@ $(document).ready(function(){
     results.append('<p>Weather: 74&deg;</p>');
     $(this).off('show.weather');
   });
-  
+
   // Show Photos
   $('button').on('click.photos', function() {
     var tour = $(this).closest('li');
@@ -91,7 +92,7 @@ $(document).ready(function(){
     results.append('<p>Weather: 74&deg;</p>');
     $(this).off('click.weather');
   });
-  
+
   // Show Photos
   $('button').on('click.photos', function() {
     var tour = $(this).closest('li');
@@ -99,7 +100,7 @@ $(document).ready(function(){
     results.append('<p><img src="/assets/photos/'+tour.data('loc')+'.jpg" /></p>');
     $(this).off('click.photos');
     $(this).trigger('click.weather');
-   	
+
   });
 });
 ```

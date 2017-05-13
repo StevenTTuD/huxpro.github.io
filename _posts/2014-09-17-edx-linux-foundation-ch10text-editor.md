@@ -3,8 +3,9 @@ layout: post
 title: EDX Linux Foundation Ch10：Text Editor
 published: true
 date: 2014-09-17 05:45
-tags: []
-categories: []
+tags:
+  - Linux
+  - EDX Linux Foundation Course
 comments: true
 
 ---
@@ -34,18 +35,18 @@ http://www.openvim.com/sandbox.html
 
 ##vim使用技巧
 ZZ = :wq
- 
+
 無法寫入的狀況
 關鍵字：vim sudo
- 
+
 github vundle
- 
-:set paste 
+
+:set paste
 貼進來就不會縮排變成梯形
- 
+
 ultra vim
 https://github.com/bcbcarl/ultra_vim
- 
+
 
 
 #Emacs

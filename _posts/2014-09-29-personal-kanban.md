@@ -3,8 +3,9 @@ layout: post
 title: Personal Kanban：能夠用在自己身上的敏捷方法 學習筆記
 published: true
 date: 2014-09-29 07:22
-tags: []
-categories: []
+tags:
+  - Agile
+  - Kanban
 comments: true
 
 ---

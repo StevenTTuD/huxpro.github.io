@@ -4,24 +4,25 @@ title: EDX Linux Foundation Ch 9：User Environment Section 3  Recalling Previou
   &4 Command Aliases
 published: true
 date: 2014-09-14 09:41
-tags: []
-categories: []
+tags:
+  - Linux
+  - EDX Linux Foundation Course
 comments: true
 
 ---
 #Section 3:Recalling Previous Commands
 ###Up and Down
- you can recall previously used commands simply by using the Up and Down cursor keys. 
+ you can recall previously used commands simply by using the Up and Down cursor keys.
 ###histroy
  To view the list of previously executed commands, you can just type history at the command line.
 ###~/.bash_history.
 The list of commands is displayed with the most recent command appearing last in the list. This information is stored in ~/.bash_history.
 
 ##Using History Environment Variables
-**$HISTFILE** stores the location of the history file. 
+**$HISTFILE** stores the location of the history file.
 **$HISTFILESIZE** stores the maximum number of lines in the history file.
 **$HISTSIZE** stores the maximum number of lines in the history file for the current session.
-``` 
+```
 ubuntu@ip-172-31-27-94:~$ echo $HISTFILE
 /home/ubuntu/.bash_history
 ubuntu@ip-172-31-27-94:~$ echo $HISTFILESIZE
@@ -29,14 +30,14 @@ ubuntu@ip-172-31-27-94:~$ echo $HISTFILESIZE
 ubuntu@ip-172-31-27-94:~$ echo $HISTSIZE
 1000
 ubuntu@ip-172-31-27-94:~$
-``` 
+```
 
 ##Finding and Using Previous Commands
-###Up/Down arrow key	
+###Up/Down arrow key
 Browse through the list of commands previously executed
-###!! (Pronounced as bang-bang)	
+###!! (Pronounced as bang-bang)
 Execute the previous command
-###CTRL-R	
+###CTRL-R
 Search previously used commands
 
 ##Executing Previous Commands

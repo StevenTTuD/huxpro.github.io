@@ -3,8 +3,10 @@ layout: post
 title: Techdays Videos 釋出
 published: true
 date: 2014-10-01 01:07
-tags: []
-categories: []
+tags:
+  - Agile
+  - Kanban
+  - CI/CD
 comments: true
 
 ---

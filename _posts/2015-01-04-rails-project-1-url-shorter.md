@@ -3,8 +3,8 @@ layout: post
 title: Rails Project 1 URL Shortener
 published: true
 date: 2015-01-04 01:02
-tags: []
-categories: []
+tags:
+  - Rails
 comments: true
 
 ---
@@ -74,21 +74,21 @@ end
 
 ```rb
 class UrlsController < ApplicationController
-	
+
   .
   .
   .
-  
+
   def show
   	url = Url.where( random_id: params[:id] ).first
-    
+
     if url
     	redirect_to url.original
     else
     	render "index"
     end
   end
-  
+
 end
 ```
 
@@ -96,14 +96,14 @@ end
 
 ```rb
 class UrlsController < ApplicationController
-	
+
   .
   .
   .
-  
+
   def new
   	@url = Url.new
-    
+
     letters = [('a'..'z'),('A'..'Z')].map{|i| i.to_a}.flatten
     @url.random_id = (0...8).map{ letters[rand(letters.length)]}.join
   end
@@ -123,7 +123,7 @@ class UrlsController < ApplicationController
   def urls_params
     params.require(:url).permit(:original, :random_id)
   end
-  
+
   def create
     @url = Url.new(urls_parmas)
     if @url.save
@@ -137,7 +137,7 @@ end
 >比較show與new可以發現，前面有加@的變數，是view會使用到的變數。如果view不會用到，那就不要添加@，以免造成混淆，這樣在閱讀程式碼的時候，可以更清楚的知道這些變數作用在哪些地方。
 
 >來複習一下render的用法主要有四種：第一種是直接回傳結果，回傳的格式可以是xml,json,text...等等檔案格式。範例：`render text: "hello world"`、`render json: @event.to_json`。第二種是render template。可以直接指定template的路徑如：`render "/events/index.html.erb"`。如果是同controller的action可以寫成`render "index"`。第三種是回傳status code例如：`render status: 500`。第四種是回傳某template使用的layout，例如：`render layout: "special_layout"`。
-其他用法請參考：[Layouts and Rendering in Rails](http://guides.rubyonrails.org/layouts_and_rendering.html#using-render) 
+其他用法請參考：[Layouts and Rendering in Rails](http://guides.rubyonrails.org/layouts_and_rendering.html#using-render)
 
 ##Views
 因為URL Shortener的action show是轉址，並不需要view，所以我們要實作的view只有index.html.erb和new.html.erb。

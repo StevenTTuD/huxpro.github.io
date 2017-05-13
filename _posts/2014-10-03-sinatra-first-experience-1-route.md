@@ -3,8 +3,9 @@ layout: post
 title: Sinatra初體驗( 1 )：Route
 published: true
 date: 2014-10-03 12:04
-tags: []
-categories: []
+tags:
+  - Ruby
+  - Sinatra
 comments: true
 
 ---
@@ -26,12 +27,12 @@ end
 
 ```rb
 	require "./app" # relative file path
-	
+
 	run App   #class Name
 ```
 4.輸入```rackup```啟動server，在 http://localhost:9292即可看到Hello World
 
-##使用curl來模仿HTTP Verb - GET 
+##使用curl來模仿HTTP Verb - GET
 1. 輸入```curl -v "http://localhost:9292"```
 2. 可以看到以下畫面
 /Users/Steven/Desktop/Screen Shot 2014-10-03 at 14.41.37.png
@@ -68,15 +69,15 @@ class App < Sinatra::Base
 	get '/' do
 		"Hello World!!"
 	end
-	
+
 	post '/' do
 		"Hello World via POST!!"
 	end
-	
+
 	put '/' do
 		"Hello World via PUT!!"
 	end
-	
+
 	delete '/' do
 		"Hello World via DELETE!!"
 	end

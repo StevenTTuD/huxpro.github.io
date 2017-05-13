@@ -3,8 +3,8 @@ layout: post
 title: Rails - 拆解 Form Helper 以 Checkbox 為例
 published: true
 date: 2015-01-18 05:25
-tags: []
-categories: []
+tags:
+  - Rails
 comments: true
 
 ---

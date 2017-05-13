@@ -3,12 +3,13 @@ layout: post
 title: "在 Centos OS 7 架設 Gitlab 筆記"
 published: true
 date: 2016-07-29 06:45
-tags: []
-categories: []
+tags:
+  - Gitlab
+  - Centos
 comments: true
 
 ---
-## 安裝git  
+## 安裝git
 
 因為系統內建的git 是 1.8.3 版本太舊了，所以我們要先移除掉舊版的 git，並下載 2.7.4 版的 source code 重新編譯。
 

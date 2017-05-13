@@ -3,8 +3,8 @@ layout: post
 title: Agile Meetup 2014 9月：喚醒者的工具箱
 published: true
 date: 2014-09-18 18:39
-tags: []
-categories: []
+tags:
+  - Agile
 comments: true
 
 ---
@@ -12,7 +12,7 @@ comments: true
 ##如何讓一個二十幾年沒運動的阿宅學會打球
 一個網球教練如何讓一個二十幾年沒出門運動的宅女學會打球，答案是沒有太多的技巧，沒有標準的動作，當場示範怎麼打網球，然後把球丟給那個宅宅，阿宅揮空幾次以後，發現真的打的到了！證明學習的最好方法不是看書，而是用本能來適應。
 
-##Try error 嘗試錯誤 
+##Try error 嘗試錯誤
 人類的腦子分為兩個部分，其中腦幹會想保護自己。 先讓人專注之後，保護自己的機制就會降低
 一旦降低了自己的恐懼感，便增加awareness。
 learning the hard way

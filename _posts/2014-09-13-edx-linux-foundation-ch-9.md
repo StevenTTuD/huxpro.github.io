@@ -3,8 +3,9 @@ layout: post
 title: EDX Linux Foundation Ch 9：User Environment Section 1 Account
 published: true
 date: 2014-09-13 07:50
-tags: []
-categories: []
+tags:
+  - Linux
+  - EDX Linux Foundation Course
 comments: true
 
 ---
@@ -20,7 +21,7 @@ Giving ```who``` the ```-a``` option will give more detailed information.
 
 #2. Basics of Users and Groups
 
-Linux uses groups for organizing users. Groups are collections of accounts with certain shared permissions. 
+Linux uses groups for organizing users. Groups are collections of accounts with certain shared permissions.
 
 ###UID and GID
 
@@ -51,7 +52,7 @@ sys:x:3:3:sys:/dev:/usr/sbin/nologin
 5. 使用者資訊說明欄
 這個欄位基本上並沒有什麼重要用途，只是用來解釋這個帳號的意義而已
 6. 家目錄
-root 的家目錄在 /root 
+root 的家目錄在 /root
 預設的使用者家目錄在 /home/yourIDname
 7. Shell
 當使用者登入系統後就會取得一個 Shell 來與系統的核心溝通以進行使用者的操作任務。那為何預設 shell 會使用 bash 呢？就是在這個欄位指定的囉！ 這裡比較需要注意的是，有一個 shell 可以用來替代成讓帳號無法取得 shell 環境的登入動作！那就是 /sbin/nologin 這個東西！這也可以用來製作純 pop 郵件帳號者的資料呢！
@@ -62,8 +63,8 @@ root 的家目錄在 /root
 詳細內容請看：
 [鳥哥：/etc/shadow 檔案結構](http://linux.vbird.org/linux_basic/0410accountmanager.php#shadow_file)
 
-###/etc/group 
-Control of group membership is administered through the ```/etc/group``` file, which shows a list of groups and their members. 
+###/etc/group
+Control of group membership is administered through the ```/etc/group``` file, which shows a list of groups and their members.
 ```
 ubuntu@ip-172-31-27-94:~$ head -n 4 /etc/group
 root:x:0:
@@ -91,7 +92,7 @@ sys:x:3:
 
 Only the *root user* can add and remove users and groups.
 
-###useradd 
+###useradd
 
 In the simplest form an account for the new user turkey would be done with:
 ```
@@ -106,7 +107,7 @@ and sets the default shell to ```/bin/bash```
 ###userdel and userdel -r
 Removing a user account is as easy as typing userdel turkey However, this will leave the /home/turkey directory intact. This might be useful if it is a temporary inactivation. To remove the home directory while removing the account one needs to use the ```-r``` option to userdel.
 
-###id 
+###id
 Typing id with no argument gives information about the current user, as in:
 ```
 $ id
@@ -121,9 +122,9 @@ If given the name of another user as an argument, id will report information abo
 
 [鳥哥：usermod](http://linux.vbird.org/linux_basic/0410accountmanager.php#usermod)
 
-#4. Adding and Removing Groups 
+#4. Adding and Removing Groups
 
-###groupadd 
+###groupadd
 
 Adding a new group is done with groupadd:
 ```
@@ -145,7 +146,7 @@ turkey : turkey
 得到turkey : turkey，代表預設的群組是自己。
 
 ###使用usermod修改群組
-Adding a user to an already existing group is done with usermod. 
+Adding a user to an already existing group is done with usermod.
 ```
 $ sudo /usr/sbin/usermod -G anewgroup turkey
 $ groups turkey
@@ -157,7 +158,7 @@ turkey: turkey anewgroup
 
 
 #5. The root Account
-The root account is very powerful and has full access to the system. Other operating systems often call this the administrator account; in Linux it is often called the superuser account. 
+The root account is very powerful and has full access to the system. Other operating systems often call this the administrator account; in Linux it is often called the superuser account.
 
 ###su
 switch or substitute user
@@ -179,12 +180,12 @@ When you first login to Linux, /etc/profile is read and evaluated, after which t
 
 1. ~/.bash_profile
 2. ~/.bash_login
-3. ~/.profile 
+3. ~/.profile
 
 The Linux login shell evaluates whatever startup file that it comes across first and ignores the rest. This means that if it finds ~/.bash_profile, it ignores ~/.bash_login and ~/.profile. Different distributions may use different startup files.
 
 ###~/.bashrc (non-login shell reading it)
-However, every time you create a new shell, or terminal window, etc., you do not perform a full system login; only the ~/.bashrc file is read and evaluated. 
+However, every time you create a new shell, or terminal window, etc., you do not perform a full system login; only the ~/.bashrc file is read and evaluated.
 
 
 ###~/.bash_history

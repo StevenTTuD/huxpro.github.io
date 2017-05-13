@@ -3,8 +3,8 @@ layout: post
 title: 'Rails note : Require Creator'
 published: true
 date: 2015-01-13 00:42
-tags: []
-categories: []
+tags:
+  - Rails
 comments: true
 
 ---

@@ -3,8 +3,9 @@ layout: post
 title: Meteor專用的Sublime套件：TernJs
 published: true
 date: 2014-07-23 18:31
-tags: []
-categories: []
+tags:
+  - Sublime
+  - Text Editor
 comments: true
 
 ---

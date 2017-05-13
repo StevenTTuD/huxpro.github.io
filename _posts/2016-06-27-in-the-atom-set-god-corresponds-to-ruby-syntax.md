@@ -3,7 +3,9 @@ layout: post
 title: "在 Atom 設定 .god 對應至 Ruby Syntax "
 published: true
 date: 2016-06-27 11:23
-tags: []
+tags:
+  - Atom
+  - Text Editor
 categories: []
 comments: true
 

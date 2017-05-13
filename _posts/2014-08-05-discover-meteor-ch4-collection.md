@@ -3,8 +3,9 @@ layout: post
 title: Discover meteor Ch4：Collection
 published: true
 date: 2014-08-05 03:04
-tags: []
-categories: []
+tags:
+  - Meteor
+  - Javascript
 comments: true
 
 ---
@@ -21,14 +22,14 @@ Posts = new Meteor.Collection('posts');
 
 2. Commit 4-1
 ```
-git commit -m "Added a posts collection" 
+git commit -m "Added a posts collection"
 ```
 
 #Collection的性質
 On the server, the collection has the job of talking to the Mongo database, and reading and writing any changes. In this sense, it can be compared to a standard database library. On the client however, the collection is a secure copy of a subset of the real, canonical collection. The client-side collection is constantly and (mostly) transparently kept up to date with that subset in real-time.
 
 ##Server-Side Collection
-On the server, the collection acts as an API into your Mongo database. 
+On the server, the collection acts as an API into your Mongo database.
 
 ##Client-Side Collection
 client side Mongo稱為MiniMongo，如字面所述，它不支援所有的Mongo的特徵。
@@ -47,7 +48,7 @@ client side Mongo稱為MiniMongo，如字面所述，它不支援所有的Mongo�
 server/fixtures.js
 ```
 ```js
-if (Posts.find().count() === 0) { 
+if (Posts.find().count() === 0) {
       Posts.insert({
         title: 'Introducing Telescope',
         author: 'Sacha Greif',
@@ -60,7 +61,7 @@ if (Posts.find().count() === 0) {
       Posts.insert({
         title: 'The Meteor Book', author: 'Tom Coleman',
         url: 'http://themeteorbook.com'
-      }); 
+      });
 }
 ```
 3. Commit 4-2
@@ -72,8 +73,8 @@ client/views/posts/posts_list.js
 ```
 ```js
 Template.postsList.helpers({ posts: function() {
-        return Posts.find(); 
-    
+        return Posts.find();
+
       }
 });
 ```
@@ -94,7 +95,7 @@ $ meteor remove autopublish
 server/publications.js
 ```
 ```js
-Meteor.publish('posts', function() { 
+Meteor.publish('posts', function() {
   		return Posts.find();
 });
 ```
@@ -125,7 +126,7 @@ Removed autopublich and set up a basic publication.
 根據剛剛的介紹可以了解到Rails app只能在server處理資訊。而Meteor在Client也就是你的瀏覽器中就可以處理資訊。
 這就像書店的店員不只是針對你的需求把書給你，而且他還跟著你回家把書的內容讀給妳聽。
 
-###This has two big implications: 
+###This has two big implications:
 first, instead of sending HTML code to the client, a Meteor app will send the actual, raw data and let the client deal with it (data on the wire).
 Second, you'll be able to access that data instantaneously without having to wait for a round-trip to the server (latency compensation).
 
@@ -151,7 +152,7 @@ Meteor.publish('posts', function(author) {
 Meteor.subscribe('posts', 'bob-smith');
 ```
 
-##Autopulish 
+##Autopulish
 Automatically mirroring all data from the server on the client
 
 ###實際運作

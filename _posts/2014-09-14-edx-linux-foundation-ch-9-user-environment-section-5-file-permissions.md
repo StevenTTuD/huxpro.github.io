@@ -3,14 +3,15 @@ layout: post
 title: EDX Linux Foundation Ch 9：User Environment Section 5 File Permissions
 published: true
 date: 2014-09-14 10:33
-tags: []
-categories: []
+tags:
+  - Linux
+  - EDX Linux Foundation Course
 comments: true
 
 ---
 ##File Ownership
 ![](https://lh5.googleusercontent.com/5pM1DTFHc1_5F8GpOpCa5rfG7hBk7xk9JN4uPV9UIxk=w1755-h485-no)
-#0.File Permission Modes  
+#0.File Permission Modes
 
 | rwx:| rwx: |  rwx |
 | :---: | :-----: | :----: |
@@ -18,14 +19,14 @@ comments: true
 
 
 ###rwx
- Files have three kinds of permissions: read (r), write (w), execute (x). These are generally represented as in **rwx**. 
+ Files have three kinds of permissions: read (r), write (w), execute (x). These are generally represented as in **rwx**.
 
- 
+
 ###ugo
- u:user/owner 
- g:group 
+ u:user/owner
+ g:group
  0:others
- 
+
 #1.chmod
 ```
 $ ls -l a_file
@@ -35,7 +36,7 @@ $ ls -l a_file
 -rwxr--r-x 1 coop coop 1601 Mar 9 15:04 a_file
 ```
 ##This kind of syntax can be difficult to type and remember
-so one often uses a shorthand which lets you set all the permissions in one step. 
+so one often uses a shorthand which lets you set all the permissions in one step.
 
 **4** if read permission is desired.
 **2** if write permission is desired.

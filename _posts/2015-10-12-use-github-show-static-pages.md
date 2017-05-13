@@ -3,8 +3,9 @@ layout: post
 title: "使用Github展示靜態網頁"
 published: true
 date: 2015-10-12 19:06
-tags: []
-categories: []
+tags:
+  - Github
+  - HTML / CSS
 comments: true
 
 ---

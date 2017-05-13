@@ -3,8 +3,8 @@ layout: post
 title: Javascript核心筆記：建構式與prototype
 published: true
 date: 2015-02-27 13:25
-tags: []
-categories: []
+tags:
+  - Javascript
 comments: true
 
 ---
@@ -16,9 +16,9 @@ comments: true
 var p1 = new Person('Justin', 35);
 var p2 = new Person('Monica', 32);
 var p3 = new Person('Irene', 2);
- 
-console.log(p1.toString());  // [Justin,35] 
-console.log(p2.toString());  // [Monica,32] 
+
+console.log(p1.toString());  // [Justin,35]
+console.log(p2.toString());  // [Monica,32]
 console.log(p3.toString());  // [Irene,2]
 ```
 當你使用new產生Person物件時。其實是透過如下面例子的建構式function Person 初始化了建構式所設定的各個特性。
@@ -77,10 +77,10 @@ console.log(p2.toString());   // [Momor, 32]
 ```js
 function Some() {}
 Some.prototype.data = 10;
- 
+
 var s = new Some();
 console.log(s.data);                 // 10
- 
+
 s.data = 20;
 console.log(s.data);                 // 20
 console.log(Some.prototype.data);    // 10

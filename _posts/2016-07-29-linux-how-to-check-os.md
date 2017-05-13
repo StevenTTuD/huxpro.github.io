@@ -3,8 +3,8 @@ layout: post
 title: Linux - 如何查詢 OS 版本
 published: true
 date: 2016-07-29 04:37
-tags: []
-categories: []
+tags:
+  - Linux
 comments: true
 
 ---
@@ -46,7 +46,7 @@ $ cat /etc/lsb-release
 cat: /etc/lsb-release: No such file or directory
 ```
 
-Debian 
+Debian
 
 雖然跟 Ubuntu 同體系但是存放版本號文件的位置不太一樣，
 輸入`cat /etc/debian_version`
@@ -80,14 +80,14 @@ CentOS Linux release 7.1.1503 (Core)
 |  Red Hat/older CentOS |  /etc/redhat-release |
 |  newer CentOS | /etc/centos-release |
 
-如果你的 OS 上面列表都找不到的話，可以找 etc 資料夾內的有 release 這個詞的 
+如果你的 OS 上面列表都找不到的話，可以找 etc 資料夾內的有 release 這個詞的
 
 ```
 cat /etc/*{release,version}
 ```
 
 
-## Reference 
+## Reference
 
 [command line - How do I find out what version of Linux I'm running? - Super User](http://superuser.com/questions/11008/how-do-i-find-out-what-version-of-linux-im-running)
 [How to Check CentOS Version Number](https://www.rackaid.com/blog/check-your-centos-version-number/)

@@ -3,8 +3,9 @@ layout: post
 title: EDX Linux Foundation Ch15：Shell Script ( Ch14跳過 )
 published: true
 date: 2014-10-13 14:30
-tags: []
-categories: []
+tags:
+  - Linux
+  - EDX Linux Foundation Course
 comments: true
 
 ---

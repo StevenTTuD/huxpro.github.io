@@ -3,8 +3,8 @@ layout: post
 title: HTTP Status Code In Rails
 published: true
 date: 2015-10-10 11:22
-tags: []
-categories: []
+tags:
+  - Rails
 comments: true
 
 ---
@@ -25,12 +25,12 @@ render status: :forbidden
 
 ```rb
     HTTP_STATUS_CODES = {
-    
+
     # Informational
       100 => 'Continue',
       101 => 'Switching Protocols',
       102 => 'Processing',
-      
+
     # Success
       200 => 'OK',
       201 => 'Created',
@@ -42,7 +42,7 @@ render status: :forbidden
       207 => 'Multi-Status',
       208 => 'Already Reported',
       226 => 'IM Used',
-      
+
     # Redirection
       300 => 'Multiple Choices',
       301 => 'Moved Permanently',
@@ -52,7 +52,7 @@ render status: :forbidden
       305 => 'Use Proxy',
       307 => 'Temporary Redirect',
       308 => 'Permanent Redirect',
-      
+
     # Client Error
       400 => 'Bad Request',
       401 => 'Unauthorized',
@@ -80,7 +80,7 @@ render status: :forbidden
       428 => 'Precondition Required',
       429 => 'Too Many Requests',
       431 => 'Request Header Fields Too Large',
-      
+
     # Server Error
       500 => 'Internal Server Error',
       501 => 'Not Implemented',
