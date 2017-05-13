@@ -4,7 +4,7 @@ title: Javascript核心筆記：callback
 published: true
 date: 2015-02-27 04:25
 tags:
-  - Javascript
+  - javascript
 comments: true
 
 ---

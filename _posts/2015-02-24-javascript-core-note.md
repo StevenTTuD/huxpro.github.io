@@ -4,7 +4,7 @@ title: javascript核心筆記：Object
 published: true
 date: 2015-02-24 02:50
 tags:
-    - Javascript
+    - javascript
 comments: true
 
 ---

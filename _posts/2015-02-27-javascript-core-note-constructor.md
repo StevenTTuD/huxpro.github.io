@@ -4,7 +4,7 @@ title: Javascript核心筆記：建構式與prototype
 published: true
 date: 2015-02-27 13:25
 tags:
-  - Javascript
+  - javascript
 comments: true
 
 ---

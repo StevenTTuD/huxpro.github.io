@@ -5,7 +5,7 @@ published: true
 date: 2014-10-10 05:16
 tags:
   - jQuery
-  - Javascript
+  - javascript
 comments: true
 
 ---

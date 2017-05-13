@@ -4,7 +4,7 @@ title: Javascript核心筆記：namespace
 published: true
 date: 2015-02-27 14:39
 tags:
-  - Javascript
+  - javascript
 comments: true
 
 ---

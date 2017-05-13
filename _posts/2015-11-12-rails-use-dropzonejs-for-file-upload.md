@@ -6,7 +6,7 @@ date: 2015-11-12 16:31
 tags:
   - Rails
   - Ajax
-  - Javascript
+  - javascript
 categories: []
 comments: true
 

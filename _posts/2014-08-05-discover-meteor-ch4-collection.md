@@ -5,7 +5,7 @@ published: true
 date: 2014-08-05 03:04
 tags:
   - Meteor
-  - Javascript
+  - javascript
 comments: true
 
 ---

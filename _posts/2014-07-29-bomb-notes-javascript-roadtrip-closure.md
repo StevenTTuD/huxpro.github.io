@@ -4,7 +4,7 @@ title: Javascript Roadtrip 3 Closure
 published: true
 date: 2014-07-29 04:12
 tags:
-  - Javascript
+  - javascript
 comments: true
 
 ---

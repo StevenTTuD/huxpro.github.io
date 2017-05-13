@@ -4,7 +4,7 @@ title: JS - 確認 jQuery 是否正確載入
 published: true
 date: 2016-06-15 12:32
 tags:
-    - Javascript
+    - javascript
     - jQuery
 comments: true
 

@@ -4,7 +4,7 @@ title: "保哥 javascript 實戰課程筆記"
 published: true
 date: 2015-02-22 06:09
 tags:
-  - Javascript
+  - javascript
   - Course
 comments: true
 

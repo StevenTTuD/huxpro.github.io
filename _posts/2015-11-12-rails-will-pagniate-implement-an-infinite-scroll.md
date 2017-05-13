@@ -5,7 +5,7 @@ published: true
 date: 2015-11-12 05:29
 tags:
     - Rails
-    - Javascript
+    - javascript
 comments: true
 
 ---

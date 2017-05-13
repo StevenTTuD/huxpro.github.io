@@ -1,10 +1,11 @@
 ---
+
 layout: post
 title: 'Javascript核心筆記：function '
 published: true
 date: 2015-02-27 09:55
 tags:
-  - Javascript
+  - javascript
 comments: true
 
 ---
