@@ -6,7 +6,7 @@ published: true
 date: 2014-10-13 14:30
 tags:
   - Linux
-  - EDX Linux Foundation Course
+  - EDX Linux Foundation
 comments: true
 
 ---
