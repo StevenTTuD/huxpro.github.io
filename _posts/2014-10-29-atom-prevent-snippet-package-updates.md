@@ -1,4 +1,5 @@
 ---
+author: StevenTTuD
 layout: post
 title: Atom 防止 Snippet Package 更新
 published: true

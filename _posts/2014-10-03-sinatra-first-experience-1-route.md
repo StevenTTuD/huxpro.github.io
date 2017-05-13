@@ -1,4 +1,5 @@
 ---
+author: StevenTTuD
 layout: post
 title: Sinatra初體驗( 1 )：Route
 published: true

@@ -1,4 +1,5 @@
 ---
+author: StevenTTuD
 layout: post
 title: Rails Project 1 URL Shortener
 published: true

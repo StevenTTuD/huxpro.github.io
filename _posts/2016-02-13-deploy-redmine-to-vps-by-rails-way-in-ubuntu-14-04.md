@@ -1,4 +1,5 @@
 ---
+author: StevenTTuD
 layout: post
 title: Deploy Redmine to VPS by Rails way in Ubuntu 14.04
 published: true

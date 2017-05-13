@@ -1,4 +1,5 @@
 ---
+author: StevenTTuD
 layout: post
 title: jQuery Return Flight Ch4：Utility Methods
 published: true

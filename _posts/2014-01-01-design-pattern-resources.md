@@ -1,4 +1,5 @@
 ---
+author: StevenTTuD
 layout: post
 title: "Design Pattern - 資源總整理"
 published: true

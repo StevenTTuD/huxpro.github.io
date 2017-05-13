@@ -1,4 +1,5 @@
 ---
+author: StevenTTuD
 layout: post
 title: Personal Kanban：能夠用在自己身上的敏捷方法 學習筆記
 published: true

@@ -1,4 +1,5 @@
 ---
+author: StevenTTuD
 layout: post
 title: Agile Meetup 2014 9月：More with LeSS
 published: true

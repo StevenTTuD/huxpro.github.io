@@ -1,4 +1,5 @@
 ---
+author: StevenTTuD
 layout: post
 title: Ruby bits ( 3 )：Class
 published: true

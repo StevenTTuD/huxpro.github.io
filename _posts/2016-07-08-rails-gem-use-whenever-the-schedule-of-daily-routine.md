@@ -1,4 +1,5 @@
 ---
+author: StevenTTuD
 layout: post
 title: 'Rails: 使用 Whenever 產生 Cronjob '
 published: true

@@ -1,4 +1,5 @@
 ---
+author: StevenTTuD
 layout: post
 title: Discover meteor Ch4：Collection
 published: true

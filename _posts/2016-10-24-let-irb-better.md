@@ -1,4 +1,5 @@
 ---
+author: StevenTTuD
 layout: post
 title: Ruby - 讓 irb 更好用
 published: true

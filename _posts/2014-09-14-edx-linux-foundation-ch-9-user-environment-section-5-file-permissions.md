@@ -1,4 +1,5 @@
 ---
+author: StevenTTuD
 layout: post
 title: EDX Linux Foundation Ch 9：User Environment Section 5 File Permissions
 published: true

@@ -1,4 +1,5 @@
 ---
+author: StevenTTuD
 layout: post
 title: Linux - 如何查詢 OS 版本
 published: true

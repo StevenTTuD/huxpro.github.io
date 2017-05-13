@@ -1,4 +1,5 @@
 ---
+author: StevenTTuD
 layout: post
 title: "練習：使用SASS開發Portfolio (1) Header 與 Footer"
 published: true

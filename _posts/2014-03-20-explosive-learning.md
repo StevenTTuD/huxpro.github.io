@@ -1,4 +1,5 @@
 ---
+author: StevenTTuD
 layout: post
 title: "爆炸性的學習"
 author: StevenTTuD

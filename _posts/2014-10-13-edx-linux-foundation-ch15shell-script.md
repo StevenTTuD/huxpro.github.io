@@ -1,4 +1,5 @@
 ---
+author: StevenTTuD
 layout: post
 title: EDX Linux Foundation Ch15：Shell Script ( Ch14跳過 )
 published: true

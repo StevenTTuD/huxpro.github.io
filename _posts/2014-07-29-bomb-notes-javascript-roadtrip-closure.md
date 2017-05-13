@@ -1,4 +1,5 @@
 ---
+author: StevenTTuD
 layout: post
 title: Javascript Roadtrip 3 Closure
 published: true

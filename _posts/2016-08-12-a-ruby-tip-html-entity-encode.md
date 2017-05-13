@@ -1,4 +1,5 @@
 ---
+author: StevenTTuD
 layout: post
 title: Ruby 爬蟲小技巧 - 處理 Html Entity
 published: true

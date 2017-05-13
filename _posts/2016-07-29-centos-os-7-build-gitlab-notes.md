@@ -1,4 +1,5 @@
 ---
+author: StevenTTuD
 layout: post
 title: "在 Centos OS 7 架設 Gitlab 筆記"
 published: true

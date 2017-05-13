@@ -1,4 +1,5 @@
 ---
+author: StevenTTuD
 layout: post
 title: Rails - 使用 dropzone.js 實現檔案上傳
 published: true

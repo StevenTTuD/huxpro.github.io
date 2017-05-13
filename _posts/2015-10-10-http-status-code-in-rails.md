@@ -1,4 +1,5 @@
 ---
+author: StevenTTuD
 layout: post
 title: HTTP Status Code In Rails
 published: true

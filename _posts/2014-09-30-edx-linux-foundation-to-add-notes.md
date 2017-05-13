@@ -1,4 +1,5 @@
 ---
+author: StevenTTuD
 layout: post
 title: EDX Linux Foundation 補充筆記
 published: true

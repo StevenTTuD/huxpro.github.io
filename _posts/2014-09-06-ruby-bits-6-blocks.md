@@ -1,4 +1,5 @@
 ---
+author: StevenTTuD
 layout: post
 title: Ruby bits ( 6 )：Blocks 學習筆記
 published: true

@@ -1,4 +1,5 @@
 ---
+author: StevenTTuD
 layout: post
 title: Sublime 3 套件整理
 published: true

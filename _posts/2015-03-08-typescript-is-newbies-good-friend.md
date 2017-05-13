@@ -1,4 +1,5 @@
 ---
+author: StevenTTuD
 layout: post
 title: Typescript是新手的好朋友
 published: true

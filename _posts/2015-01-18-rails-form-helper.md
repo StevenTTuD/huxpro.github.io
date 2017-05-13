@@ -1,4 +1,5 @@
 ---
+author: StevenTTuD
 layout: post
 title: Rails - 拆解 Form Helper 以 Checkbox 為例
 published: true

@@ -1,4 +1,5 @@
 ---
+author: StevenTTuD
 layout: post
 title: Ruby - 利用 ARGV 特性執行指定的方法
 published: true

@@ -1,4 +1,5 @@
 ---
+author: StevenTTuD
 layout: post
 title: JS - 確認 jQuery 是否正確載入
 published: true

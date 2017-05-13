@@ -1,4 +1,5 @@
 ---
+author: StevenTTuD
 layout: post
 title: Demo：使用wow.js快速打造捲動式動畫網頁
 published: true

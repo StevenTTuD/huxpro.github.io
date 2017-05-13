@@ -1,4 +1,5 @@
 ---
+author: StevenTTuD
 layout: post
 title: "在 OSX 環境中測試 etc/hosts 是否成功修改"
 published: true

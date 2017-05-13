@@ -1,4 +1,5 @@
 ---
+author: StevenTTuD
 layout: post
 title: 'Rails note : Require Creator'
 published: true

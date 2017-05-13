@@ -1,4 +1,5 @@
 ---
+author: StevenTTuD
 layout: post
 title: 'Ruby metaprogramming - Open Class and Refine '
 published: true

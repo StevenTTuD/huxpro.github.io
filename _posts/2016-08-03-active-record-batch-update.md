@@ -1,4 +1,5 @@
 ---
+author: StevenTTuD
 layout: post
 title: ActiveRecord - 更新大量資料
 published: true

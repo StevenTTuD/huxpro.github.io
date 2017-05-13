@@ -1,4 +1,5 @@
 ---
+author: StevenTTuD
 layout: post
 title: "從 Tealeaf 課程學習模組化 - Sluggify Module"
 published: true

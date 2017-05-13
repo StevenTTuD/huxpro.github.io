@@ -1,4 +1,5 @@
 ---
+author: StevenTTuD
 layout: post
 title: Javascript核心筆記：namespace
 published: true

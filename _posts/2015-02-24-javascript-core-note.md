@@ -1,4 +1,5 @@
 ---
+author: StevenTTuD
 layout: post
 title: javascript核心筆記：Object
 published: true

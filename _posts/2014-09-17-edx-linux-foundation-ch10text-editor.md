@@ -1,4 +1,5 @@
 ---
+author: StevenTTuD
 layout: post
 title: EDX Linux Foundation Ch10：Text Editor
 published: true

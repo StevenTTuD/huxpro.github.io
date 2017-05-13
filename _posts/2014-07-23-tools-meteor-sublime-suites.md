@@ -1,4 +1,5 @@
 ---
+author: StevenTTuD
 layout: post
 title: Meteor專用的Sublime套件：TernJs
 published: true

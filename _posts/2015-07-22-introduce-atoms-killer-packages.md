@@ -1,4 +1,5 @@
 ---
+author: StevenTTuD
 layout: post
 title: Atom殺手級套件介紹
 published: true

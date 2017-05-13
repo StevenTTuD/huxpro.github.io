@@ -1,4 +1,5 @@
 ---
+author: StevenTTuD
 layout: post
 title: jQuery Returm Flight Ch2：Javascript Object & Function
 published: true

@@ -1,4 +1,5 @@
 ---
+author: StevenTTuD
 layout: post
 title: 'Ruby bits ( 2 ) : Methods and Classes'
 published: true

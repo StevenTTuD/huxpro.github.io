@@ -1,4 +1,5 @@
 ---
+author: StevenTTuD
 layout: post
 title: "[Design Pattern] - Command Pattern"
 published: true

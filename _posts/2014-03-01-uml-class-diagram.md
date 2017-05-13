@@ -1,4 +1,5 @@
 ---
+author: StevenTTuD
 layout: post
 title: "[ UML ] Class Diagram"
 published: true

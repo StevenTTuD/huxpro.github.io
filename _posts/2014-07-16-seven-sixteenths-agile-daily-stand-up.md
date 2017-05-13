@@ -1,4 +1,5 @@
 ---
+author: StevenTTuD
 layout: post
 title: "[7/16]Agile daily Stand up"
 published: true

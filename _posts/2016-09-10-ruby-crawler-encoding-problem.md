@@ -1,4 +1,5 @@
 ---
+author: StevenTTuD
 layout: post
 title: Ruby - 爬網頁時遇到的編碼錯亂問題
 published: true

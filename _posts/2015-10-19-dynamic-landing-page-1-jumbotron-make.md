@@ -1,4 +1,5 @@
 ---
+author: StevenTTuD
 layout: post
 title: Landing Page 實作：來做個簡單的Jumbotron
 published: true
@@ -8,7 +9,9 @@ tags:
 comments: true
 
 ---
+
 製作jumbotron有兩個重點
+
 1. 垂直置中
 2. 設定背景。
 

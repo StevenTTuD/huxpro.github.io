@@ -1,4 +1,5 @@
 ---
+author: StevenTTuD
 layout: post
 title: javascript 筆記：|| 與 &&的妙用
 published: true

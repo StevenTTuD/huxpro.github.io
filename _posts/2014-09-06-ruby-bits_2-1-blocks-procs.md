@@ -1,4 +1,5 @@
 ---
+author: StevenTTuD
 layout: post
 title: Ruby bits 2 ( 1 )：BLOCKS, PROCS & LAMBDAS
 published: true

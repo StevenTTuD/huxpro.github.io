@@ -1,4 +1,5 @@
 ---
+author: StevenTTuD
 layout: post
 title: Atom 常用快速鍵(持續更新)
 published: true

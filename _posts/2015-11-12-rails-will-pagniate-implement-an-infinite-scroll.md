@@ -1,4 +1,5 @@
 ---
+author: StevenTTuD
 layout: post
 title: Rails - 使用 will pagniate 搭配 ajax 實作無限捲動
 published: true
