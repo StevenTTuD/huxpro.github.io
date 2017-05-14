@@ -42,4 +42,4 @@ IRB.conf[:AUTO_INDENT] = true
 
 - [Module: IRB (Ruby 2.0.0)](http://ruby-doc.org/stdlib-2.0.0/libdoc/irb/rdoc/IRB.html)
 
-- [Have ruby irb console save history | kitt hodsden's nags of a similar ilk](https://kitt.hodsden.org/comment/1656#comment-1656)
+- [Have ruby irb console save history - kitt hodsden's nags of a similar ilk](https://kitt.hodsden.org/comment/1656#comment-1656)
