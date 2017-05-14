@@ -13,8 +13,8 @@ comments: true
 ## each
 用each把result的物件讀出來，插入頁面元素之中。
 要插入`<p></p>`之中使用的是html()
-要插入img的src欄位，使用find('img').attr('src', city.image)
-之前也有使用過attr()這個方法來找到data欄位。
+要插入img的src欄位，使用`find('img').attr('src', city.image)`
+之前也有使用過`attr()`這個方法來找到data欄位。
 ```js
 success: function(result){
   $.each(result, function(index, city) {
