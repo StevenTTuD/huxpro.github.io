@@ -174,4 +174,4 @@ console.log(man1.equals(man2));
 console.log(man1.equals(man3));
 ```
 ## 參考資料
-[JavaScript 語言核心（6）鍵值聚合體的物件 by caterpillar | CodeData](http://www.codedata.com.tw/javascript/essential-javascript-6-object/)
+[JavaScript 語言核心（6）鍵值聚合體的物件 by caterpillar CodeData](http://www.codedata.com.tw/javascript/essential-javascript-6-object/)

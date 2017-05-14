@@ -115,5 +115,5 @@ console.log(p1.toString.call(p2)); // momor
 
 
 #### 參考資料 & 延伸閱讀
-- [JavaScript 語言核心（11）this 是什麼？ by caterpillar | CodeData](http://www.codedata.com.tw/javascript/essential-javascript-11-what-is-this/)
-- [Function.prototype.call - JavaScript | MDN](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Function/call)
+- [JavaScript 語言核心（11）this 是什麼？ by caterpillar - CodeData](http://www.codedata.com.tw/javascript/essential-javascript-11-what-is-this/)
+- [Function.prototype.call - JavaScript - MDN](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Function/call)

@@ -92,8 +92,8 @@ PUT my_index
 
 相關連結:
 
-[String datatype | Elasticsearch Reference [2.4] | Elastic](https://www.elastic.co/guide/en/elasticsearch/reference/2.4/string.html)
-[Field datatypes | Elasticsearch Reference [2.4] | Elastic](https://www.elastic.co/guide/en/elasticsearch/reference/2.4/mapping-types.html)
+[String datatype - Elasticsearch Reference [2.4] - Elastic](https://www.elastic.co/guide/en/elasticsearch/reference/2.4/string.html)
+[Field datatypes - Elasticsearch Reference [2.4] - Elastic](https://www.elastic.co/guide/en/elasticsearch/reference/2.4/mapping-types.html)
 
 #### 2.3 keyword 、 full text 與 analyzer
 
@@ -117,13 +117,13 @@ JSON.parse res.body
 
 相關連結：
 
-[Get Field Mapping | Elasticsearch Reference [2.4] | Elastic](https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-get-field-mapping.html)
+[Get Field Mapping - Elasticsearch Reference [2.4] - Elastic](https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-get-field-mapping.html)
 
 ### 參考資料
 
-[Getting Started | Elasticsearch: The Definitive Guide [2.x] | Elastic](https://www.elastic.co/guide/en/elasticsearch/guide/current/getting-started.html)
+[Getting Started - Elasticsearch: The Definitive Guide [2.x] - Elastic](https://www.elastic.co/guide/en/elasticsearch/guide/current/getting-started.html)
 [Module: Elasticsearch::API::Actions — Documentation for elasticsearch-api (2.0.0)](http://www.rubydoc.info/gems/elasticsearch-api/Elasticsearch/API/Actions)
-[Field datatypes | Elasticsearch Reference [2.4] | Elastic](https://www.elastic.co/guide/en/elasticsearch/reference/2.4/mapping-types.html)
+[Field datatypes - Elasticsearch Reference [2.4] - Elastic](https://www.elastic.co/guide/en/elasticsearch/reference/2.4/mapping-types.html)
 
 
 

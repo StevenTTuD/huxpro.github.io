@@ -98,4 +98,4 @@ render status: :forbidden
 ```
 還是不知道從何下手記憶嘛？來看保哥已經整理好一篇完整的HTTP Status Code文章囉^^
 
-[The Will Will Web | 網頁開發人員應了解的 HTTP 狀態碼](http://blog.miniasp.com/post/2009/01/16/Web-developer-should-know-about-HTTP-Status-Code.aspx)
+[The Will Will Web 網頁開發人員應了解的 HTTP 狀態碼](http://blog.miniasp.com/post/2009/01/16/Web-developer-should-know-about-HTTP-Status-Code.aspx)

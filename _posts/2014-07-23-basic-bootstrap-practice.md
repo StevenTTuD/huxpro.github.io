@@ -30,7 +30,7 @@ sublime的套件安裝與使用方式請看[這裡](http://bombertw.logdown.com/
 # 學習資源
 [Bootstrap RWD 使用方法及原理](http://kimix.name/bootstrap-rwd-%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95%E5%8F%8A%E5%8E%9F%E7%90%86/)
 [limestrap](http://limestrap.blogspot.tw/)
-[Sublimte Text 3 + Bootstrap Snippets | Create simple login form](https://www.youtube.com/watch?v=VWp6J7Q59KE)
+[Sublimte Text 3 + Bootstrap Snippets - Create simple login form](https://www.youtube.com/watch?v=VWp6J7Q59KE)
 一個簡單的範例
 [bootstrap 3 官網](http://getbootstrap.com/)
 [Coder's Guide](https://coders-guide.com/course.php?c=bootstrap-3)

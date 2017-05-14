@@ -200,7 +200,7 @@ $(function () {
 
 MDN 的 CSS 動畫說明頁，有不少的範例可以玩。
 
-[CSS 動畫 | MDN](https://developer.mozilla.org/zh-TW/docs/CSS_%E5%8B%95%E7%95%AB)
+[CSS 動畫  MDN](https://developer.mozilla.org/zh-TW/docs/CSS_%E5%8B%95%E7%95%AB)
 
 中文版的CSS字典
 

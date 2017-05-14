@@ -28,4 +28,4 @@ function doSome() {
 ```
 
 ## 參考資料
-[JavaScript 語言核心（13）在 Scope chain 查找變數 by caterpillar | CodeData](http://www.codedata.com.tw/javascript/essential-javascript-13-scope-chain/)
+[JavaScript 語言核心（13）在 Scope chain 查找變數 by caterpillar - CodeData](http://www.codedata.com.tw/javascript/essential-javascript-13-scope-chain/)

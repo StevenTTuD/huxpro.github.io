@@ -111,6 +111,6 @@ func main() {
 
 #### 參考資料
 
-[Mac下安装Go和配置相应环境 | Arron.y's blog](http://blog.helloarron.com/2015/08/29/go/mac-install-go/)
+[Mac下安装Go和配置相应环境 Arron.y's blog](http://blog.helloarron.com/2015/08/29/go/mac-install-go/)
 
 [Getting Started with Golang on OS X](https://coolaj86.com/articles/getting-started-with-golang-osx/)
