@@ -13,7 +13,7 @@ comments: true
 [JavaScript学习总结(十六)——Javascript闭包（Closure）](http://www.cnblogs.com/xdp-gacl/p/3703876.html)
 這個網站寫的不錯，看來以後要拜讀一下他的文章。
 
-##2.1 影片
+## 2.1 影片
 ```js
 ￼￼function buildCoveTicketMaker( transport ) {
          return function ( name ) {
@@ -42,14 +42,15 @@ getGiantSeagullTicket("Bowser");
 
 ![Screen Shot 2014-07-29 at 13.19.36.png](http://user-image.logdown.io/user/6619/blog/6590/post/211815/AprhkyhjSF6LexQr6iGl_Screen%20Shot%202014-07-29%20at%2013.19.36.png)
 
-##2.8
+## 2.8
 呼叫closure顯示訊息。
 
-##2.11
+## 2.11
 將location存進陣列中。這題滿值得做的，能夠利用closure來儲存陣列，給五顆星。
 
-##2.12
+## 2.12
 比想像中的複雜，先記錄起來。
+
 ```js
 function warningMaker( obstacle ){
   var count = 0;
@@ -93,8 +94,3 @@ function warningMaker( obstacle ){
 }
 ```
 
-##2.15
-這題先跳一下
-
-#closure的用途
-1.

@@ -10,7 +10,7 @@ tags:
 comments: true
 
 ---
-#First Sinatra App
+# First Sinatra App
 
 1.輸入```gem install sinatra```安裝gem
 
@@ -33,7 +33,7 @@ end
 ```
 4.輸入```rackup```啟動server，在 http://localhost:9292即可看到Hello World
 
-##使用curl來模仿HTTP Verb - GET
+## 使用curl來模仿HTTP Verb - GET
 1. 輸入```curl -v "http://localhost:9292"```
 2. 可以看到以下畫面
 /Users/Steven/Desktop/Screen Shot 2014-10-03 at 14.41.37.png
@@ -46,7 +46,7 @@ curl -X POST -d "http://localhost:9292"
 
 [curl指令用法](http://evelynnote.blogspot.tw/2011/03/curl.html)
 
-##改寫app為post
+## 改寫app為post
 ```rb
 require "sinatra/base"
 
@@ -61,7 +61,7 @@ end
 這邊分號沒有寫錯，因為就是要傳一個空字串給server。
 這樣server就會傳回http response
 
-##接著來大亂鬥
+## 接著來大亂鬥
 app.rb
 ```rb
 require "sinatra/base"
@@ -131,11 +131,11 @@ end
 在網址列輸入http://0.0.0.0:9292/hello/steven/huang
 網頁上就會印出hellostevenhuang
 
-###這樣寫的缺點
+### 這樣寫的缺點
 這樣寫的話有如果網址列輸入http://0.0.0.0:9292/hello/test
 就會出現Sinatra doesn’t know this ditty.的錯誤，因為這樣的寫法比較沒有彈性，route並沒有match到網址。
 
-###修正選擇性欄位的問題
+### 修正選擇性欄位的問題
 ```rb
 get "/hello/:first_name/?:last_name?" do |first, last|
   "hello#{first}#{last}"

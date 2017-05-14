@@ -11,7 +11,7 @@ comments: true
 ---
 Rails將這些HTTP Status定義成有意義的單字。讓我們可以在使用的時候減少因為背錯而發生錯誤的機率。
 
-###使用方式
+### 使用方式
 
 用symbol加上單字即可取代原本的HTTP Status Code(500)
 
@@ -20,7 +20,7 @@ render status: 500
 render status: :forbidden
 ```
 
-###這些Symbol其實定義在Rack中
+### 這些Symbol其實定義在Rack中
 
 [原始碼 rack/utils.rb](https://github.com/rack/rack/blob/master/lib/rack/utils.rb#L452-L515)
 

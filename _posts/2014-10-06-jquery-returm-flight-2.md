@@ -10,7 +10,7 @@ tags:
 comments: true
 
 ---
-#Part 1. javascript Object
+# Part 1. javascript Object
 將改原本的程式重構，所有的function都變成Object的Method，增加可讀性。
 
 這是原本的code
@@ -42,8 +42,8 @@ $(document).ready(function() {
 });
 ```
 
-#Part2 javascript Function
-##Object vs Function
+# Part2 javascript Function
+## Object vs Function
 這是物件，只允許一個vacation。
 ```js
 var vacation = {

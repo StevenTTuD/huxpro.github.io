@@ -13,7 +13,7 @@ comments: true
 
 Materialize是除了Bootstrap以外現今相當熱門的前端框架，可以製作的網頁類型相當廣泛，未來將使用Materialize來開發一些小作品，是今天練習的主要目的。
 
-##實現Materialize框架提供的視差滾動效果
+## 實現Materialize框架提供的視差滾動效果
 
 視差滾動的效果由materialize提供的[Parallax JS 套件](http://materializecss.com/parallax.html)來完成，效果可以讓圖片滿板，並且有視差效果。步驟如下：
 
@@ -40,7 +40,7 @@ Materialize是除了Bootstrap以外現今相當熱門的前端框架，可以製
  }
 ```
 
-###其他學習記錄
+### 其他學習記錄
 
 1. 一般區塊的垂直置中使用materialize的valign-wrapper來達到垂直置中的效果。
 

@@ -11,9 +11,9 @@ comments: true
 ---
 [Demo展示頁](http://steventtud.github.io/Scollspy-Landing-Page/#who)
 
-##作法說明
+## 作法說明
 
-###1.幫body加工
+### 1.幫body加工
 
 將body加上`display: relative`，如果還是不行使用的話加上`width: 100%`與`height: 100%`。
 
@@ -23,7 +23,7 @@ width: 100%;
 height: 100%;
 ```
 
-###2. 宣告navbar並設定target
+### 2. 宣告navbar並設定target
 使用js宣告target，這次我使用的target是整個navbar，用`.navbar-custom`來指定之，有需要的話可以調整offset修正navbar的觸發情形。
 
 ```js
@@ -45,7 +45,7 @@ nav class="navbar navbar-default navbar-custom navbar-fixed-top" role="navigatio
   </div><!-- /.container -->
 </nav>
 ```
-###3. 設定個區塊的id，並關聯到導覽列的連結
+### 3. 設定個區塊的id，並關聯到導覽列的連結
 
 
 每個區塊設定id，例如：
@@ -72,7 +72,7 @@ nav class="navbar navbar-default navbar-custom navbar-fixed-top" role="navigatio
 ```
 
 
-###Bonus. 自行撰寫點擊導覽列連結就可以緩緩移動的JS
+### Bonus. 自行撰寫點擊導覽列連結就可以緩緩移動的JS
 
 將li加上`.page-scroll`的屬性，以便之後選取。
 
@@ -114,7 +114,7 @@ nav class="navbar navbar-default navbar-custom navbar-fixed-top" role="navigatio
 ```
 
 
-###參考連結
+### 參考連結
 [JavaScript · Bootstrap](http://getbootstrap.com/javascript/#scrollspy)
 
 [How to Create Bootstrap 3 Scrollspy - Tutorial Republic](http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-scrollspy.php)

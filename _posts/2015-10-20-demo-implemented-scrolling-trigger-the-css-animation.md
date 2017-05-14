@@ -11,7 +11,7 @@ comments: true
 
 [demo](http://steventtud.github.io/CSS-Animation-Page-Demo/)
 
-##第一部分：使用CSS撰寫Slide In效果
+## 第一部分：使用CSS撰寫Slide In效果
 
 這個單元使用的技巧有：
 
@@ -19,11 +19,11 @@ comments: true
 2. 使用`animation-fill-mode`設定結束狀態
 3. 使用`transform:translate`移動元素
 
-####1. 使用`transition`讓屬性值改變時有動畫的效果
+#### 1. 使用`transition`讓屬性值改變時有動畫的效果
 
 transition 可以將CSS改變的過程變成動畫。詳細玩一下[CSS3 Transitions](http://www.w3schools.com/css/css3_transitions.asp)就懂了。
 
-####2. 使用`animation-fill-mode`設定結束狀態
+#### 2. 使用`animation-fill-mode`設定結束狀態
 animation-fill-mode 結束後的狀態
 
 - none：默认值。不设置对象动画之外的状态

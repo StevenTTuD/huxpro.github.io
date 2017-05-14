@@ -13,14 +13,14 @@ comments: true
 不得不再說一次，這些主題都超級重要，不先學Ruby直接學Rails感覺很卡。果然要從基礎開始打才是王道。在看這篇之前請先看完[method / block / yield / Proc / lambda](http://bombersnote.logdown.com/posts/2014/09/06/231080)，很多觀念都是從這邊的延伸。
 
 
-#conventions
+# conventions
 block有兩種表達方式
-###single block
+### single block
 braces if the block is a single line
 ```rb
 words.each { |word| puts word }
 ```
-###multiblock
+### multiblock
 do/end if it's multiple lines
 ```rb
 words.each do |word|
@@ -28,7 +28,7 @@ words.each do |word|
   puts backward_word
 end
 ```
-#yield
+# yield
 這邊有一個yield的範例
 ```rb
 def call_this_block_twice
@@ -64,7 +64,7 @@ call_this_block_twice{ puts "twitter"}
   #=>twitter twitter
 ```
 
-##yield - arguments
+## yield - arguments
 再來看另一個範例
 ```rb
 def call_this_block
@@ -82,7 +82,7 @@ call_this_block { |myarg| puts myarg.upcase }
 ```
 這時候如果要在call block的時候呼叫參數，要用```|```和```|```把輸入的參數包起來。接著後面的陳述式就可以對輸入的進行一些處理。
 
-#Your own "each"
+# Your own "each"
 現在我的class中有兩個method，一個要列出朋友的tweet，一個要儲存朋友的tweet。可以發現```@user.friends.each do |friend| ```這段iteration重複了。
 ```rb
 class Timeline
@@ -128,7 +128,7 @@ timeline.map      { |tweet| tweet.status }
 timeline.find_all { |tweet| tweet.status =~ /\@codeschool/ }
 ```
 
-#再來重構一個例子
+# 再來重構一個例子
 ```rb
 def update_status(user, tweet)
   begin
@@ -154,7 +154,8 @@ ensure
 end
 ```
 有裡個method裡面除了核心邏輯以外全部都一樣。這樣的話我們需要進行重構來實現DRY原則。因為Proc本身就是匿名函數也就是一段未執行程式碼，所以特別適用這個情況。
-##把重複的地方獨立出來，核心邏輯用yield代替。
+
+## 把重複的地方獨立出來，核心邏輯用yield代替。
 ```rb
 def while_signed_in_as(user) begin
     sign_in(user)
@@ -177,8 +178,10 @@ tweets = while_signed_in_as(user) do
   retrieve_list(list_name)
 end
 ```
-##最後可以改寫的精簡一點
+
+## 最後可以改寫的精簡一點
 去掉不必要的begin和end
+
 ```rb
 def while_signed_in_as(user)
   sign_in(user)
@@ -190,8 +193,8 @@ def while_signed_in_as(user)
 end
 ```
 
-#作業實作
-##6.1
+# 作業實作
+## 6.1
 使用each代替for迴圈。原來使用for迴圈的程式：
 ```rb
 def list
@@ -209,7 +212,7 @@ def list
   end
 end
 ```
-##6.2
+## 6.2
 現在我們有一個class叫做Game裡面裝著每場比賽的資訊。
 有一個陣列叫做Games，裡面蒐集了很多場的比賽。
 現在我們要在Library中寫一個方法叫做each_on_system(system)，讓他可以讀出Games陣列裡面符合輸入的system的比賽。
@@ -247,13 +250,15 @@ class Library
   end
 end
 ```
-##6.3 Passing Argument to Blocks
+## 6.3 Passing Argument to Blocks
 讓產生的block能夠使用iterator的參數。如下圖可以使用|game|。
+
 ```rb
 library = Library.new(GAMES)
 library.each_on_system("SNES") { |game| puts game.name }
 ```
-##6.4 Return Value From block
+
+## 6.4 Return Value From block
 Modify the list method to yield to a block and print whatever the block returns.
 除了能夠在block中使用以外還要可以直接印出來。
 ```rb
@@ -275,9 +280,9 @@ class Library
   end
 end
 ```
-##6.5include Enumerable module
+## 6.5include Enumerable module
 
-##6.6重構以避免重複
+## 6.6重構以避免重複
 ```rb
 class Game
   attr_accessor :name, :year, :system

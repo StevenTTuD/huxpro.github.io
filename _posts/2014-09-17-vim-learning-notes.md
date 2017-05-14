@@ -33,7 +33,7 @@ page down:
 page up:
 
 
-##Vim資源整理
+## Vim資源整理
 
 [VIM Adventures](http://vim-adventures.com/)
 

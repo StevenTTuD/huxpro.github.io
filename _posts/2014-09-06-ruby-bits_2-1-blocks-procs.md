@@ -11,8 +11,9 @@ comments: true
 
 ---
 雖然跟Ruby bit名字很像，但是內容的確比較進階點。
-#two ways for storing blocks
-##1.Proc
+
+# two ways for storing blocks
+## 1.Proc
 ```rb
 my_proc = Proc.new do
   puts "tweet"
@@ -25,7 +26,7 @@ my_proc = Proc.new { puts "tweet" }
 my_proc.call # => tweet
 ```
 
-##2.lambda
+## 2.lambda
 使用lambda來儲存又稱為static lambda。
 ```rb
 my_proc = lambda { puts "tweet" }
@@ -36,7 +37,9 @@ Ruby1.9以前的版本是這樣寫
 my_proc = -> { puts "tweet" }
 my_proc.call  # => tweet
 ```
-#block to lambda
+
+# block to lambda
+
 ```rb
 class Tweet
   def post
@@ -72,7 +75,7 @@ success = -> { puts "Sent!" }
 tweet.post(success)
 ```
 
-#multiple lambdas
+# multiple lambdas
 ```rb
 class Tweet
   def post(success, error)
@@ -91,21 +94,24 @@ success = -> { puts "Sent!" }
 error = -> { raise 'Auth Error' }
 tweet.post(success, error)
 ```
-#Using the ampersand
+# Using the ampersand
 有兩種情況會用到ampersand也就是```＆```符號
-##1.Calling a method with & in front of a parameter
+
+## 1.Calling a method with & in front of a parameter
 ```rb
 tweets.each(&printer)
 ```
 turn a proc into block
-##2.Defining a method with & in front of a parameter
+
+## 2.Defining a method with & in front of a parameter
 ```rb
 def each(&block)
 ```
 turns a block into a proc so it can be assigned to parameter
 
 這兩種用法很常同時使用
-##example 1:
+
+## example 1:
 ```rb
 printer = lambda { |tweet| puts tweet }
 tweets.each (printer) (
@@ -118,7 +124,7 @@ tweets.each(&printer)
 ```
 `&`turns proc into block
 
-##example 2:
+## example 2:
 ```rb
 class Timeline
   attr_accessor :tweets
@@ -134,6 +140,6 @@ timeline.each do |tweet|
 end
 ```
 
-#symbol to Proc
+# symbol to Proc
 
 未完待續...

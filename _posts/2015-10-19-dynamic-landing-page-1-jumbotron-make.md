@@ -15,7 +15,7 @@ comments: true
 1. 垂直置中
 2. 設定背景。
 
-##Background
+## Background
 
 - 設定`position: center bottom`讓圖片顯示出需要的區塊
 - 使用`background-size: cover;`讓圖片滿版
@@ -34,7 +34,7 @@ section.intro{
 }
 ```
 
-###複習背景的用法
+### 複習背景的用法
 
 背景的屬性：
 - background-repeat，常用的是`no-repeat`
@@ -52,7 +52,7 @@ background-position: bottom right; /* 水平 100% ，垂直 100% */
 ```
 
 
-##使用Table-cell水平置中
+## 使用Table-cell水平置中
 
 1. 外層display設成table
 1. 內層display設成table-cell，並加上`vertical-align: middel`即可

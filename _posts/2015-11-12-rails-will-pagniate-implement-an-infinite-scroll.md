@@ -10,7 +10,7 @@ tags:
 comments: true
 
 ---
-##概念：
+## 概念：
 
 will paganiate 由送到 controller 的 params[:page] 決定回傳的`@posts`。
 
@@ -20,7 +20,7 @@ will paganiate 由送到 controller 的 params[:page] 決定回傳的`@posts`。
 @posts = Post.paginate(:page => params[:page])
 ```
 
-##inifite scroll event
+## inifite scroll event
 
 ```js
 $(window).scroll(function () {
@@ -34,7 +34,7 @@ $(window).scroll(function () {
 
 [javascript - infinite-scroll jquery plugin - Stack Overflow](http://stackoverflow.com/questions/5059526/infinite-scroll-jquery-plugin)
 
-##程式碼 - HTML
+## 程式碼 - HTML
 
 因為我們使用 will pagniate 也就是分頁的GEM來實作，所以我們必須用 hidden field 來儲存目前捲動的最後一頁是哪一頁。image_tag 是 rails 特有的用法，會對應到 `assets/images` 資料夾下的圖片。
 
@@ -66,7 +66,7 @@ _post.html.erb
 
 ```
 
-##程式碼 - JS
+## 程式碼 - JS
 
 實作了兩種觸發的方式，先完成較簡單的 click ，之後再把 click 事件替換成捲動至頁尾會觸發的事件即完成無限下拉式瀏覽。
 
@@ -142,7 +142,7 @@ $(function () {
 ```
 
 
-##其他：javascript小技巧 - 過濾url獲取id
+## 其他：javascript小技巧 - 過濾url獲取id
 
 ```js
 var str_sub = str.substr(str.lastIndexOf("=")+1);

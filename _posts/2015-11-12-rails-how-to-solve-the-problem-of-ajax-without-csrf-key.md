@@ -13,7 +13,7 @@ comments: true
 
 當瀏覽器發生422錯誤，很有可能是缺少CSRF Key所引起的。這時候可以到 Log 確認一下是否是缺少 CSRF Key的情形。
 
-##方法一：用js抓mete的csrf-token
+## 方法一：用js抓mete的csrf-token
 
 ```js
 $(document).ajaxSend(function(e, xhr, options) {
@@ -27,11 +27,11 @@ $(document).ajaxSend(function(e, xhr, options) {
 [jquery-rails/jquery_ujs.js at master · rails/jquery-rails](https://github.com/rails/jquery-rails/blob/master/vendor/assets/javascripts/jquery_ujs.js#L69)
 
 
-##方法二：在controller加上一個方法
+## 方法二：在controller加上一個方法
 
 [[SOLVD] Rails: How Does csrf_meta_tag Work? | DevSolvd](http://devsolvd.com/questions/rails-how-does-csrf_meta_tag-work)
 
-##配合ajax 使用
+## 配合ajax 使用
 ```js
       $.ajax({
         url: "your_url",
@@ -48,6 +48,6 @@ $(document).ajaxSend(function(e, xhr, options) {
 
 ```
 
-##結論
+## 結論
 
 這是在前端做的事情，所以我會選擇使用js來抓

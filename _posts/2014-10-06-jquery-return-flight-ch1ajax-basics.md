@@ -10,7 +10,7 @@ tags:
 comments: true
 
 ---
-##使用.html()插入元素
+## 使用.html()插入元素
 要使用的ajax長這樣，點下#tour之下的button後，如果出現錯誤，就會顯示錯誤訊息。
 ```js
 $(document).ready(function() {
@@ -49,7 +49,7 @@ ajax回傳之後的html
 </li>
 ```
 
-#event delegate
+# event delegate
 錯誤寫法
 ```js
 $('.confirmation .view-boarding-pass').on('click', function(){ ... });
@@ -60,7 +60,7 @@ $('.confirmation').on('click', '.view-boarding-pass', function(){ ... })
 ```
 因為當頁面載入時，```.view-boarding-pass```並不存在，所以必須使用把要選擇的元素寫在event handler裡面又稱為**event delegate**的作法。
 
-#做出Loading特效
+# 做出Loading特效
 這是一個使用event delegate概念完成的特效。
 ```js
 $('.photos').on('mouseenter', 'li', showPhotos)

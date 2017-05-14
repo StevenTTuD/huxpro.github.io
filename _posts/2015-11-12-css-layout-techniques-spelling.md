@@ -15,7 +15,7 @@ comments: true
 
 ![](https://lh3.googleusercontent.com/oP3fnp8f8uhuc0mxk_0mU9xYtmakaKKgF_Wc6_GeBrsKZl4CbQj8gR81SreC_lD2Wge2f2CDdmq4sx8ywUJSPdsN1P7GC1W0196lhH0VMLt1fUQ8wpnvUlxcqqJgvWwv7k-wnp5Zvptd234xOCVoeVD1EgluELO_c2pcejlRwMZqUGcufr_o1o1DpsmsqrPm0iQ-T7bgNskMImC4ZaEnfiE2J43jpgR6fknJ5rvYSpAP1rUOsS-n7UTxVyVZeFwJl7SrjCxmVQAQQ-dsDSWxvFKIfNcktfpEYFrm5oUf8AFWue-66DFGoZ4gXPV2LpBpyiqh4GA5q535SGNy01jrZKCKzEv-jIwwscd1n7dEfWFBlVZsfvxQ-SEm1E1fdaTZafF15bSmRxQlae96ibtUUYy4zSaEa5g2ycBFELJ61gmABHehSLsGYQwtZjeM-a4SESSwQSAtxiGIN2p6rz46wLPRK6y5JKkflhazE9gSK88dUVD5XnBuP4JiBcBnmg-RQJ8o_cT-NE0LgspEZ_MkB7Q6X1L2ci--utG7u6TVVxo=w1805-h761-no)
 
-###html結構
+### html結構
 
 圖片(img)必須在段落(p)的上面，當圖片加上`float:left`屬性時，圖片的空間會消失，變成浮在畫面上，利用這個技巧，我們來做到文繞圖的效果。
 
@@ -65,7 +65,7 @@ comments: true
 
 > 容器水平置中是使用把最大寬度設成60%，並使用`margin:auto`技巧。
 
-###想要分段的時候用div包起來並加上`.clear-fix`
+### 想要分段的時候用div包起來並加上`.clear-fix`
 
 如果段落(p)高比圖片(img)小的時候會出現這樣的情況。有時候我們想要段落分明，這時候使用div包覆並幫div加上`.clear-fix`。
 
@@ -132,7 +132,7 @@ comments: true
 
 ```
 
-###幫段落左邊加上斷行效果用`clear:left`
+### 幫段落左邊加上斷行效果用`clear:left`
 
 這次段落和img的html是：
 
@@ -254,7 +254,7 @@ comments: true
 ```
 
 
-###結論
+### 結論
 
 1. 加上 float 屬性之後在`空間會受到外部 .image-wrapper 的限制`。
 1. 然而對同層元素來說，設成 float 的 img 空間會消失，因此在`float img 下方的同層元素會直接浮上來`，空間跟下方的同層元素共用，內容卻是流動的，形成文繞圖的效果。
@@ -262,7 +262,7 @@ comments: true
 1. `.image-wrapper`高度比圖片的時候需要加上`clear-fix`。
 
 
-####參考資料
+#### 參考資料
 
 [float與clear用法 - 布魯克斯- 點部落](http://www.dotblogs.com.tw/brooke/archive/2015/04/21/151108.aspx)
 [CSS - 關於 float 屬性](http://zh-tw.learnlayout.com/float.html)

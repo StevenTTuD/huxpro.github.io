@@ -11,7 +11,7 @@ comments: true
 ---
 因為 Post 與 Category 都的網址都需要 Sluggify 以便 SEO 的進行。所以我們把 Sluggify 模組化，讓同樣的程式碼只要寫一次就好。
 
-###1. 建立module Sluggable，並引入之
+### 1. 建立module Sluggable，並引入之
 
 在lib資料夾中建立一個名為`sluggable.rb`的檔案。加入`extend ActiveSupport::Concern`，這個技巧會讓模組間的耦合變得更加簡單。而一個class載入Sluggable時，會先做完include區塊中寫下的事情。
 
@@ -28,7 +28,7 @@ end
 打開`config/application.rb`加入路徑`config.autoload_paths << Rails.root.join('lib')`
 > 還有另一個方法把rb檔initializers中，放在這個資料夾裡面代表app打開初始化時就會先跑過一遍。
 
-###2. 跟sluggify有關的方法通通搬過來
+### 2. 跟sluggify有關的方法通通搬過來
 
 接著我們要把原本model(post.rb,category.rb)跟sluggify有關的方法搬過來。
 
@@ -77,7 +77,7 @@ module Sluggable
 end
 ```
 
-###3. class_attribute特性新增屬性到model上
+### 3. class_attribute特性新增屬性到model上
 
 因為post與category所要轉換成網址的欄位一個是title、一個是name。所以我們必須想個方法讓module至換掉原本設定the_slug的這一行：
 
@@ -106,7 +106,7 @@ class_attribute這個ruby語言獨有的特性可以幫助我們解決這個問�
 
 這樣一來就可以使用`post.slug_column`這個新的變數。
 
-###4. 新增類別方法sluggable_cloumn讓model能夠初始化slug_column
+### 4. 新增類別方法sluggable_cloumn讓model能夠初始化slug_column
 
 ```rb
 module Sluggable
@@ -135,7 +135,7 @@ class Post
 end
 ```
 
-###5. 置換欄位
+### 5. 置換欄位
 
 ```rb
 def generate_slug
@@ -170,7 +170,7 @@ end
 1. `post.send(:title)`就等同於post.(:title)就等同於`post.title`，我們成功的呼叫了`post.title`屬性！
 
 
-###6. 有了the_slug之後我們就可以來置換post與Post
+### 6. 有了the_slug之後我們就可以來置換post與Post
 
 1. Post用self.class來取代
 1. post用obj來取代 => `obj = self.class.find_by slug: the_slug`
@@ -191,7 +191,7 @@ end
   end
 ```
 
-###7. 完成品
+### 7. 完成品
 
 lib/slugabble.rb
 
@@ -249,7 +249,7 @@ end
 Post.rb
 
 ```rb
-class` Post < ActiveRecord::Base
+class Post < ActiveRecord::Base
   include Sluggable
 
   has_many :post_categories

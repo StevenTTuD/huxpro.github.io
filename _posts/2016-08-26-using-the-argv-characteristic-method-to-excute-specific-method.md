@@ -13,7 +13,7 @@ comments: true
 
 我想手動執行 class 的某個方法。這邊的例子是當我想移動的時候，我可以選擇走路、跑步或是游泳。
 
-###方法一： 在 irb 中引入 Ruby 檔
+### 方法一： 在 irb 中引入 Ruby 檔
 
 ```rb
 class Move

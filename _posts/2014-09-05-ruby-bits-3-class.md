@@ -12,10 +12,10 @@ comments: true
 ---
 上一個禮拜想要嘗試更多的動手記憶，經過實驗證明，還是需要筆記的輔助反覆記憶會比較好。經過這次的練習之後會更注重學習本身的強度。
 
-##ENCAPSULATION封裝
+## ENCAPSULATION封裝
 跟物件本身有關的method，使用class會比使用許多的method來的好。
 
-##VISIBILITY
+## VISIBILITY
 有一些method你並不想給外面的人直接使用他，那麼宣告成private，限制這些private method不能給外面的人所使用。
 ```rb
 class User
@@ -29,7 +29,7 @@ class User
   end
 end
 ```
-#INHERITANCE
+# INHERITANCE
 重複的程式碼使用繼承來避免。
 原來程式碼：
 ```rb
@@ -60,16 +60,16 @@ class Video < Attachment
 end
 ```
 ruby內的繼承就用箭頭```<```來表示
-##SUPER
+## SUPER
 ruby的super跟java的super只能夠繼承constructor一樣。（見下圖）
 ![](https://lh3.googleusercontent.com/AXTNO38rF_Z5-Bvn6HEX96KsojxntcHjnKFdkpT-5-4=w1755-h923-no)
 
-###super的省略寫法
+### super的省略寫法
 super不僅可以在method裡面用，而且有省略寫法。
 不過一開始學習還是把參數加上去避免混淆。
 ![](https://lh4.googleusercontent.com/-3UdY2F0B16k/VAlinCbjwRI/AAAAAAAAC3c/aFwDasJziEo/w1755-h833-no/Screen%2BShot%2B2014-09-05%2Bat%2B15.12.39.png)
 
-###overideing methods以加強執行效率
+### overideing methods以加強執行效率
 原來寫法：使用case來判斷。
 ```rb
 class Attachment
@@ -98,7 +98,7 @@ class Audio < Attachment
 end
 ```
 
-##HIDE INSTANCE VARIABLES
+## HIDE INSTANCE VARIABLES
 這節要討論的是如何簡化程式碼
 原本
 ```rb
@@ -139,7 +139,8 @@ class User
   end
 end
 ```
-#Override
+## Override
 Override的方法很簡單，直接取相同的method名稱，就可以複寫掉父類別的method。
 
-#最後一關refactoring看不太懂
+## 最後一關
+重構程式碼 refactoring

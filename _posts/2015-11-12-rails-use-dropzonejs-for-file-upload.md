@@ -12,7 +12,7 @@ categories: []
 comments: true
 
 ---
-##實現上傳檔案
+## 實現上傳檔案
 
 create的時候controller要設定一些值給js接。
 
@@ -58,7 +58,7 @@ $("#new_upload").dropzone({
 	.
 ```
 
-##設定成按下按鈕才送出
+## 設定成按下按鈕才送出
 
 用js的方式宣告myDropzone。並設定自動送出false
 ```js
@@ -82,7 +82,7 @@ $("#new_upload").dropzone({
   })
 ```
 
-##跟一般的form結合
+## 跟一般的form結合
 
 ```html
 <form id="my-awesome-dropzone" class="dropzone">
@@ -143,10 +143,10 @@ Dropzone.options.myAwesomeDropzone = { // The camelized version of the ID of the
 * [Combine normal form with Dropzone · enyo/dropzone Wiki](https://github.com/enyo/dropzone/wiki/Combine-normal-form-with-Dropzone)
 
 
-##可以覆寫事件
+## 可以覆寫事件
 [Dropzone.js](http://www.dropzonejs.com/#events)
 
-##參考資料
+## 參考資料
 
 [AJAX Photo Uploading the Easy Way with Rails 4 and Paperclip - JustPayme — Muno Creative](http://www.munocreative.com/nerd-notes/justpayme)
 

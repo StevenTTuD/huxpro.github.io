@@ -41,7 +41,7 @@ Html5的Snippets
 用clone的方式還是靠譜的多
 
 
-##參考資料
+## 參考資料
 
 [1.1 Configure Sublime Text 2 for BootStrap & PHP](http://limestrap.blogspot.in/2013/09/11-configure-sublime-text-2.html)
 一整系列使用sublime來快速撰寫bootstrap的教學，這篇是安裝套件篇。

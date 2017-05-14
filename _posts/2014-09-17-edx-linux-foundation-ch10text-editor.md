@@ -13,7 +13,7 @@ comments: true
 本週比較輕鬆，介紹的是Text Editor，但是我卻從中得到很多收穫。課程中介紹了Vim和Emacs，話說這是我第一次聽到Emacs這個編輯器，但他卻是原生的linux編輯器。而且還有不少的愛用者，開發效率也不輸Vim！
 ( 以下內容大部分由Carl大哥所分享，加上我的心得所寫而成。 )
 
-#Vim
+## Vim
 
 VIM Adventures
 http://vim-adventures.com/
@@ -34,7 +34,7 @@ Iteractive Vim
 http://www.openvim.com/sandbox.html
 右邊有指令邊看邊試還不錯用，但並非全部vim的指令都支援，只有表上的可以使用。
 
-##vim使用技巧
+### vim使用技巧
 ZZ = :wq
 
 無法寫入的狀況
@@ -50,7 +50,7 @@ https://github.com/bcbcarl/ultra_vim
 
 
 
-#Emacs
+## Emacs
 特色：功能強大，可取代 IDE
 
 Emacs tutorial: C-h t

@@ -10,7 +10,7 @@ tags:
 comments: true
 
 ---
-##Hash Argument
+## Hash Argument
 ![](https://lh4.googleusercontent.com/-hdUCbd8-xxI/VJ7OabbDJzI/AAAAAAAADVE/IVpvhmF0jME/w1755-h965-no/Screen%2BShot%2B2014-12-27%2Bat%2B23.18.02.png)
 每一個不同的欄位就多一個 argument不是個好方法，會造成很多欄位空在那邊。
 ![](https://lh6.googleusercontent.com/-Gn4gNk7tPCE/VJ7ObUCXt5I/AAAAAAAADVQ/DmSN6NOzNLw/w1755-h958-no/Screen%2BShot%2B2014-12-27%2Bat%2B23.18.18.png)
@@ -22,7 +22,7 @@ comments: true
 hash 中的 key 可以省略，只寫出某幾個就可以，就連hash argument 本身都可以省略，。
 ![](https://lh6.googleusercontent.com/-SoTADybAdlA/VJ7OfHNTvJI/AAAAAAAADVg/bWIor1roiY8/w1755-h663-no/Screen%2BShot%2B2014-12-27%2Bat%2B23.19.42.png)
 
-##Exceptions
+## Exceptions
 ![](https://lh6.googleusercontent.com/-q7ZbxrQ8BHU/VJ7ZaBfnJ2I/AAAAAAAADV4/7G0z1kMaJXk/w1753-h933-no/Screen%2BShot%2B2014-12-28%2Bat%2B00.05.23.png)
 當 tweets 是空的時候，我希望我會知道這個訊息，這時候 Exception 就派上用場了。
 ```rb
@@ -49,17 +49,17 @@ end
 
 
 
-##Splat Argument
+## Splat Argument
 ![](https://lh3.googleusercontent.com/--O8ZvriOtYI/VJ7frL2bYtI/AAAAAAAADWU/Vudg3_RSJnY/w1748-h260-no/Screen%2BShot%2B2014-12-28%2Bat%2B00.34.16.png)
 前面有加 * 字號的變數代表傳入的會是 Array，依序傳入為 Array[0]、Array[1]、Array[2]...以此類推。
 ![](https://lh3.googleusercontent.com/m_IMEQvAM5O6a-_I801MNkMBy3b6Ksklu_-wnlDo5T8=w1755-h415-no)
 
-##You Need a Class When ...
+## You Need a Class When ...
 ![](https://lh4.googleusercontent.com/-A_2YsWJ-dzQ/VJ7j1AQW5kI/AAAAAAAADW4/pkW88PelvLU/w1755-h1005-no/Screen%2BShot%2B2014-12-28%2Bat%2B00.48.34.png)
 ![](https://lh6.googleusercontent.com/-koGBR2kSY74/VJ7jz1uHhMI/AAAAAAAADW0/J4GF70Xeeg4/w1753-h903-no/Screen%2BShot%2B2014-12-28%2Bat%2B00.49.01.png)
 ![](https://lh4.googleusercontent.com/-qcgWOVQOWl0/VJ7jz_THkII/AAAAAAAADWs/GiSTz8Od5uE/w1755-h855-no/Screen%2BShot%2B2014-12-28%2Bat%2B00.49.23.png)
 
-##OverSharing
+## OverSharing
 ![](https://lh4.googleusercontent.com/-ySIcZkVxL1k/VJ7j3olxddI/AAAAAAAADXA/LGct57OmEoU/w1753-h973-no/Screen%2BShot%2B2014-12-28%2Bat%2B00.50.40.png)
 ![](https://lh4.googleusercontent.com/-G881X3MSHo8/VJ7j67Nk_vI/AAAAAAAADXM/ZkKMYHmRlY8/w1755-h960-no/Screen%2BShot%2B2014-12-28%2Bat%2B00.50.48.png)
 

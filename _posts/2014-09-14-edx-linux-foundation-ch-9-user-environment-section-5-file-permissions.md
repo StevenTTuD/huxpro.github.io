@@ -10,25 +10,25 @@ tags:
 comments: true
 
 ---
-##File Ownership
+## File Ownership
 ![](https://lh5.googleusercontent.com/5pM1DTFHc1_5F8GpOpCa5rfG7hBk7xk9JN4uPV9UIxk=w1755-h485-no)
-#0.File Permission Modes
+# 0.File Permission Modes
 
 | rwx:| rwx: |  rwx |
 | :---: | :-----: | :----: |
 | u:  |  g: |  o |
 
 
-###rwx
+### rwx
  Files have three kinds of permissions: read (r), write (w), execute (x). These are generally represented as in **rwx**.
 
 
-###ugo
+### ugo
  u:user/owner
  g:group
  0:others
 
-#1.chmod
+## 1.chmod
 ```
 $ ls -l a_file
 -rw-rw-r-- 1 coop coop 1601 Mar 9 15:04 a_file
@@ -36,7 +36,7 @@ $ chmod uo+x,g-w a_file
 $ ls -l a_file
 -rwxr--r-x 1 coop coop 1601 Mar 9 15:04 a_file
 ```
-##This kind of syntax can be difficult to type and remember
+### This kind of syntax can be difficult to type and remember
 so one often uses a shorthand which lets you set all the permissions in one step.
 
 **4** if read permission is desired.
@@ -51,7 +51,7 @@ $ ls -l a_file
 -rwxr-xr-x 1 coop coop 1601 Mar 9 15:04 a_file
 ```
 
-#2.chown
+## 2.chown
 有三個檔案file-1, file-2, temp
 ```
 $ ls -l
@@ -74,7 +74,7 @@ total 4
 drwxrwxr-x. 2 bob bob 4096 Mar 16 19:04 temp
 ```
 
-#3.chgrp
+## 3.chgrp
 續上面的例子：這次對file-2下```chgrp```改變檔案的群組。
 ```
 $ sudo chgrp bin file-2
