@@ -12,6 +12,7 @@ comments: true
 ---
 # Section 1 cat and echo
 ## cat(concatenate)
+
 ```
 cat file
 ```
@@ -146,6 +147,7 @@ $ join phonebook directory
 555-289-6193 Alice Youngstown
 ```
 ## split
+
 ```
 split infile <Prefix>
 ```
