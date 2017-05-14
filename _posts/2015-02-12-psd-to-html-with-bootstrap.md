@@ -13,10 +13,10 @@ comments: true
 ---
 第二個練習一樣學習tuts的課程，選擇課程的好處是做到一半不知道該怎麼做時，有video解答可以看。看看高手怎麼做總是比自己亂弄的好的多。我選擇的課程是需要付費的，tuts還有一些免費的教材可以學習，影片或是文章教學都有，有興趣的自己發掘囉。第二個練習跟第一個練習不同之處在於本練習會使用bootstrap的grid system來排版，並且icon與logo會使用sprite css的方式來製作。
 
-##Sprite sheets
+## Sprite sheets
 sprite 說的是利用將 icon 集中在一張圖片上，藉由CSS設定不同顯示區域，來實現每一個不同的icon。這樣的好處是很可降低圖片request數，減少server負擔。現在我們要使用sprite的方法實作的是右上角的五個social-icon和左上角的mumbo logo。
 
-##Create Sprite Sheets
+## Create Sprite Sheets
 1. 首先在photoshop中用方框工具圈選5個icon
 1. 點選`file > copy merge`複製五個icon
 1. `file > new` 建立新檔案，圖像大小設定為250 X 250。
@@ -66,7 +66,7 @@ header hgroup h1 a{
 1. 如此一來便大功告成。使用photoshop手動製作sprite是比較沒效率的作法，現在已經有很多方便的工具可以使用，藉由這個練習了解sprite的原理，之後再學習快速開發的工具便容易許多。
 ![](https://lh4.googleusercontent.com/-4Np5E53Y3Bs/VNy7xCZCx8I/AAAAAAAAE60/EcqUdwQ5P30/w992-h219-no/01mumbo.jpg)
 
-##學習筆記
+## 學習筆記
 1. 先來進行header的h1與h2排版，要達成的效果如下圖。還在苦惱怎麼使用純CSS設定長寬和box-model讓他服服貼貼的時候，突然發現有`.pull-left`可以用。真是太方便了。
 ![](https://lh4.googleusercontent.com/-4Np5E53Y3Bs/VNy7xCZCx8I/AAAAAAAAE60/EcqUdwQ5P30/w992-h219-no/01mumbo.jpg)
 

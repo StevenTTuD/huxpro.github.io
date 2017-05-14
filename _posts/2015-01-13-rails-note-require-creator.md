@@ -11,7 +11,7 @@ comments: true
 ---
 增加一個叫做Creator的別名，讓我們在判別作者時文意更加通順。
 
-##設定發文者
+## 設定發文者
 我們透過foreign key新增一個叫做creator的別名。作法是修改model/post.rb原本的
 ```rb
 	belongs_to :user
@@ -23,7 +23,7 @@ comments: true
 原本我們要使用post.user來取得文章作者，現在可以使用post.creator來取得作者。
 
 
-##只有作者可以新增或修改文章
+## 只有作者可以新增或修改文章
 
 1. 到posts controller加上`before_action :require_creator, only: [:edit, :update]`
 

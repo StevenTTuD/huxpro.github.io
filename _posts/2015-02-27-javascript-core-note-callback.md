@@ -9,7 +9,7 @@ tags:
 comments: true
 
 ---
-##callback是一種設計模式
+## callback是一種設計模式
 
 來看看callback的定義：
 
@@ -21,7 +21,7 @@ A callback is a function that is passed as an argument to another function and i
 
 所以本質上callback是一種設計模式。當一段程式碼可以當做參數丟給其他程式碼執行就叫做callback。jQuery和許多其他的框架的設計原則都遵循這個模式。
 
-##callback不限於非同步使用
+## callback不限於非同步使用
 同步時使用callback通常是希望程式能夠按照順序執行。通常callback在同步的情況下是最後執行的。
 ```js
 var func1=function(callback){
@@ -50,8 +50,8 @@ $.ajax({
 });
 ```
 
-##callback function的撰寫方式
-####1.沒有其他引數時
+## callback function的撰寫方式
+#### 1.沒有其他引數時
 ```js
 function basic( callback ){
   console.log( '作些事情' );
@@ -73,7 +73,7 @@ basic( function( result ){
 我是等會要被傳送給 `do something` 的 callback 的函式結果
 ```
 
-####2.有其他引數時可以用call或apply來實作。用call來實作看看。
+#### 2.有其他引數時可以用call或apply來實作。用call來實作看看。
 ```js
 function callbacks_with_call( arg1, arg2, callback ){
   console.log( '作些事情' );
@@ -108,6 +108,6 @@ result2: i am result2
 data from `callbacks_with_call`: 這等會可以讓 callback 函式用 `this` 來調用
 ```
 
-##參考資料
+## 參考資料
 [Javascript callbacks | DreamersLab](http://dreamerslab.com/blog/tw/javascript-callbacks/)
 [JavaScript 回调函数怎么理解](http://segmentfault.com/q/1010000000140970)

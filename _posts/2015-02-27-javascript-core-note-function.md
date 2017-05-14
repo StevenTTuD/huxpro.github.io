@@ -9,7 +9,7 @@ tags:
 comments: true
 
 ---
-###javascript的函數是一級物件(First-Class)
+### javascript的函數是一級物件(First-Class)
 function是由Function的實例，並且在javascript中可以指定給變數，函式與數值的地位相同，並不會像有些語言中，無法像數值一樣地被指定，不會淪為二等公民，因此，對於支持函式可如數值一樣指定給變數的語言，我們稱函式在這個語言中是一級函數。
 ```js
 var number = 10;        // Number literal
@@ -28,12 +28,12 @@ var gcd = function g(num1, num2) {
 console.log(gcd.length); // 2
 ```
 
-###函數的回傳值
+### 函數的回傳值
 
 函式沒設定return時，預設回傳`undefined`。
 
 
-###輸入的參數與引數不符合時
+### 輸入的參數與引數不符合時
 如果函式傳入的參數不足時是可以執行的，不足的部份會自動補上`undefined`。
 ```js
 function func(a, b) {
@@ -64,7 +64,7 @@ arguments 不是 Array 實例，它只是具有數字作為特性，特性參考
 
 在 `EMCAScript 5 前的版本`，參數只是具名的引數，你改變參數的值，arguments 對應索引的參考值也會相應的改變。然而，若採用 `EMCAScript 5 嚴格模式`，參數的值 與 arguments 的元素值彼此互不影響。
 
-###函式宣告式、函式表達式與匿名函數
+### 函式宣告式、函式表達式與匿名函數
 
 - 表達式
 	- 具名表達式 var add = function add(a, b){return a+b;};
@@ -82,12 +82,12 @@ arguments 不是 Array 實例，它只是具有數字作為特性，特性參考
 - 後面加括號`立刻`調用函數。
 
 
-###立即函數
+### 立即函數
 要在函數體後面加括號就能立即調用，則這個函數必須是函數表達式，不能是函數宣告式。所以立即函數的本質是函數表達式。立即函數可以讓括號內的變數變成區域變數，這部份請參考Scope的筆記。
 
-##後記
+## 後記
 除了本篇提到的性質以外，物件的建構式也是由function來構建，學習時一併理解以釐清不清楚的地方。
 
 
-##參考資料
+## 參考資料
 [js中(function(){…})()立即执行函数写法理解](http://dengo.org/archives/1004)

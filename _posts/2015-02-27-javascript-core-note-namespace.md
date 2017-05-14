@@ -9,7 +9,7 @@ tags:
 comments: true
 
 ---
-##靜態命名空間
+## 靜態命名空間
 1. 直接指定
 ```js
 var myApp = {}
@@ -37,4 +37,6 @@ window.console && console.log(
 
 3. 使用設計模式Module Pattern來建構
 
-##動態命名空間
+## 動態命名空間
+
+未完...

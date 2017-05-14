@@ -11,7 +11,7 @@ comments: true
 ---
 使用Bootstrap好一段時間了，卻沒有好好的把官方文件讀過一遍，雖然寫的出來但是速度不盡理想，所以這兩天花些時間將幾個不太理解的常用元件與一些以前有使用到卻不太了解的data-attribute用法寫下筆記，好提高生產力。
 
-##Part 1: Navbar
+## Part 1: Navbar
 
 這是一個bootstrap官網上的完整navbar範例。
 ```html
@@ -71,7 +71,7 @@ comments: true
 ```
 
 
-####外部的nav
+#### 外部的nav
 navbar的外部由nav包覆，但是這樣的作法其實不太妥當，因為有時候navbar中的元素並不完全是用來導覽(navigate)整個網站。所以我們將範例修改成使用`div`配合`role="navigation"`來避免這個問題。
 
 ```html
@@ -89,7 +89,7 @@ navbar的外部由nav包覆，但是這樣的作法其實不太妥當，因為�
 > Use `.container-fluid` for a full width container, spanning the entire width of your viewport.
 >
 
-####Brand與手機版本的元素
+#### Brand與手機版本的元素
 除了Brand以外的上半部程式碼顯示的是手機版本的畫面。
 ```html
 <!-- Brand and toggle get grouped for better mobile display -->
@@ -107,7 +107,7 @@ navbar的外部由nav包覆，但是這樣的作法其實不太妥當，因為�
 ```
 
 
-####容器
+#### 容器
 navbar的容器有幾種：
 1. `div.navbar-header`裡面常裝brand與手機版網頁元素
 2. `ul.navbar-nav`
@@ -151,7 +151,7 @@ navbar的容器有幾種：
 最外層`div class="collapse navbar-collapse"`讓這個navbar套用了reponsive design。reponsive navbar必須要有collapse plugin，不過不用擔心，bootstrap已經內建了collapse js plugin。
 
 
-###容器一：navbar-nav
+### 容器一：navbar-nav
 
 `ul.navbar-nav`本質上是unorder list ( ul )，裡面可以裝的元素必須為List item( li ) 。裡面可以裝：
 1. Link
@@ -181,7 +181,7 @@ dropdown本身是unorder list，因為他屬於`ul.navbar-nav`的其中之一個
       </ul>
 ```
 
-###容器二：navbar-form
+### 容器二：navbar-form
 form的使用跟一般的form是相同的，特別注意的是加上`.navbar-form`讓form在navbar中可以垂直置中。
 ```html
       <form class="navbar-form navbar-left" role="search">
@@ -193,7 +193,7 @@ form的使用跟一般的form是相同的，特別注意的是加上`.navbar-for
 ```
 詳細form的使用方法會開另一篇來做記錄。
 
-###配合Snippet加快開發效率
+### 配合Snippet加快開發效率
 
 我使用的是 atom-bootstrap3 和 bootstrap-3-snippetset 這兩個package。
 
@@ -206,7 +206,7 @@ form的使用跟一般的form是相同的，特別注意的是加上`.navbar-for
 	- `textareabs`
 	- `selectbs`
 
-####參考資料：
+#### 參考資料：
 [官方Doc - navbar](http://getbootstrap.com/components/#navbar)
 
 ##Part 2: Form
@@ -259,7 +259,7 @@ form的最後使用submit，使用class修飾外觀。
 <button type="submit" class="btn btn-default">Send invitation</button>
 ```
 
-###水平形式的form
+### 水平形式的form
 要達成水平的form可以用兩種方式，第一種是form-inline。缺點是不能自行設定label的長度。
 ```html
 <form class="form-inline">
@@ -307,12 +307,12 @@ form的最後使用submit，使用class修飾外觀。
 ```
 這樣子基本的需求大概都可以cover到了。CSS class的查詢就直接看官方文件。
 
-####參考資料
+#### 參考資料
 http://getbootstrap.com/css/#forms
 
-##Part 3: JS Libarays
+## Part 3: JS Libarays
 
-###Carousel
+### Carousel
 
 HTML分為三個部分：
 1. indecator : 下面用來代表目前頁面的小圈圈
@@ -354,7 +354,7 @@ indecator和controls需要跟外層的`#carousel-example-generic"`一致。
 
 
 
-###modal
+### modal
 ```html
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
@@ -383,7 +383,7 @@ indecator和controls需要跟外層的`#carousel-example-generic"`一致。
 </div>
 ```
 
-###Collapse
+### Collapse
 ```html
 <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
   Link with href
@@ -405,7 +405,7 @@ Collapse的第一個例子中的`aria-controls="collapseExample"`輸入的「要
 
 
 
-##ScrollSpy
+## ScrollSpy
 Scrollspy可以讓你滾動到哪個div時，就讓navbar選擇到相對應的button。使用方式除了需要在html中加上`data-spy="scroll"`以外，css必須對body使用`position: relative`才能夠使用。css檔長這樣：
 ```css
 body {
@@ -429,7 +429,7 @@ html檔者這樣：
 $('body').scrollspy({ target: '.navbar-example' })
 ```
 
-###jumbto
+### jumbto
 ```html
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
@@ -438,7 +438,7 @@ $('body').scrollspy({ target: '.navbar-example' })
   </div>
 ```
 
-###Cheetsheet
+### Cheetsheet
 http://getbootstrap.com/css/#buttons
 http://getbootstrap.com/css/#tables
 http://getbootstrap.com/css/#helper-classes
@@ -449,22 +449,22 @@ http://getbootstrap.com/components/#thumbnails
 http://getbootstrap.com/javascript/#modals
 http://getbootstrap.com/components/#pagination
 
-##其他
+## 其他
 
-###常見的data-attribute
+### 常見的data-attribute
 1. Hide an element to all devices except screen readers with `.sr-only.`
 2.  All textual `<input>`, `<textarea>`, and `<select>` elements with `.form-control` are set to width: 100%; by default. Wrap labels and controls in `.form-group` for optimum spacing.
 
 3. 要使用sass開發的話有bootstrap for sass。
 
 
-###Tag role
+### Tag role
 甚麼時候要用到role，根據官方文件的說法，當你所編寫的 tag 代表的意義已不符合本身的 default implicit roles，那你便需要再加上 role 屬性來說明其正確用途。而在W3C的官方文件中也載明了一個表格(見參考資料2 標題 Recommended ARIA usage by HTML language feature) 其中詳列的各 HTML Tag 的預設隱性 role，以及其可支援的其他 role
 
 (引用自 [ARIA role 相關筆記 « Lobster 亂七八糟筆記](http://lobster0429.logdown.com/posts/144753-aria-role-related-notes) )
 
 
-###container
+### container
 Use `.container` for a responsive fixed width container.
 
 ```html

@@ -10,8 +10,8 @@ tags:
 comments: true
 
 ---
-#advanced event handler
-##trigger
+# advanced event handler
+## trigger
 使用trigger就像是你按下那個按鈕。範例:
 ```js
 function picture() { console.log('Show Plane'); }
@@ -36,7 +36,7 @@ $('button').on('click.image', picture);
 $('button').on('click.details', status);
 ```
 
-##自訂`<event>`同時觸發多個事件
+## 自訂`<event>`同時觸發多個事件
 照理說evnt的格式是：
 ```js
 $(<dom element>).on("<event>.<namespace>", <method>)
@@ -106,7 +106,7 @@ $(document).ready(function(){
 });
 ```
 
-##off
+## off
 將符合event.namespace的handler移除
 ![](https://lh4.googleusercontent.com/-Pponyl2bHfo/VDeZTWsGPlI/AAAAAAAADHc/8_d1EMnLjzc/w1650-h530-no/Screen%2BShot%2B2014-10-10%2Bat%2B15.31.35.png)
 刪除符合event的handler

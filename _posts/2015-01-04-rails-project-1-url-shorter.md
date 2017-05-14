@@ -9,26 +9,26 @@ tags:
 comments: true
 
 ---
-##前言
+## 前言
 
 接下來我要藉由實作一些比較小型的Rails Project，來練習工程師必備的技能，其中最主要訓練的目標是能抓出需要實作的use case與如何從use case中實踐功能。因為沒有網頁的相關背景，如何磨練Html css javascript的基本實作能力也是這一階段的重點。
 
 熟悉了如何使用Rails完成所要的需求與一些常見功能的開發之後，下一階段可以是學習Rails如何跟API互動或是開始學習Design Patterns。學習Dessign Pattern的原因有：一是可以讀的懂程式碼，二是了解為什麼要這麼寫。anyway，先把眼前的事情做好最重要let's do it！
 
-##Use Case , Page Flow and Data
+## Use Case , Page Flow and Data
 
 在練習實作Project的過程中，我會格外地注意Use Case、Page Flow和Data。一個網站從無到有，便是先抓出使用者的需求，也就是Use Case，可以表達出身為不同的使用者，各需要哪些需求。
-###Use Case
+### Use Case
 Url Shortener顧名思義要能夠縮減網址，我們可以抓出幾個需求。
 - 使用者可以使用URL Shortener縮短網址
 - 輸入URL Shortener產生的網址時必須連接到原網址。
 
-###Page Flow
+### Page Flow
 
-###Data
+### Data
 
 
-#URL Shortener in Rails
+# URL Shortener in Rails
 
 1. 建立專案
 ```
@@ -46,7 +46,7 @@ resources :urls
 rails generate controller urls
 ```
 
-##Model
+## Model
 
 1. 建立model，名詞是單數。要使用的Model有兩個欄位，original用來記錄原始網址，random_id用來記錄縮址。
 ```
@@ -60,8 +60,8 @@ validates :original, presence: true
 
 
 
-##Controller
-####Index: 繼續完成controller，從index開始著手，在index我們希望可以看到全部儲存的連結。
+## Controller
+#### Index: 繼續完成controller，從index開始著手，在index我們希望可以看到全部儲存的連結。
 
 ```ruby
 class UrlsController < ApplicationController
@@ -71,7 +71,7 @@ class UrlsController < ApplicationController
 end
 ```
 
-####Show: 在action show我們希望可以做到的功能是「當使用者輸入縮址時，會轉址到原網址」，這也是也這個URL Shortener的核心功能。
+#### Show: 在action show我們希望可以做到的功能是「當使用者輸入縮址時，會轉址到原網址」，這也是也這個URL Shortener的核心功能。
 
 ```rb
 class UrlsController < ApplicationController
@@ -93,7 +93,7 @@ class UrlsController < ApplicationController
 end
 ```
 
-####New: 在action new要做的事情是「當使用者輸入原始網址，會產生相對應的縮網址」
+#### New: 在action new要做的事情是「當使用者輸入原始網址，會產生相對應的縮網址」
 
 ```rb
 class UrlsController < ApplicationController
@@ -115,7 +115,7 @@ letter陣列用來裝所有的字母包含大寫A-Z與小寫a-z。flatten使屬�
 [產生隨機小寫英數字 幾種方法 and 效能](http://railsfun.tw/t/and/46)
 
 
-####Create: 儲存一筆url資料，記得要使用strong parameter核對欄位。
+#### Create: 儲存一筆url資料，記得要使用strong parameter核對欄位。
 ```rb
 class UrlsController < ApplicationController
 	.
@@ -140,10 +140,11 @@ end
 >來複習一下render的用法主要有四種：第一種是直接回傳結果，回傳的格式可以是xml,json,text...等等檔案格式。範例：`render text: "hello world"`、`render json: @event.to_json`。第二種是render template。可以直接指定template的路徑如：`render "/events/index.html.erb"`。如果是同controller的action可以寫成`render "index"`。第三種是回傳status code例如：`render status: 500`。第四種是回傳某template使用的layout，例如：`render layout: "special_layout"`。
 其他用法請參考：[Layouts and Rendering in Rails](http://guides.rubyonrails.org/layouts_and_rendering.html#using-render)
 
-##Views
+## Views
 因為URL Shortener的action show是轉址，並不需要view，所以我們要實作的view只有index.html.erb和new.html.erb。
 
-####index.html.erb
+#### index.html.erb
+
 ```html.erb
 <h1>Url Shortener</h1>
 <% @urls.each do |url| %>
@@ -155,7 +156,8 @@ end
 <%= link_to "Shorten another URL", new_url_path %>
 ```
 
-####new.html.erb
+#### new.html.erb
+
 ```
 <h1>Shorten a URL</h1>
 erb
@@ -171,6 +173,6 @@ erb
   <%= f.submit "Shorten my URL" %>
 <% end %>
 ```
-##Summary
+## Summary
 
 URL Shortener這個小Project需求上跟一般實作的留言板有點不一樣，但還是可以用new和index兩個action來達成了Use Case所抓出來的需求。這非常有趣，多做點不同專案的好處就是能夠用不同的角度來累積經驗。

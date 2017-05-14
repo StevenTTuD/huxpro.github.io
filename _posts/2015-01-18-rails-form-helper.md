@@ -11,7 +11,7 @@ comments: true
 ---
 使用Rails Form Helper時，很重要的一點是要知道Form Helper會產生什麼樣的Html Code，了解之，觀察之，這樣你才能修改成自己需要的樣子。如果要在form中加入check box，可以使用collection_check_boxes這個在rails 4新加入的form helper來完成。我們就以checkbox為例，來練習觀察html吧！
 
-##Collection Check Box
+## Collection Check Box
 第一個來使用到的是collection_check_boxes，完整的參數是`collection_check_boxes(object, method, collection, value_method, text_method, options = {}, html_options = {}, &block)`，一看覺得眼花撩亂，沒關係，直接來看例子。首先我們有兩個model，分別為Post和Cateogry，他們是多對多的關係。現在我們想要在新增Post的時候可以用checkbox選擇Category。
 
 ```erb
@@ -33,7 +33,7 @@ comments: true
 
 用binding pry把form傳出的資訊抓出來看可以發現，params中傳送的key正是使用category_ids來做為名稱，因為checkbox的name都是相同的，所以只會有一個key(這邊不懂的話請去了解一下checkbox的html與select的html有什麼不一樣)。而value就是選擇的選項，因為我在form中勾選了第一個選項，所以顯示為"1"。label的for屬性，代表這是給哪一個專屬的`id`所使用的label，for與id常常搭配使用。
 
-##手刻html版的checkbox
+## 手刻html版的checkbox
 知道會產生怎麼樣的form和知道會傳出怎麼樣的params以後我就可以手刻一個html版的checkbox。
 ```erb
     <% Category.all.each do |category| %>

@@ -10,7 +10,7 @@ tags:
 comments: true
 
 ---
-##each
+## each
 用each把result的物件讀出來，插入頁面元素之中。
 要插入`<p></p>`之中使用的是html()
 要插入img的src欄位，使用find('img').attr('src', city.image)
@@ -30,7 +30,7 @@ success: function(result){
 $.each(collection, function(<index>, <object>) {});
 ```
 
-##getJSON
+## getJSON
 用ajax設定```dataType:'json'```
 ```js
 ('.update-status').on('click', function() {
@@ -52,7 +52,7 @@ $('.update-status').on('click', function() {
 });
 ```
 
-##map
+## map
 ```js
 var myNumbers = [1,2,3,4];
 var newNumbers = $.map(myNumbers, function(item, index){ return item + 1 });
@@ -60,7 +60,7 @@ var newNumbers = $.map(myNumbers, function(item, index){ return item + 1 });
   //newNumbers => [2,3,4,5]
 ```
 
-###使用map插入元素
+### 使用map插入元素
 ```js
 $.map(result, function(status, i) {
 	var listItem = $('<li></li>');
@@ -89,7 +89,7 @@ $('.update-flight-status').on('click', function() {
 還有一個最大的不同是each回傳的陣列不會改變，而map回傳的陣列是經過處理的。請看下圖：
 ![](https://lh5.googleusercontent.com/9HcvHuOpheqWWH6tJ8NpLniNpnlyllb1SpLk510t8cg=w1755-h1123-no)
 
-##detach
+## detach
 ```js
 $('.update-flight-status').on('click', function() {
   $.getJSON('/status', function(result) {
@@ -105,4 +105,5 @@ $('.update-flight-status').on('click', function() {
 });
 ```
 這邊使用detach而不使用remove來刪除元素，因為detach其實不會把元素真正的刪除，而會保留下來。這樣做效率比較好。
+
 [detach與remvove的區別](http://www.jquery001.com/jquery-detach-remove.html)

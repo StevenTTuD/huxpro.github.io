@@ -11,7 +11,7 @@ comments: true
 
 ---
 
-##javascript 語言特性
+## javascript 語言特性
 1. javascript是個動態型別語言，無法在開發期間宣告型別，意味著javascript的單一變數可能會隨時改變型別!
 
 1. javascript是個弱型別的語言：意味著在開發時期無法指定javascript型別。只能在執行期間檢查型別。如果真的要知道這個變數的型態，只能在執行時透過typeof的方式將該變數目前的型別使用字串顯示。
@@ -20,7 +20,7 @@ comments: true
 
 
 
-##javascript 是個物件導向程式語言
+## javascript 是個物件導向程式語言
 這節會從javascript是物件導向語言這個觀點延伸了解javascript的型別(type)。
 1. 除了數值(number) 字串(string) 布林(boolean) null undefined 這五個是原始型別(Primitive Type)外，所有的東西都是物件。
 ![](https://lh5.googleusercontent.com/-kJ98NBVTZi4/VOltbCHXWAI/AAAAAAAAE9I/VxitLDd70sc/w734-h522-no/JavaScriptTypes1.jpg)
@@ -35,7 +35,7 @@ comments: true
 
 了解javascript的型別之後，接下來我們要來了解javascript的物件特性。
 
-###1. JavaScript物件是個容器(Container)。
+### 1. JavaScript物件是個容器(Container)。
 每個物件包含了`屬性(Property)`和`方法(Method或Function)`。
 ```js
 var car={};           //宣告物件(Object)
@@ -45,7 +45,7 @@ car.start=function(){ //函式(Function)
 }
 var car_name = car['name'];
 ```
-###2. JavaScript 物件其實就是 HashMap
+### 2. JavaScript 物件其實就是 HashMap
 - 所有屬性名稱一定是字串
 
 - 取得car的屬性name的內容有兩種取法 一種是物件取法`car.name` 和 另一種是陣列取法`car['name']`。
@@ -54,7 +54,7 @@ var car_name = car['name'];
 
 （這部份code school的javascript課程有更多範例，未來有時間的時候再補充。）
 
-###3. JavaScript沒有Class概念，所以你可以不需要constructor，就能建立物件
+### 3. JavaScript沒有Class概念，所以你可以不需要constructor，就能建立物件
 1. javascript的constructor(建構式)就是函式，又稱建構式函式。
 
 1. 使用 new 關鍵字，透過建構式建立物件。
@@ -74,7 +74,7 @@ var myMother = new person("Sally", "Rally", 48, "green");
 ```
 1. 因為javascript沒有Class概念，所以必須借助prototype的特性。
 
-###4. javascript的物件可以不需先行宣告就可以自由擴充屬性
+### 4. javascript的物件可以不需先行宣告就可以自由擴充屬性
 1. 這點是我之前學習時沒有發現的微妙之處，一般物件導向程式語言如java一定要先行宣告變數才能使用，而javascript卻不需要。
 ```js
 //物件範例
@@ -91,7 +91,7 @@ elete obj.b;
 
 1. 物件也可以透過下列的方法轉換成原始型別。`valueOf()` : 物件型別轉成原始型別。`toString()` : 物件型別轉成字串型別。
 
-###5. 原生物件與宿主物件
+### 5. 原生物件與宿主物件
 javascript有兩種物件：
 - 原生物件(Native)，也可以叫做內建物件，例如Array、Date或是使用者自行定義(後面會提到)
 - 宿主物件(Host)，例如window物件和所有DOM物件。
@@ -117,7 +117,7 @@ javascript有兩種物件：
 ![](https://lh5.googleusercontent.com/-dtWA3IrgWbw/VOmNEZi5u8I/AAAAAAAAE98/m3Xk4tBMpzY/w577-h388-no/01333w234234willcourse.jpg)
 (引用自[梅西的小腦袋](http://windwaterbo-blog.logdown.com/posts/222722-baoge-typescript-combat-development-and-javascript-javascript-basic-beliefs-review))
 
-###範例：物件、變數與型別之間的關係
+### 範例：物件、變數與型別之間的關係
 請問以下出現過幾個記憶體物件? 出現過幾個變數? 出現過幾個型別?
 ```js
  var a;
@@ -142,7 +142,7 @@ ANS : 5個記憶體物件、1個變數、3個型別  '
 2. 提供變數的作用域(scope)，換句話說，作用域是看function範圍，而不是 {} 的符號範圍，跟C#不一樣。
 
 
-###函式表示法
+### 函式表示法
 
 - 表式式
   - 具名表示

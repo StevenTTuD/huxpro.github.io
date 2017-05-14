@@ -11,7 +11,7 @@ comments: true
 ---
 本篇介紹Ruby中特有的寫法，將解答`&:to_s`和`:symbol`這兩種寫法的意義。並依序介紹以下議題：
 
-###Symbol和String的不同之處
+### Symbol和String的不同之處
 分別宣告兩個symbol與string。
 
 ```
@@ -39,7 +39,7 @@ comments: true
 [31] pry(main)>
 ```
 
-###all_symbols 與 include? 搭配運用
+### all_symbols 與 include? 搭配運用
 
 在終端機輸入`Symbol.all_symbols`可以列出目前所有的Symbol。
 
@@ -86,7 +86,7 @@ comments: true
 [25] pry(main)>
 ```
 
-###&:to_s的用法與原理
+### `&:to_s`的用法與原理
 以下兩個寫法效果相同，`:`代表一個Symbol，當Symbol遇上`&`符號時，會把`to_s`方法轉變為proc，而是否能轉變為proc則是看Class中有沒有`to_proc`方法，這是ruby中的duck typing特性所致。我會另外寫一篇來說明duck typing是如何運作。
 
 ```
@@ -96,7 +96,7 @@ comments: true
 => ["1", "2", "3", "4"]
 ```
 
-###String、Symbol和Integer的互相轉換
+### String、Symbol和Integer的互相轉換
 
 Symbol可以轉換成String
 
@@ -120,5 +120,5 @@ NoMethodError: undefined method `to_sym' for 1:Fixnum
 from (pry):98:in `__pry__'
 ```
 
-##參考資料
+## 參考資料
 誘人的ruby-符號篇
