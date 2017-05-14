@@ -61,7 +61,8 @@ validates :original, presence: true
 
 
 ## Controller
-#### Index: 繼續完成controller，從index開始著手，在index我們希望可以看到全部儲存的連結。
+#### Index
+繼續完成controller，從index開始著手，在index我們希望可以看到全部儲存的連結。
 
 ```ruby
 class UrlsController < ApplicationController
@@ -71,7 +72,8 @@ class UrlsController < ApplicationController
 end
 ```
 
-#### Show: 在action show我們希望可以做到的功能是「當使用者輸入縮址時，會轉址到原網址」，這也是也這個URL Shortener的核心功能。
+#### Show
+在action show我們希望可以做到的功能是「當使用者輸入縮址時，會轉址到原網址」，這也是也這個URL Shortener的核心功能。
 
 ```rb
 class UrlsController < ApplicationController
@@ -93,7 +95,8 @@ class UrlsController < ApplicationController
 end
 ```
 
-#### New: 在action new要做的事情是「當使用者輸入原始網址，會產生相對應的縮網址」
+#### New
+ 在action new要做的事情是「當使用者輸入原始網址，會產生相對應的縮網址」
 
 ```rb
 class UrlsController < ApplicationController
@@ -115,7 +118,8 @@ letter陣列用來裝所有的字母包含大寫A-Z與小寫a-z。flatten使屬�
 [產生隨機小寫英數字 幾種方法 and 效能](http://railsfun.tw/t/and/46)
 
 
-#### Create: 儲存一筆url資料，記得要使用strong parameter核對欄位。
+#### Create
+儲存一筆url資料，記得要使用strong parameter核對欄位。
 ```rb
 class UrlsController < ApplicationController
 	.
