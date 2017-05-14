@@ -95,25 +95,25 @@ var global = global || (function() {
 this 實際參考的對象，是以呼叫方式而定，而不是它是否附屬在哪個物件而定。例如就算函式是附屬在函式上的某個特性，也可以這麼改變 this 所參考的對象：
 ```js
 function toString() {
-    return this.name;
+    return this.name;
 }
- 
+
 var p1 = {
-    name     : 'Justin',
-    toString : toString
+    name: 'Justin',
+    toString: toString
 };
- 
+
 var p2 = {
-    name     : 'momor',
-    toString : toString
+    name: 'momor',
+    toString: toString
 };
- 
-console.log(p1.toString());        // Justin
-console.log(p2.toString());        // momor
+
+console.log(p1.toString()); // Justin
+console.log(p2.toString()); // momor
 console.log(p1.toString.call(p2)); // momor
 ```
 
 
 #### 參考資料 & 延伸閱讀
-[JavaScript 語言核心（11）this 是什麼？ by caterpillar | CodeData](http://www.codedata.com.tw/javascript/essential-javascript-11-what-is-this/)
-[Function.prototype.call - JavaScript | MDN](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Function/call)
+- [JavaScript 語言核心（11）this 是什麼？ by caterpillar | CodeData](http://www.codedata.com.tw/javascript/essential-javascript-11-what-is-this/)
+- [Function.prototype.call - JavaScript | MDN](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Function/call)
