@@ -12,7 +12,7 @@ comments: true
 ---
 # 如何將敏捷方法用在個人身上?
 
-## 1.符合敏捷精神
+## 1. 符合敏捷精神 Agile
 因為Scrum需要角色的區分，所以對個人來說，並不需要使用Scrum，只要符合敏捷精神即可。
 
 ## 2.「個人看板系統」Personal Kanban
@@ -64,13 +64,15 @@ Lead time (開發週期時間) 團隊完成一個項目所花費的平均時間�
 
 # 主要研讀對象與參考資料
 主要研讀對象：這篇學習筆記是研讀以下文章所作出的筆記，想要深入了解務必讀一讀下列的文章。
-[運用個人看板做時間管理](http://ruddyblog.wordpress.com/2014/09/21/%E9%81%8B%E7%94%A8%E5%80%8B%E4%BA%BA%E7%9C%8B%E6%9D%BF%E5%81%9A%E6%99%82%E9%96%93%E7%AE%A1%E7%90%86/)
-[用來提升個人效能的「個人看板系統」– Personal Kanban](http://ruddyblog.wordpress.com/2014/08/25/%E7%94%A8%E4%BE%86%E6%8F%90%E5%8D%87%E5%80%8B%E4%BA%BA%E6%95%88%E8%83%BD%E7%9A%84%E3%80%8C%E5%80%8B%E4%BA%BA%E7%9C%8B%E6%9D%BF%E7%B3%BB%E7%B5%B1%E3%80%8D-personal-kanban/)
-參考資料：
-[看板方法介紹（1）：Kanban這個字是什麼意思？](http://teddy-chen-tw.blogspot.tw/2014/08/kanban.html)
-[看板方法介紹（2）：Push 和 Pull](http://teddy-chen-tw.blogspot.tw/2014/08/2push-pull.html)
-[看板方法介紹（3）：Kanban方法的六個實務做法--Visualize與Limit WIP](http://teddy-chen-tw.blogspot.tw/2014/08/3kanban-visualizelimit-wip.html)
-[看板方法介紹（4）：Kanban方法的六個實務做法--Manage Flow](http://teddy-chen-tw.blogspot.tw/2014/08/4kanban-manage-flow.html)
-[看板方法介紹（5）：Kanban方法的六個實務做法—Make Policies Explicit](http://teddy-chen-tw.blogspot.tw/2014/08/5kanbanmake-policies-explicit.html)
-[看板方法介紹（6）：Kanban方法的六個實務做法—Implement Feedback Loops](http://teddy-chen-tw.blogspot.tw/2014/08/6kanbanimplement-feedback-loops.html)
-[看板方法介紹（7）：Kanban方法的六個實務做法—Improve Collaboratively, Evolve Experimentally](http://teddy-chen-tw.blogspot.tw/2014/08/7kanbanimprove-collaboratively-evolve.html)
+- [運用個人看板做時間管理](http://ruddyblog.wordpress.com/2014/09/21/%E9%81%8B%E7%94%A8%E5%80%8B%E4%BA%BA%E7%9C%8B%E6%9D%BF%E5%81%9A%E6%99%82%E9%96%93%E7%AE%A1%E7%90%86/)
+- [用來提升個人效能的「個人看板系統」– Personal Kanban](http://ruddyblog.wordpress.com/2014/08/25/%E7%94%A8%E4%BE%86%E6%8F%90%E5%8D%87%E5%80%8B%E4%BA%BA%E6%95%88%E8%83%BD%E7%9A%84%E3%80%8C%E5%80%8B%E4%BA%BA%E7%9C%8B%E6%9D%BF%E7%B3%BB%E7%B5%B1%E3%80%8D-personal-kanban/)
+
+## 參考資料：
+
+- [看板方法介紹（1）：Kanban這個字是什麼意思？](http://teddy-chen-tw.blogspot.tw/2014/08/kanban.html)
+- [看板方法介紹（2）：Push 和 Pull](http://teddy-chen-tw.blogspot.tw/2014/08/2push-pull.html)
+- [看板方法介紹（3）：Kanban方法的六個實務做法--Visualize與Limit WIP](http://teddy-chen-tw.blogspot.tw/2014/08/3kanban-visualizelimit-wip.html)
+- [看板方法介紹（4）：Kanban方法的六個實務做法--Manage Flow](http://teddy-chen-tw.blogspot.tw/2014/08/4kanban-manage-flow.html)
+- [看板方法介紹（5）：Kanban方法的六個實務做法—Make Policies Explicit](http://teddy-chen-tw.blogspot.tw/2014/08/5kanbanmake-policies-explicit.html)
+- [看板方法介紹（6）：Kanban方法的六個實務做法—Implement Feedback Loops](http://teddy-chen-tw.blogspot.tw/2014/08/6kanbanimplement-feedback-loops.html)
+- [看板方法介紹（7）：Kanban方法的六個實務做法—Improve Collaboratively, Evolve Experimentally](http://teddy-chen-tw.blogspot.tw/2014/08/7kanbanimprove-collaboratively-evolve.html)
