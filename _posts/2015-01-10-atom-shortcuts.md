@@ -1,7 +1,7 @@
 ---
 author: StevenTTuD
 layout: post
-title: Atom 常用快速鍵(持續更新)
+title: Atom 常用快速鍵
 published: true
 date: 2015-01-10 13:39
 tags:
