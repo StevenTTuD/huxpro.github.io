@@ -1,11 +1,10 @@
 ---
 author: StevenTTuD
 layout: post
-title: "[ UML ] Class Diagram"
+title: "UML - Class Diagram"
 published: true
 date: 2014-03-01 08:31
 tags:
-  - Design Pattern
   - UML
 comments: true
 
