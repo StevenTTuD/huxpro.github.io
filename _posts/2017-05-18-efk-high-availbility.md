@@ -1,7 +1,7 @@
 ---
 author: StevenTTuD
 layout: post
-title: "EFK(5) - 讓 Elasticsearch 與 Kibana 能夠接收 Rails 的 log"
+title: "EFK(5) - Fluentd 高可用架構(High Availibity)"
 published: true
 date: 2017-05-18 22:15
 tags:
@@ -11,7 +11,6 @@ tags:
 comments: true
 
 ---
-# Fluentd 高可用架構(High Availibity)
 
 ## 1 架構
 
