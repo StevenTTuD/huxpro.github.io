@@ -1,7 +1,7 @@
 ---
 author: StevenTTuD
 layout: post
-title: "EFK (3) - Rails 與 Fluentd 的串接方法"
+title: "EFK(3) - Rails 與 Fluentd 的串接方法"
 published: true
 date: 2017-05-15 21:23
 tags:

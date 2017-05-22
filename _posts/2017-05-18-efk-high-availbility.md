@@ -1,7 +1,7 @@
 ---
 author: StevenTTuD
 layout: post
-title: "EFK (3) - 讓 Elasticsearch 與 Kibana 能夠接收 Rails 的 log"
+title: "EFK(5) - 讓 Elasticsearch 與 Kibana 能夠接收 Rails 的 log"
 published: true
 date: 2017-05-18 22:15
 tags:

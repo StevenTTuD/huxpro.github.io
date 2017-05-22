@@ -1,7 +1,7 @@
 ---
 author: StevenTTuD
 layout: post
-title: "EFK (1) - 介紹 ELK Stack( Elasticsearch + Logstash + Kibana)"
+title: "EFK(1) - 介紹 ELK Stack( Elasticsearch + Logstash + Kibana)"
 published: true
 date: 2017-05-14 20:02
 tags:

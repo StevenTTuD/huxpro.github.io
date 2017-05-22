@@ -1,7 +1,7 @@
 ---
 author: StevenTTuD
 layout: post
-title: "EFK (6) - 使用 docker 包裝 Fluentd"
+title: "EFK(6) - 使用 docker 包裝 Fluentd"
 published: true
 date: 2017-05-19 23:15
 tags:

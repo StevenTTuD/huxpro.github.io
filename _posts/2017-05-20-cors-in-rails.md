@@ -23,10 +23,11 @@ comments: true
 需要先使用 `PATCH` 這個 HTTP Verb 來確認有沒有跨網域存取的權限。
 當 PATCH 動作打到 Rails Route 的時候，就會發現，沒有對應的 Route，於是就回 404 了。
 
-## Solution
-
-所以如果以後有 CORS 需求的話，請使用 [gem 'rack-cors'](https://github.com/cyu/rack-cors)，從 middleware 層處理 CORS，會是比較萬用的解法。
-
 ![](https://lh3.googleusercontent.com/-_Pes10FnRo4/WSLrN-5YTJI/AAAAAAAAKyw/TS2_O2GiWJocUjlo15glwizmLVOW4JUXQCHM/I/14954599810526.jpg)
 
 (圖片來源: MDN)
+
+
+## Solution
+
+所以如果以後有 CORS 需求的話，請使用 [gem 'rack-cors'](https://github.com/cyu/rack-cors)，從 middleware 層處理 CORS，會是比較萬用的解法。
