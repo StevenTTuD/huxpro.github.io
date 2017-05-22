@@ -12,13 +12,13 @@ comments: true
 
 ---
 
-### 2.1 架構
+### 1 架構
 
 ![](https://lh3.googleusercontent.com/-d5gQhHd4ylM/WSKepoR8vPI/AAAAAAAAKyc/0BxPY3iDqEkpUttT907x5q__p1z2Cgy1wCHM/I/14943188485356.jpg)
 
-## 2.2 安裝步驟
+## 2 安裝步驟
 
-### 2.2.1 安裝 elasticsearch
+### 2.1 安裝 elasticsearch
 
 ```
 $ curl -O https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-5.0.2.tar.gz
@@ -32,7 +32,7 @@ $ cd elasticsearch-5.0.2
 $ ./bin/elasticsearch
 ```
 
-### 2.2.2 安裝 Kibana
+### 2.2 安裝 Kibana
 
 ```
 curl -O https://artifacts.elastic.co/downloads/kibana/kibana-5.0.2-darwin-x86_64.tar.gz
@@ -46,7 +46,7 @@ $ cd kibana-5.0.2-darwin-x86_64
 $ ./bin/kibana
 ```
 
-## 2.2.2 fluentd
+## 2.3 安裝 fluentd
 
 透過fluentd 的 elasticsearch 套件`fluent-plugin-elasticsearch`我們可以讓 fluentd 輸出的 log 變成 logstash 輸出的格式，這樣一來 kibana 就可以顯示我們儲存的 log。
 

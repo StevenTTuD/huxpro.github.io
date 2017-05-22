@@ -51,7 +51,7 @@ curl https://raw.githubusercontent.com/fluent/fluentd-docker-image/master/Docker
 curl https://raw.githubusercontent.com/fluent/fluentd-docker-image/master/fluent.conf.erb > fluent.conf
 ```
 
-#### 2.3 製作 Fluentd Log Aggregator Image
+#### 2.2 製作 Fluentd Log Aggregator Image
 
 ```
 FROM fluent/fluentd:onbuild
@@ -120,7 +120,7 @@ docker build -t my-fluentd-aggregator:1.0 ./
 
 接著輸入 `docker run -p 24224:24224 custom-fluentd` 即可啟動 container，並 bind 至本機 24224 port 上。
 
-### 2.4 製作 Fluentd Log Aggregator Image
+### 2.3 製作 Fluentd Log Aggregator Image
 
 Forwarder 也是如法炮製，差別在於 Dockerfile 不需加上 Elasticsearch Output 套件。
 
