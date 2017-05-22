@@ -176,6 +176,27 @@ docker build -t my-fluentd-forwarder:1.0 ./
 
 接著輸入 `docker run -p 24225:24224 custom-fluentd` 即可啟動 container，並 bind 至本機 24225 port 上。
 
-## 3.實際運作
+## 3. 使用 docker-compose 整合容器
+
+可以使用 docker-compose 節省 build 的動作。
+新增檔案 `docker-compose.yml`，輸入以下內容：
+
+```
+version: '1'
+services:
+  forwarder:
+    build: ./fluentd-forwarder
+    ports:
+     - "24224:24224"
+  aggregator:
+    build: ./fluentd-aggregator
+    ports:
+     - "24225:24224"
+```
+
+輸入 `docker-compose up` 一次 build forwarder 和 aggregator 兩個 image，
+並將容器跑起來。
+
+## 4.實際運作
 
 實際運作的時候只需將 fluent.conf 中的 ip 位置，改成真實 Server IP，即可開始運作。
