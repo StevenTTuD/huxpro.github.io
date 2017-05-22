@@ -11,7 +11,6 @@ tags:
 comments: true
 
 ---
-# EFK (2) - 讓 Elasticsearch 與 Kibana 能夠接收 Rails 的 log
 
 ### 2.1 架構
 
