@@ -3,7 +3,7 @@ author: StevenTTuD
 layout: post
 title: "EFK(4) - 讓 Elasticsearch 與 Kibana 能夠接收 Rails 的 log"
 published: true
-date: 2017-05-16 21:33
+date: 2017-05-17 21:33
 tags:
   - EFK
   - Fluentd
