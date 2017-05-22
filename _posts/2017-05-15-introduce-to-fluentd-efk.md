@@ -49,7 +49,7 @@ Ruby 之父 Matz 與 Heroku co-founder 推薦
 
 這編有兩篇很棒的比較：
 
-[Loom Systems | AI Log Analysis for All Your Applications](https://www.loomsystems.com/single-post/2017/01/30/A-Comparison-of-Fluentd-vs-LogStash-Log-Collector)
+[Loom Systems - AI Log Analysis for All Your Applications](https://www.loomsystems.com/single-post/2017/01/30/A-Comparison-of-Fluentd-vs-LogStash-Log-Collector)
 
 [Log Aggregation with Fluentd, Elasticsearch and Kibana](http://dev.haufe.com/log-aggregation/)
 

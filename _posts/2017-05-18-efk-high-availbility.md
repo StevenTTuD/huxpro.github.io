@@ -78,4 +78,4 @@ comments: true
 
 ## 參考資料
 
-[Fluentd High Availability Configuration | Fluentd](http://docs.fluentd.org/v0.12/articles/high-availability#network-topology)
+[Fluentd High Availability Configuration - Fluentd](http://docs.fluentd.org/v0.12/articles/high-availability#network-topology)

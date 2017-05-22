@@ -95,4 +95,4 @@ fluentd -c ./fluent/td-agent.conf -vv
 
 ## 參考資料
 
-[Free Alternative to Splunk Using Fluentd | Fluentd](http://docs.fluentd.org/v0.12/articles/free-alternative-to-splunk-by-fluentd)
+[Free Alternative to Splunk Using Fluentd - Fluentd](http://docs.fluentd.org/v0.12/articles/free-alternative-to-splunk-by-fluentd)
