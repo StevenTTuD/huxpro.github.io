@@ -47,7 +47,7 @@ Ruby 之父 Matz 與 Heroku co-founder 推薦
 
 ### Fluentd 與 Logstash 比較
 
-這編有兩篇很棒的比較：
+這邊有兩篇很棒的比較：
 
 [Loom Systems - AI Log Analysis for All Your Applications](https://www.loomsystems.com/single-post/2017/01/30/A-Comparison-of-Fluentd-vs-LogStash-Log-Collector)
 
